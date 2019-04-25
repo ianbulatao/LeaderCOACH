@@ -1,18 +1,60 @@
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon color="light" name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <!-- <ion-title>Home</ion-title> -->
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content  padding>
+<div class="swipercontainer">
+  <div class="content-wrapper">
+      <div class="logo-container" text-center>
+          <!-- <h3>Welcome To</h3> -->
+          <div class="logo">
+          <img src="assets/imgs/leader.png" alt="">
+          <h1>LeaderCOACH</h1>
+          </div>
+        </div>
+        <div  text-center class="menu-buttons">
+          <h3>What do you want to do?</h3>
+          <div (click)="goTo('coach_myself')" margin-top class="coach-myself" text-center>
+            <h4 no-margin>COACH MYSELF</h4>
+            <div class="description">
+              <p no-margin>get questions to reflect on and answer</p>
+            </div>
+          </div>
+          <div (click)="goTo('coach_someone')" margin-top class="coach-someone" text-center>
+              <h4 no-margin>COACH SOMEONE</h4>
+              <div class="description">
+                  <p no-margin>get questions to coach myself and others</p>
+              </div>
+            </div>
+            <div (click)="goTo('lead_a_meeting')" margin-top class="lead-meeting" text-center>
+                <h4 no-margin>LEAD a MEETING</h4>
+                <div class="description">
+                  <p no-margin>get questions to challenge your team/group</p>
+                </div>
+              </div>
+            <div (click)="gotoGroundRules()" margin-top class="ground-rules" text-center>
+                <h4 no-margin>SET GROUND RULES</h4>
+                <div class="description">
+                  <p no-margin>choose from 100+ norms for better meetings</p>
+                </div>
+              </div>
+        </div>
+  </div>
+  
+</div>
 </ion-content>
+
+<ion-footer no-border color="primary">
+    <div class="quote">
+        <p no-margin>To ask the right question is already half the solution of a problem.</p>
+        <p no-margin float-right>- Carl Jung</p>
+      </div>
+    <div class="custom-footer" style="height: 7vh;">
+
+    </div>
+</ion-footer>

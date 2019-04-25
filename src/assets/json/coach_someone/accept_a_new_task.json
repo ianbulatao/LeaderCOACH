@@ -1,0 +1,63 @@
+{
+  
+    "data": [
+        {
+            "title": "CONTEXT",
+            "color": "yellow",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "Establish the context for delegating this responsibility to this person.",
+                "Announce the topic, purpose and expected length of the conversation.",
+                "Explain what led to delegating this responsibility, and why.",
+                "Share the significance of the project, program or task.",
+                "Explain your rationale in choosing her/him. Be transparent. Express confidence.",
+                "How do you perceive this responsibility? What questions do you have so far?"
+            ]
+        },
+        {
+            "title": "TASK",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "Describe the responsibility in detail: key tasks, decisions, deliverables, etc.",
+                "Explain what the responsibility involves and produces (i.e., key deliverables).",
+                "Outline the key decisions, actions, communications and reporting requirements.",
+                "Explain how the scope of authority will vary by each key decision and action.",
+                "What questions do you have about the scope of the responsibility?",
+                "(Depending on familiarity) What are your thoughts on how you’d approach this?",
+                "What concerns do you have? Address concerns seriously and fully."
+            ]
+        },
+        {
+            "title": "RESPONSIBILITY + AUTHORITY",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, discuss the level of authority for key decisions and actions.",
+                "The key decisions and actions you'll be responsible for are…",
+                "Let’s discuss your authority to make each of these decisions and actions.",
+                "Eventually, all decisions and actions related to this responsibility will be yours to make.",
+                "At first, on some decisions, you will need to involve me; on others, less so.",
+                "On which of these would you like my input? Which would you feel more comfortable with?",
+                "Share how success will be measured, and progress evaluated.",
+                "What questions or concerns do you have about your authority and responsibility?",
+                "Express confidence in their ability to perform."
+            ]
+        },
+        {
+            "title": "SUPPORT + FOLLOW-UP",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, explore their needs for support and explain how you will follow-up.",
+                "What do you need most from me to accept this responsibility?",
+                "Specifically, what coaching, support or other help do you need to be successful?",
+                "Let's meet regularly to check-in on how it's going…once a week?",
+                "I will give you feedback on what I observe/hear.",
+                "Please let me know your questions and challenges.",
+                "Emphasize your desire for them to succeed, and expectation of success."
+            ]
+        }
+    ]
+}

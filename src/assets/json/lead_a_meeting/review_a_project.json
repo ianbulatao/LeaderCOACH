@@ -1,0 +1,76 @@
+{   
+    "data": [
+        {
+            "title": "GOAL v. RESULTS",
+            "color": "#33348e",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, compare the project’s goal with the results achieved.",
+                "What did we set out to achieve? What was the goal/objective?",
+                "What specific results were produced? What was accomplished?",
+                "How was success measured? To what extent was this project ‘successful’?",
+                "What helped make it a ‘success’?",
+                "What diminished its ‘success’?"
+            ]
+        },
+        {
+            "title": "SPECIFIC OBSERVATIONS",
+            "color": "#33a457",
+            "percent": 25,    
+            "questions": [
+                "In this phase, identify specific things which worked and didn’t work.",
+                "What went well? What worked?  What contributed to or caused that?",
+                "What didn’t work or go well? What contributed to or caused that?",
+                "What actually happened? How did what happen vary from the plan?",
+                "To what extent was the scope of work clearly defined and pursued?",
+                "To what extent were stakeholders’ expectations clear and measurable?",
+                "To what extent was each deliverable achieved? Scorecard (red, yellow, green)?",
+                "To what extent were individuals held accountable for their deliverables?",
+                "To what extent was the plan, timeline and deadline realistic?",
+                "To what extent were tasks assigned and responsibilities clear?",
+                "To what extent were the estimated durations of tasks accurate?",
+                "Which tasks required less time, more time or about the right time?",
+                "Did the risks identified and assessed in advance prove accurate?",
+                "What risks were not identified in advance? How significant were they?",
+                "To what extent were contingency plans implemented? How successfully?",
+                "What changes in scope occurred over the course of the project?",
+                "How did changes in scope impact the project? How were they handled?"
+            ]
+        },
+        {
+            "title": "PEOPLE + LEADERSHIP",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, review how people fared on the project and its leadership.",
+                "To what extent were stakeholders’ expectations met?",
+                "What stakeholder interests or concerns went unaddressed, if any?",
+                "To what extent was there a communication plan? If so, how was it used?",
+                "Who needs to be recognized and/or rewarded for their contributions?",
+                "Did anything on the project impact trust or interpersonal relationships?",
+                "How did the project impact morale and confidence in future projects?",
+                "How would we summarize the people aspect of this project?",
+                "To what extent did the leader respect and engage people?",
+                "To what extent did the leader consistently hold people accountable?",
+                "To what extent did the leader practice transparent communication?",
+                "How would we evaluate the leadership of this project?"
+            ]
+        },
+        {
+            "title": "OBJECTIVE + AGENDA",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, document lessons learned and raise the bar for next time.",
+                "What insights were gained? What lessons were learned?",
+                "What were your personal lessons learned?",
+                "How might risks be better identified in the future?",
+                "What advice (with hindsight) would we have given ourselves at the kick-off of this project?",
+                "What 2 or 3 key lessons would we share with others doing similar projects?",
+                "What will we do differently next time?",
+                "How will we raise the bar?"
+            ]
+        }
+    ]
+}

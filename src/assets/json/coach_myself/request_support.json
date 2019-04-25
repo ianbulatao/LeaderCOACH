@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "title": "PROPOSAL",
+            "color": "#33348e",
+            "isActive": true,
+            "percent": 20,
+            "questions":[
+                "In this phase, clarify the support being requested.",
+                "State the general request in the subject/heading.",
+                "Define the specific action, decision or resource needed.",
+                "ummarize your rationale. Why is it needed? Why now?"
+            ]
+        },
+        {
+            "title": "CONTEXT",
+            "color": "yellow",
+            "percent": 25,
+            "questions":[
+                "In this phase, connect the proposal to relevant contextual factors.",
+                "Show how this supports a corporate/unit strategy, priority, goal or value.",
+                "Link relevant external issues, trends and events to the request.",
+                "Identify potential future impacts: If approved, this will…",
+                "Identify negative consequences if action is not taken immediately."
+            ]
+        },
+        {
+            "title": "SUPPORTING DATA",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, pull together all relevant data to make your case.",
+                "Provide accurate, specific data supporting your request.",
+                "Provide short- and long-term costs in sufficient detail.",
+                "Make explicit any implicit assumptions, risks or caveats.",
+                "Present data in objective, yet persuasive ways (e.g., use contrast)."
+            ]
+        },
+        {
+            "title": "BENEFITS",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, determine the people impacts of your proposal.",
+                "Who will be impacted? Who gains? Who loses? Who pays?",
+                "Which stakeholder(s) support this? Who is ‘on board’?",
+                "How will stakeholders/customers benefit from this action?",
+                "How will this help productivity, morale, competitiveness, etc.?"
+            ]
+        },
+        {
+            "title": "DECISION + ACTION",
+            "color": "#33348e",
+            "percent": 5,
+            "questions":[
+                "In this phase, summarize the request for support in clear terms.",
+                "Restate the request calling for action: “Your approval is requested for…”"
+            ]
+        }
+    ]
+}

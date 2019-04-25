@@ -1,0 +1,54 @@
+{
+    "coach_myself": {
+      "title": "COACH MYSELF",
+      "description": "get questions to reflect on and answer",  
+      "list":   [
+        {"title": "Delegate work", "description":"prepare for a delegation conversation"},
+        {"title": "Get unstuck", "description":"move through a challenge or obstacle"},
+        {"title": "Give feedback", "description":"prepare to deliver redirecting feedback"},
+        {"title": "Lead better", "description":"reflect on my development as a leader"},
+        {"title": "Manage conflict", "description":"encourage myself/others to collaborate"},
+        {"title": "Present an idea", "description":"get buy-in for a presentation/proposal"},
+        {"title": "Probe a decision", "description":"study a disputed management decision"},
+        {"title": "Process reactions", "description":"sort out what happened after an event"},
+        {"title": "Request support", "description":"structure an appeal for action/resources"},
+        {"title": "Review a meeting", "description":"conduct post-critique for lessons learned"},
+        {"title": "Sell with SPIN", "description":"prep for a sales call using 4-step process"},
+        {"title": "Sort out feedback ", "description":"reflect on criticism, and move forward"}
+        ]
+    },
+    "coach_someone": {
+        "title": "COACH SOMEONE",
+        "description": "get questions to coach myself and others",  
+        "list":   [
+          {"title": "Accept a new task", "description":"structure a delegation conversation "},
+          {"title": "Achieve a goal", "description":"identify plan for a developmental goal"},
+          {"title": "Find career focus", "description":"explore career situation and direction"},
+          {"title": "Leverage talent", "description":"get to know, onboard new team member"},
+          {"title": "Redirect behavior", "description":"deliver an effective feedback conversation"},
+          {"title": "Refocus effort", "description":"assess a challenge, and motivate action"},
+          {"title": "Reinforce behavior", "description":"structure a conversation to deliver praise"},
+          {"title": "Review an event", "description":"help process reactions to a confrontation"},
+          {"title": "Set a SMART goals", "description":"consider key factors in a goal-setting talk"},
+          {"title": "Update progress", "description":"structure 1:1 employee status meetings"}
+          ]
+      },
+
+      "lead_a_meeting": {
+        "title": "LEAD a MEETING",
+        "description": "get questions to challenge your team/group",  
+        "list":   [
+          {"title": "Build teamwork", "description":"build rapport, trust and focus for a team"},
+          {"title": "Devise a strategy", "description":"analyze a situation for best way forward"},
+          {"title": "Generate ideas", "description":"stimulate creativity via brainstorming"},
+          {"title": "Handle a crisis", "description":"assess a pressing concern and respond"},
+          {"title": "Initiate a change", "description":"plan implementation of something new"},
+          {"title": "Launch a project", "description":"structure and kick-off a successful project"},
+          {"title": "Make a decision", "description":"consider multiple perspectives in deciding"},
+          {"title": "Manage an issue", "description":"examine and respond to public policy issue"},
+          {"title": "Plan a workshop", "description":"design and deliver a productive meeting"},
+          {"title": "Review a project", "description":"generate lessons learned at project close"},
+          {"title": "Solve a problem", "description":"ensure joint solution of non-technical issue"}
+          ]
+      }
+}

@@ -1,0 +1,58 @@
+<!--
+  Generated template for the PreparePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <!-- <ion-title>prepare</ion-title> -->
+    <button ion-button menuToggle>
+      <ion-icon color="light" name="menu"></ion-icon>
+  </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="swipercontainer" (swipe)="swipeEvent($event)">
+    <div class="logo-container">
+        <div class="logo">
+            <img src="assets/imgs/leader.png" alt="">
+            <p class="logo-text">LeaderCOACH</p>
+        </div>
+    </div>
+      <div class="content-wrapper" [ngStyle]="{'top': questions[activeIndex].isChoices ? 'unset' : '35%'}">
+        <div text-center class="question">
+          <h4>{{questions[activeIndex].question}}</h4>
+          <div *ngIf="questions[activeIndex].isNumber" class="selection">
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 1}" (click)="select(1)" >1</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 2}" (click)="select(2)" >2</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 3}" (click)="select(3)" >3</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 4}" (click)="select(4)" >4</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 5}" (click)="select(5)" >5</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 6}" (click)="select(6)" >6</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 7}" (click)="select(7)" >7</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 8}" (click)="select(8)" >8</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 9}" (click)="select(9)" >9</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 10}" style="padding: 1px 4px;" (click)="select(10)">10</div>
+          </div>
+          <div *ngIf="questions[activeIndex].isYesNo"  class="selection">
+              <div [ngClass]="{'active': questions[this.activeIndex].answer === 'yes'}" (click)="select('yes')" >Yes</div>
+            <div [ngClass]="{'active': questions[this.activeIndex].answer === 'no'}" (click)="select('no')" >No</div>
+          </div>
+          <div *ngIf="questions[activeIndex].isChoices"  class="selection">
+                <div margin-bottom [ngClass]="{'active': questions[this.activeIndex].choice === choice}" (click)="selectChoice(choice)" *ngFor="let choice of questions[activeIndex].choices" text-center>
+                  {{choice}}
+                </div>
+          </div>
+          <input *ngIf="questions[activeIndex].isText" [(ngModel)]="questions[this.activeIndex].answer" >
+          
+        </div>
+      </div>
+    </div>
+</ion-content>
+<ion-footer color="primary">
+    <div style="height: 50px;">
+
+    </div>
+</ion-footer> 

@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "title": "KNOWLEDGE + SKILLS",
+            "color": "#33a457",
+            "percent": 10,
+            "isActive": true,
+            "questions": [
+                "In this phase, get to know the person and what they bring to the table.",
+                "Tell me about yourself. What got you here?",
+                "Given what you know about the job, what are your most relevant skills/strengths?",
+                "What specific knowledge areas and expertise do you bring to the role?",
+                "What knowledge could you share with the team?",
+                "What skills do you want to develop?"
+            ]
+        },
+        {
+            "title": "HOPES + DREAMS",
+            "color": "yellow",
+            "percent": 20,
+            "questions": [
+                "In this phase, get the person to share their hopes and dreams in the role.",
+                "What drew you to this role?",
+                "What are you most curious about?",
+                "How do you learn best? Reading, studying, listening, or just doing?",
+                "What do you aspire to do professionally? What’s a dream of yours?",
+                "How do you see this role helping your career?",
+                "What’s your ‘gut’/intuition about this job?"
+            ]
+        },
+        {
+            "title": "VALUES + MOTIVATIONS",
+            "color": "#cc2229",
+            "percent": 20,
+            "questions": [
+                "In this phase, try to understand their values, motivations and de-motivators.",
+                "What qualities are you most proud of?",
+                "What matters most to you? What do you value most?",
+                "What matters to you on a team? Or in the people you work with?",
+                "Tell me about a time when you were very motivated… (listen for intrinsic motivators)",
+                "What within you motivates you to do/perform your best?",
+                "Tell me about a time when you were very demotivated… (listen for extrinsic de-motivators)",
+                "What circumstances do you think caused or contributed to that?",
+                "What are you most interested in? Passionate about?"
+            ]
+        },
+        {
+            "title": "GOALS + PLANS",
+            "color": "#33348e",
+            "percent": 20,
+            "questions": [
+                "In this phase, ensure the person is clear about their role, goals and near-term plan.",
+                "How clear is your role? What’s expected of you? What can I clarify?",
+                "What’s your near-terms plan? First steps?",
+                "What goals/targets have you set for yourself?",
+                "How can I help you achieve your goals?",
+                "How often shall we touch base on your goals?"
+            ]
+        },
+        {
+            "title": "ME AS a LEADER",
+            "color": "yellow",
+            "percent": 20,
+            "questions": [
+                "In this phase, share openly about yourself as a leader.",
+                "What would you like to know about me?",
+                "Here’s what matters most to me: (values, beliefs, principles)",
+                "Here’s my philosophy of leading: (style, ethics, code of conduct)",
+                "Here are my pet peeves: (e.g., surprises, being late, not asking for help, etc.)",
+                "Here’s what you can count on from me: (support, fairness, transparency)",
+                "What else would you like to know?"
+            ]
+        }
+
+    ]
+}

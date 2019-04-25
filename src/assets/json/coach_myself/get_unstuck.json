@@ -1,0 +1,92 @@
+{
+    "data": [
+            {
+                "title": "CLARIFY",
+                "color": "#33348e",
+                "percent": 12.5,
+                "isActive": true,
+                "questions": [
+                    "In this phase, clarify the issue, its magnitude and the stakes…",
+                    "How would you define the ‘issue’?",
+                    "What’s especially challenging about it?",
+                    "What do you see as the biggest obstacle?",
+                    "To what extent do you see it as a ‘problem’?",
+                    "How has your thinking about it changed over time?",
+                    "On a scale of 1-10, how big is this for you?",
+                    "What’s at stake—if successful and if not?"
+                ]
+            },
+            {
+                "title": "REFRAME",
+                "color": "#33348e",
+                "percent": 25,
+                "questions": [
+                    "In this phase, review the data and reframe the situation…",
+                    "What’s the data? No inferences or interpretations.",
+                    "What’s another way of looking at the raw data?",
+                    "What at its essence is the situation?",
+                    "What’s happening right now? What’s your part in it?",
+                    "What would help the situation? Make it work for you?",
+                    "What plentiful resource or talent could you apply to this?",
+                    "How might you apply or leverage one of your strengths?",
+                    "What one thing, if different, would really improve things?",
+                    "What if you could change that variable…how would you?"
+                ]
+            },
+            {
+                "title": "IMAGINE",
+                "color": "yellow",
+                "percent": 25,
+                "questions": [
+                    "In this phase, explore creative and imaginative opportunities…",
+                    "What could you learn from this? What’s it teaching you?",
+                    "How might you turn the obstacle into a way forward?",
+                    "How would your favorite superhero handle it?",
+                    "What variable, if removed, would significantly change things?",
+                    "What’s a creative or artistic way of visualizing it? Draw it.",
+                    "What’s a metaphor or analogy for it? What’s it like?",
+                    "What fairy tale, fantasy or adventure does it remind you of?",
+                    "Who are you in the story? How would you write the ending?",
+                    "To what extent do you see yourself succeeding? What does it look like?",
+                    "How would your role model handle it? What would he/she do?",
+                    "What opportunity might come your way because of it?"
+                ]
+            },
+            {
+                "title": "AFFIRM",
+                "color": "#cc2229",
+                "percent": 25,
+                "questions": [
+                    "In this phase, affirm how dealing with this actually helps you…",
+                    "What’s one good thing about tackling this?",
+                    "How could it actually help you? Stretch you?",
+                    "How might you embrace it? Move into it?",
+                    "What do you personally need out of the process? And the solution?",
+                    "How can you get your needs met? Who could help you?",
+                    "Who wants you to succeed at this? Who else?",
+                    "How specifically would this person(s) help you?",
+                    "How would you approach him/her for that help?",
+                    "What’s the upside in taking a small step or risk?",
+                    "What else do you need to affirm about this situation?"
+                ]
+            },
+            {
+                "title": "SOLVE",
+                "color": "#33348e",
+                "percent": 12.5,
+                "questions": [
+                    "In this phase, synthesize insights into options for moving forward…",
+                    "Now, how do you see your obstacle?",
+                    "What/where/who is the real issue? How do you address that?",
+                    "What’s your ultimate goal? Working backwards from that…",
+                    "What’s the first step toward reaching your goal?",
+                    "What are 3 different things you could try?",
+                    "For each one, what would be the likely result?",
+                    "What are the pros & cons of each approach? Which is best?",
+                    "What’s one step you could immediately take in that direction?",
+                    "What will you do right now?"
+                ]
+            }
+        ]
+    
+}

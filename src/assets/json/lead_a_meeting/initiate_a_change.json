@@ -1,0 +1,87 @@
+{
+    "data": [
+        {
+            "title": "SITUATION",
+            "color": "#33a457",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, understand the present state and how it needs to change.",
+                "What’s the current situation facing our organization/unit? ",
+                "What are the most critical external/competitive threats?",
+                "What are the most critical external/competitive threats?",
+                "What’s not working internally? What's working well?",
+                "Why can’t we continue as is? Why is change necessary?",
+                "Why is change needed now? What’s the urgency?",
+                "What specifically will we need to do differently/better?",
+                "What forces/factors are driving us to change? Resisting change?",
+                "What external opportunities exist to collaborate/co-create?",
+                "What resources and commitments are needed to succeed?",
+                "Who’s leading the change? What’s her/his mission/responsibility?",
+                "Sum up the necessity and urgency for change. Sell the problem."
+            ]
+        },
+        {
+            "title": "VISION",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, explore the possibilities and envision success.",
+                "What’s the risk of not changing? Doing nothing? Waiting?",
+                "What’s our greatest risk? What scenarios might evolve?",
+                "In what domain/space are we seeking to improve or compete?",
+                "What are the potential benefits or opportunities with this change?",
+                "What factors will be key to succeeding in this market/arena?",
+                "What will success look like? What’s our wanted position?",
+                "How/when will we know we’re ‘there’? What will it look/sound/feel like?",
+                "What’s our strategy? How will we get ‘there’ from where we are?",
+                "In what ways must people change their behavior/way of working?",
+                "Do people ‘get’ the vision, and the change it will require?",
+                "Does everyone see how he/she contributes to success or failure?",
+                "Share a winning vision. Make it big. Inspire others to victory."
+            ]
+        },
+        {
+            "title": "ALIGNMENT",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, identify and align stakeholders to mobilize commitment.",
+                "How will we benefit if successful? What does the organization/unit stand to gain?",
+                "How will customers, employees and shareholders benefit specifically?",
+                "What do we—and they—stand to lose if we fail?",
+                "How committed (scale of 1 – 10) is this team and the organization to this effort?",
+                "Who are the key stakeholders? What level of commitment do we need from each?",
+                "What conflicts of interests, goals or priorities exist with each of them?",
+                "To what extent does each key stakeholder a) trust us and b) support this effort?",
+                "Who are our allies? Who’s on board? How to reward them?",
+                "Who's on the fence? Who's resisting? How to convince them?",
+                "Who are our adversaries/opponents? How do we win them over?",
+                "How do we influence/motivate each person to commit to the change?",
+                "How do we help people let go of what was, and engage with the new?",
+                "How will we model/demonstrate the desired culture/behaviors?",
+                "How do we sustain commitment to change for the long haul?",
+                "Confirm your commitment. Mobilize other's commitment."
+            ]
+        },
+        {
+            "title": "IMPLEMENTATION",
+            "color": "#33348e",
+            "percent": 25,    
+            "questions": [
+                "In this phase, plan how the change will be implemented and sustained.",
+                "How are we defining and positioning the desired outcome?",
+                "What balanced scorecard of goals/objectives would achieve that outcome?",
+                "What systems, structures and/or policies will need to change? How?",
+                "What new processes, tools and/or platforms must be implemented?",
+                "What’s our implementation plan? What’s our schedule/timeline?",
+                "What specific, measurable targets will indicate progress?",
+                "How do we hold everyone accountable for making it happen?",
+                "How will we celebrate when we’ve reached our desired outcome?",
+                "How will we recognize and reward those who helped accomplish it?",
+                "How do we make it ‘stick’? Make it last? Embed it in the culture?",
+                "Implement your plan to make the change happen."
+            ]
+        }
+    ]
+}

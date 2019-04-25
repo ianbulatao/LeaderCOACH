@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "title": "DATA",
+            "color": "#33a457",
+            "isActive": true,
+            "percent": 25,
+            "questions":[
+                "In this phase, establish the specific feedback you received.",
+                "What exactly was the feedback? What words were used?",
+                "What exactly was the feedback? What words were used?",
+                "If not sufficiently explicit/detailed, ask for specific examples.",
+                "How actionable was the feedback (i.e., what you need to do)?",
+                "How clear to you is the behavior/outcome that’s expected?",
+                "If not sufficiently clear, ask what specific behaviors are wanted."
+            ]
+        },     
+        {
+            "title": "INTERPRETATION",
+            "color": "yellow",
+            "percent": 15,
+            "questions":[
+                "In this phase, explore possible interpretations or misinterpretations.",
+                "To what extent did the person interpret/judge your behavior?",
+                "To what extent did those interpretations align with your own?",
+                "What could have contributed to any misinterpretation?",
+                "To what extent did their perception not match your intention?",
+                "If not, consider clarifying what your intention was."
+            ]
+        },
+        {
+            "title": "REACTIONS",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, evaluate how the feedback affected you",
+                "With what part did you agree? With what did you disagree?",
+                "How was the feedback delive#cc2229? Tone, body language?",
+                "How did their delivery make you feel?",
+                "To what extent did it feel ‘unfair’? No control over?",
+                "To what extent were you trigge#cc2229 emotionally?",
+                "How is it affecting your self-esteem? Motivation? Morale?",
+                "How is it affecting your respect for or rapport with the person?",
+                "Consider communicating the impacts to the feedback-giver.",
+                "What other reactions did you experience? How are those impacting you still?"
+            ]
+        }, 
+        {
+            "title": "DECISION",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, analyze and conclude how to respond to the feedback.",
+                "What are reasons to accept the feedback?",
+                "What will likely happen as a result?",
+                "What are reasons NOT to accept it? Or even challenge it?",
+                "What will likely happen if you do this?",
+                "What’s your decision? Based on what rationale?",
+                "If ‘accept’, what will you stop doing? Do differently?",
+                "If ‘accept’, how will you hold yourself accountable?",
+                "If to ‘ignore/challenge’ it, how will you communicate that?"
+            ]
+        }, 
+        {
+            "title": "LEARNING",
+            "color": "yellow",
+            "percent": 10,
+            "questions":[
+                "In this phase, reflect on your deeper insights about the feedback.",
+                "What did you learn from this experience?",
+                "How will you translate this insight into action?",
+                "What does this mean for your further development?"
+            ]
+        }
+    ]
+}

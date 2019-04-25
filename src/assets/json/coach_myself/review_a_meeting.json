@@ -1,0 +1,66 @@
+{
+    "data": [
+        {
+            "title": "OBSERVE",
+            "color": "#33a457",
+            "isActive": true,
+            "percent": 25,
+            "questions":[
+                "In this phase, review what happened in the meeting.",
+                "Did the meeting start/end on time?",
+                "Was the agenda stated? Posted? Followed?",
+                "Was the purpose clearly articulated? Agreed to?",
+                "Was an objective clearly stated? Achieved?",
+                "Were ground rules set? Posted? Followed?",
+                "How would you rate the participation? What % participated?",
+                "How would you rate the energy level? Scale 1 – 10?"
+
+            ]
+        },     
+        {
+            "title": "INFER",
+            "color": "yellow",
+            "percent": 25,
+            "questions":[
+                "In this phase, explore other inferences about the meeting",    
+                "How would you describe the overall ‘mood’?",
+                "To what extent was creativity/fun encouraged?",
+                "To what extent were questions answe#cc2229 satisfactorily?",
+                "What went unanswe#cc2229/unexplo#cc2229? What was missing?",
+                "What learning occur#cc2229? What insights were gained?",
+                "To what extent were learnings and insights explicitly communicated?",
+                "To what extent did the meeting move the group forward?"
+            ]
+        },
+        {
+            "title": "CONSIDER",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, consider how the ‘people’ issues were handled.",
+                "Were people respected/heard? Did anyone feel disrespected?",
+                "Did anything happen which might impact trust or rapport among attendees?",
+                "How diverse was the group? Scale 1 – 10? What were missing perspective(s)?",
+                "To what extent did every attendee feel included? Scale 1 – 10?",
+                "What cultural norms were observed? Were any challenged? How so?",
+                "What needs, interests or concerns went unaddressed? Need to follow-up?",
+                "What biases did you hear? From whom? Were the biases confronted? How?"
+            ]
+        },
+        {
+            "title": "CONCLUDE",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, analyze the meeting’s output, and identify improvement steps.",
+                "How productive was the meeting? To what extent was the objective achieved?",
+                "How efficient was the meeting, in achieving the agenda? Scale 1 – 10.",
+                "What decisions/conclusions were reached by the group? Communicated?",
+                "Who committed to what action(s)? By when? How being held accountable?",
+                "What went well in the meeting? How will you reinforce that next time?",
+                "What could have gone better or faster? How will you improve next time? ",
+                "How will you lead this type meeting differently in the future?"
+            ]
+        }
+    ]
+}

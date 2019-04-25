@@ -1,0 +1,77 @@
+{   
+    "data": [
+        {
+            "title": "IDENTIFY",
+            "color": "#33348e",
+            "percent": 12.5,    
+            "isActive": true,
+            "questions": [
+                "In this phase, define the issue that most needs to be managed.",
+                "Scan/monitor the environment for possible issues.",
+                "Prioritize issues with most significant potential impact.",
+                "Select and define the issue to be addressed.",
+                "Frame the issue as “How to most effectively respond to…”",
+                "Identify stakeholders potentially impacted by the issue.",
+                "Refine list to key stakeholders based on power/influence.",
+                "Ensure the framing satisfies key internal stakeholders."
+            ]
+        },
+        {
+            "title": "SPECIFY",
+            "color": "#33a457",
+            "percent": 25,    
+            "questions": [
+                "In this phase, gather as much information as possible.",
+                "Share knowledge/background/research on the issue.",
+                "Identify subject matter experts and their positions.",
+                "Establish data-based trends and likely future states.",
+                "What external factors are driving this? How strongly?",
+                "What external factors are resisting this? How strongly?",
+                "Overall, what’s the current assessment of the issue?"
+            ]
+        },
+        {
+            "title": "GENERATE",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "At this phase, explore all possibilities and scenarios related to the issue.",
+                "Generate scenarios of how the issue might grow/evolve.",
+                "Identify likely impacts on the organization/stakeholders.",
+                "Brainstorm ways to address/mitigate the impacts.",
+                "Envision the organization’s wanted outcome/resolution.",
+                "Imagine exactly how the issue should be resolved.",
+                "What was key to successfully navigating the issue?"
+            ]
+        },
+        {
+            "title": "EVALUATE ",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, understand stakeholder concerns and opportunities to influence.",
+                "Determine stakeholders' needs, wants and/or concerns.",
+                "How might their input be incorporated in our approach?",
+                "Assess how the issue impacts different stakeholders (+/-).",
+                "What positions have stakeholders taken or likely to take?",
+                "Who are our Allies? Opponents? Fence-sitters? Unknowns?",
+                "What coalitions or alliances might we forge? With whom?",
+                "How might we influence stakeholders to our point of view?"
+            ]
+        },
+        {
+            "title": "RESPOND",
+            "color": "#33348e",
+            "percent": 12.5,    
+            "questions": [
+                "In this phase, develop a position/response to the issue.",
+                "Assess risks: probability of outcomes x impacts (+/-).",
+                "Prioritize most significant risks relative to the issue.",
+                "Develop an operations plan to address key internal risks.",
+                "Establish a corporate position/policy to address the issue.",
+                "Craft a communications plan to influence key stakeholders.",
+                "Develop FAQ; determine how to respond to media inquiries."
+            ]
+        }
+    ]
+}

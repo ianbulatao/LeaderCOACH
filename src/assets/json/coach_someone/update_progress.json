@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "title": "ACCOMPLISHMENTS ",
+            "color": "#cc2229",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "In this phase, allow the person to brag. Build them up.",
+                "What are you most proud of accomplishing (this week)?",
+                "What was challenging or rewarding about it? (Listen for intrinsic motivators.)",
+                "What else did you accomplish? How did all this make you feel?"
+            ]
+        },
+        {
+            "title": "INSIGHTS + LEARNINGS",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, capture their a-ha’s and encourage their curiosity.",
+                "What have you learned on the job (this week)?",
+                "How could you apply that? Or share it with the team?",
+                "What are you keen to learn (in the coming week)?"
+            ]
+        },
+        {
+            "title": "PRIORITIES + PROJECTS",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to share where their work stands.",
+                "On what priorities have you been focused (this week)?",
+                "How does your time spent by project break down (% by project)?",
+                "What’s the status of each project? (e.g., green, yellow, red)"
+            ]
+        },
+        {
+            "title": "CHALLENGES ",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to share their challenges, plans and commitments.",
+                "What challenges or roadblocks are you encountering?",
+                "What’s your current thinking about your toughest challenge?",
+                "What’s your plan to get back on track?",
+                "What do you need from me to accomplish this?",
+                "On what exactly would you like some coaching?",
+                "What do you commit to accomplish by (next week)?"
+            ]
+        }
+    ]
+}

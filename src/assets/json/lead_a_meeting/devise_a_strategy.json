@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "title": "SITUATION",
+            "color": "#33a457",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, everyone shares their grasp of our reality.",
+                "What has happened?  What got us here?",
+                "What’s working/going well? What's not working?",
+                "What are our key strengths and critical weaknesses?",
+                "Relative to our competition, how strong/weak are we?",
+                "What events/issues/trends are impacting us most?",
+                "What external threats and opportunities do we face?",
+                "Overall, how positive/negative is the environment?",
+                "What mission-critical skills/resources do we lack?",
+                "How tenable is our present position? How so?"
+            ]
+        },
+        {
+            "title": "WANTED FUTURE",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, everyone shares where we’re going.",
+                "What metaphor/analogy fits our situation?",
+                "What’s our purpose in pursuing this course?",
+                "What risks/unknowns could impact our success?",
+                "In what direction lies our best potential for success?",
+                "What future do we want? What’s our place in that future?",
+                "How are we envisioning success? How do we describe it?",
+                "What are all the ways forward? How could we get ‘there’?",
+                "If successful, how significant will this be for us?",
+                "What would tell us this was all worth it?"
+            ]
+        },
+        {
+            "title": "PEOPLE + CULTURE",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, everyone shares who and what matters on this journey.",
+                "Who are our stakeholders? What do they need/value?",
+                "To what extent do they trust us? Support/agree with us?",
+                "How will we involve/influence them to get commitment?",
+                "What do we truly value? How do we want to be known?",
+                "How will we protect these shared values going forward?",
+                "What norms/ways of working will be critical to success?",
+                "How will we lead by example? Hold ourselves accountable?",
+                "How/when will we know the culture has really changed?",
+                "How will we recognize and reward the desired behaviors?",
+                "Who and what else matters to us on this journey?"
+            ]
+        },
+        {
+            "title": "EXECUTION",
+            "color": "#33348e",
+            "percent": 25,    
+            "questions": [
+                "In this phase, everyone shares what must be done to drive performance.",
+                "Working back from the desired outcome, what's our plan?",
+                "What will be key to success in achieving our vision?",
+                "Who do we set goals/measures for those KSFs/KPIs? ",
+                "What priority and principles should we apply to this?",
+                "How do we break this down into specific deliverables?",
+                "Who will own and make those results happen?",
+                "What book would you recommend everyone read?",
+                "What is each person's role, responsibilities and goals?",
+                "What’s the timeline & milestones for achieving the plan?",
+                "What’s each person’s commitment to achieving this?"
+            ]
+        }
+    ]
+    
+}

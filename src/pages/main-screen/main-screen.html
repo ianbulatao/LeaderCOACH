@@ -1,0 +1,81 @@
+<!--
+  Generated template for the MainScreenPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+      <button ion-button menuToggle>
+          <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    <!-- <ion-title>mainScreen</ion-title> -->
+  </ion-navbar>
+  <div class="logo-container">
+      <div class="header-phase">
+        <p class="phase">{{questionType}}</p>
+        <p>{{convertSecondstoTime(currentTimeConsumedInSeconds)}} consumed</p>
+      </div>
+      <div class="logo">
+          <img src="assets/imgs/leader.png" alt="">
+          <p class="logo-text">LeaderCOACH</p>
+      </div>
+  </div>
+  <div class="colors">
+      <div *ngFor="let section of sections; let i = index;" [ngStyle]="{'width': activeIndex == i ? '50%' : defaultWidthSection+'%', 'background-color': section.color}" class="color">
+          <span [ngStyle]="{'color': section.color === 'yellow' ? 'black' : 'white'}" *ngIf="activeIndex == i">{{section.title}}</span>
+      </div>
+     
+
+  </div>
+  <div class="totalTime">
+      <div class="timer" [ngStyle]="{'background-color': sections[activeIndex]?.color, 'width' : getPercentWidthSectionTime(sections[activeIndex]?.time,sections[activeIndex]?.timeTotal) +'%'}"></div>
+  </div>
+</ion-header>
+
+<ion-content >
+   
+    <ion-slides  #slides [pager]="slides.getActiveIndex() == 0 ? false : true">
+
+        <ion-slide *ngFor="let slide of sections[activeIndex]?.questions" [ngStyle]="{'background-color': sections[activeIndex]?.color}">
+          <h4 [ngStyle]="{'color': sections[activeIndex]?.color === 'yellow' ? 'black' : 'white', 'font-style': slides.getActiveIndex() == 0 ? 'italic' : 'normal'}" >{{slide}}</h4>
+        </ion-slide>
+      
+      
+      </ion-slides>
+    <!-- <div class="navigation">
+     
+    </div> -->
+</ion-content>
+
+<ion-footer color="primary">
+    <ion-row class="navigation" text-center>
+        <ion-col>
+          <button (click)="prevSection()" ion-button large clear icon-only >
+            <ion-icon color="dark" name="rewind"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <ng-container *ngIf="isPause; else elsePauseTemplate">
+              <button (click)="play()" large ion-button  clear icon-only >
+                  <ion-icon  color="dark" name="play"></ion-icon>
+              </button>
+          </ng-container>
+          <ng-template #elsePauseTemplate>
+              <button  (click)="pause()" large ion-button  clear icon-only >
+                  <ion-icon  color="dark" name="pause"></ion-icon>
+              </button>
+          </ng-template>
+          
+           
+          </ion-col>
+          <ion-col>
+              <button (click)="nextSection()" large ion-button clear icon-only >
+                  <ion-icon color="dark" name="fastforward"></ion-icon>
+                </button>
+            </ion-col>
+      </ion-row>
+    <div style="height: 50px;">
+
+    </div>
+</ion-footer> 

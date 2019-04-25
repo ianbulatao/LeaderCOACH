@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "title": "SITUATION",
+            "color": "yellow",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "In this phase, confirm the context in which the person acted.",
+                "What was the situation or challenge the person was facing?",
+                "In what context/setting did this happen? When did it occur?",
+                "(example) “During your presentation this morning…”"
+            ]
+        },
+        {
+            "title": "BEHAVIOR",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, highlight the person’s specific behavior.",
+                "What specifically did the person say and do?",
+                "What desired behavior was demonstrated?",
+                "(example) “…you answered questions expertly.”"
+            ]
+        },  {
+            "title": "RESULT",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, connect her/his behavior to an outcome/result.",
+                "What was the consequence? Impact? Result? Benefit?",
+                "What did their action/performance produce or yield? ",
+                "(example) “As a result the customer has confidence in us.”"
+            ]
+        },  {
+            "title": "FEELING",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, share your feelings or further benefits of the accomplishment.",
+                "What did this outcome cause you to feel? Others?",
+                "What further benefit or consequence did this have?",
+                "(example) “I’m happy to say they gave us a ‘green light’.”"
+            ]
+        }
+    ]
+}

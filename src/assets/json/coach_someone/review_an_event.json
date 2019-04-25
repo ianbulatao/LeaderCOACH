@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "title": "OBSERVATIONS",
+            "color": "#33a457",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "In this phase, explore exactly what occurred.",
+                "What happened? What specifically did you observe/notice?",
+                "What else do you recall about it? What details?",
+                "How did you experience it? Any physical reactions?",
+                "What you think caused you to experience it that way?",
+                "What about the situation was unusual? Unexpected?"
+            ]
+        },
+        {
+            "title": "CONCERNS",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, delve into what concerned them about it.",
+                "How and what did you feel when it happened?",
+                "How are you feeling about it now?",
+                "How were your needs or concerns dealt with?",
+                "Which of your values or ethics came into play?",
+                "How did the event impact trust and/or relationship(s)?",
+                "What concerns do you have going forward?"
+            ]
+        },  {
+            "title": "MEANING",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, help the person understand what it means for her/him.",
+                "What about this was personally significant for you?",
+                "What are you inferring or assuming from what happened?",
+                "What are you telling yourself? How will you remember this?",
+                "What's your ‘gut’ tell you? What’s your take-away from this?",
+                "What’s important for you to remember going forward?"
+            ]
+        },  {
+            "title": "RESPONSE",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, help the person decide what to do about it.",
+                "What are your thoughts about responding?",
+                "What are the pros/cons of responding immediately?",
+                "What else do you need to know or do before responding?",
+                "What are your sources of power in this situation?",
+                "What do you need to communicate? Decide? Act on?",
+                "What first step do you need to take? When will you do that?"
+            ]
+        }
+    ]
+}

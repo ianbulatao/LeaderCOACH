@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "title": "EVENTS",
+            "color": "#33a457",
+            "isActive": true,
+            "percent": 25,
+            "questions":[
+                "What opportunities did you have (this week) to demonstrate leadership?",
+                "How did you handle specific situations or challenges?",
+                "What went well? What would you have done differently?",
+                "What do you take-away from your experiences?"
+            ]
+        },
+        {
+            "title": "INSIGHTS",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "What was personally significant for you (during the week)?",
+                "What did you learn about yourself? How will you take that forward?",
+                "What did you learn about your boss? Your peers? Your team?",
+                "What insights/a-ha’s do you want to share with your leader/team?"
+            ]
+        },
+        {
+            "title": "VALUES + NEEDS",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In what specific ways did you demonstrate your values?",
+                "What value(s) do you want to emphasize going forward? How will you?",
+                "What are you intentionally doing to build trust, rapport and relationships?",
+                "Who do you need to thank, recognize or reward? By when?"                
+            ]
+        },
+        {
+            "title": "GOALS + PROGRESS",
+            "color": "blue",
+            "percent": 25,
+            "questions":[
+                "What progress did you make toward your leadership development goal(s)?",
+                "What leadership challenge(s) do you foresee (this coming week)?",
+                "How can you better manage yourself/prepare for these challenges?",
+                "What goal/skill will you intentionally work on (this coming week)?"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{   
+    "data": [
+        {
+            "title": "DEFINE",
+            "color": "#33348e",
+            "percent": 10,    
+            "isActive": true,
+            "questions": [
+                "In this phase, determine the problem to be solved.",
+                "Define the problem as a question. Post/write it down.",
+                "Ensure the framing satisfies all parties/interest groups.",
+                "Keep focused on this question throughout the process.",
+                "Determine criteria by which solutions will be evaluated.",
+                "If necessary, weight the criteria with percentages totaling 1."
+            ]
+        },
+        {
+            "title": "CLARIFY",
+            "color": "#33a457",
+            "percent": 25,    
+            "questions": [
+                "In this phase, establish the data relevant to the problem.",
+                "Establish ‘what is’: gather all the relevant data.",
+                "Exclude any inferences, interpretations, opinions, etc.",
+                "What are the verifiable facts? What is known?",
+                "What exactly is the situation now? What is the current state?",
+                "How static or evolving is the problem? Improving? Worsening? ",
+                "What is currently working? What’s not working? Why?",
+                "What seem to be the root causes of the present state?",
+                "Why is the present situation or solution unworkable?"
+            ]
+        },
+        {
+            "title": "EXPLORE",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, explore possible ways of solving the problem.",
+                "How might the data be interpreted? What can be inferred?",
+                "What is this problem similar or analogous to?",
+                "What insights/hunches come to mind about the data?",
+                "What patterns/trends are suggested by the data?",
+                "How would we solve this if there were no constraints?",
+                "What potential answers have been ruled out?",
+                "Imagine all parties are satisfied: what would that look like?  ",
+                "Remember to suspend judgment (positive or negative) in brainstorming…",
+                "Brainstorm ideas or ways of answering the question."
+            ]
+        },
+        {
+            "title": "EVALUATE",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, evaluate possible solutions and reach consensus on the best few.",
+                "Vote (each person gets 3 votes) to rank the most favored solutions.",
+                "What interests or needs are satisfied by each solution? Which are not?",
+                "Where is the most common ground on which to build?",
+                "How might two or more solutions be consolidated?",
+                "How might conflicting interests be resolved?",
+                "How might opposing groups collaborate to reach a consensus?",
+                "What solutions could all parties support—even if not in full agreement?",
+                "Specify all needs met and unmet with the proposed solutions."
+            ]
+        },
+        {
+            "title": "ANALYZE + SOLVE",
+            "color": "#33348e",
+            "percent": 15,    
+            "questions": [
+                "In this phase, select the best solution and plan how to implement it.",
+                "Analyze each solution against the criteria agreed to upfront.",
+                "Establish ratings for each solution based on verified data.",
+                "Determine and weigh the pros/cons of the highest-rated solution.",
+                "Acknowledge consequences if not an ideal solution.",
+                "Adopt the highest-rated answer/solution to the problem.",
+                "Identify next steps and contingencies (if necessary).",
+                "Implement the solution."
+            ]
+        }
+    ]
+}

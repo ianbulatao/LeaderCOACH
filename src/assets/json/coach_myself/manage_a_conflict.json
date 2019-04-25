@@ -1,0 +1,91 @@
+{
+    "data": [
+        {
+            "title": "ACKNOWLEDGE",
+            "color": "#33348e",
+            "percent": 12.5,    
+            "isActive": true,
+            "questions": [
+                "In this phase, face the conflict, its impacts and your next move…",
+                "To what extent have you clarified the conflict in your mind?",
+                "What’s actually in conflict with the other person/party?",
+                "How exactly is the situation impacting you? Your group?",
+                "What’s at stake if not resolved? Or resolved unsatisfactorily?",
+                "What’s the potential downside or risk of raising the issue?",
+                "To what extent have you communicated your issue with them?",
+                "If not, what seems to be hindering you from communicating it?",
+                "How do you think they perceive the issue? How do you know?",
+                "What common goal, purpose or interest do you share with them?",
+                "Why would collaborating toward a joint solution be in their interest?",
+                "How and when would you propose meeting to discuss this?",
+                "What ground rules would be important at this meeting?",
+                "Convene the meeting with jointly developed ground rules."                
+            ]
+        },
+        {
+            "title": "UNDERSTAND",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, seek to fully understand the other before defining the conflict…",
+                "To what extent do you understand the other party’s needs?",
+                "What are their interests in this situation? What do they have at stake?",
+                "How can you understand how they perceive the situation?",
+                "How can you build trust with them so they openly share their interests and needs?",
+                "How will you communicate your interests and needs to them?",
+                "How do you ensure your data is specific and verifiable? And theirs?",
+                "How will you reach agreement on what important words/terms mean?",
+                "How will you challenge any misperceptions, assumptions or perceived biases?",
+                "How will you create a space where both parties feel comfortable being transparent?",
+                "Ask questions that focus on each other’s interests, needs and concerns—not positions.",
+                "Above all, LISTEN. To understand—not to judge. To ALL of their message.",
+                "The test of full understanding: each party states the other's case to their satisfaction."
+            ]
+        },
+        {
+            "title": "DEFINE",
+            "color": "#33348e",
+            "percent": 12.5,
+            "questions":[
+                "In this phase, jointly define what the conflict is, and frame it as a question.",
+                "Take turns discussing what the difference or disagreement is really about.",
+                "What essentially is the ‘problem’? What’s at issue here?",
+                "Jointly define the conflict as a decision or problem to be solved.",
+                "Jointly frame the conflict in the form of a question…very specifically.",
+                "Ensure both parties agree on the question as worded, and post it."
+            ]
+        },
+        {
+            "title": "SEARCH",
+            "color": "yellow",
+            "percent": 25,
+            "questions":[
+                "In this phase, jointly explore all possible ways of answering the question and resolving the conflict.",
+                "Brainstorm ways to answer the question posted.",
+                "Jointly set and respect ground rules for brainstorming",
+                "Suspend judgment in developing ideas and possible solutions.",
+                "Be willing to let go of what you thought the ultimate solution would be.",
+                "Look for hybrid solutions or ways to combine answers or approaches."
+            ]
+        },
+        {
+            "title": "AGREE + COMMIT",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, jointly reach agreement on how to address the conflict, and implement it.",
+                "Identify (perhaps through voting) the three best proposals.",
+                "Evaluate each proposed resolution against both parties’ interests/needs.",
+                "Find common ground, and reach consensus on a mutually-agreeable solution.",
+                "Share openly what you like about the resolution, and any lingering concerns.",
+                "Ask everyone to either 1) agree and support; 2) support with reservations; or 3) decline support.",
+                "If anyone declines to support, require them to share how their concerns could be resolved.",
+                "Discuss and incorporate concerns until everyone can agree and/or support the decision.",
+                "Based on everyone’s commitment to a solution, jointly define a plan of action.",
+                "Identify who will do what by when, and how you will monitor/follow-up.",
+                "Shake hands, and have each person/party verbally commit to the resolution.",
+                "Hold each person accountable for following through on their commitment. "
+            ]
+        }
+    ]
+}

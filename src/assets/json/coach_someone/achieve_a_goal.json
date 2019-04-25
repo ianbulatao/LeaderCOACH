@@ -1,0 +1,89 @@
+{
+    "data": [
+        {
+            "title": "GOAL",
+            "color": "#33348e",
+            "percent": 12.5,
+            "isActive": true,
+            "questions": [
+                "In this phase, get them to clarify the goal and why it’s important.",
+                "What’s your goal? How would you describe your ideal outcome?",
+                "Is that specific enough? What exactly will you be able to do?",
+                "What would you like to happen that’s not happening now?",
+                "On a scale of 1 – 10, how critical is reaching this goal?",
+                "What makes this important to you? Why focus on it now?",
+                "By when do you want to achieve your goal?",
+                "How will you measure success?",
+                "What would success enable you to do?",
+                "Any other thoughts about your goal?"
+            ]
+        },
+        {
+            "title": "REALITY",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to describe their current state.",
+                "What’s up? How would you describe where you’re at now?",
+                "(If not enough specifics) What exactly is happening?",
+                "What have you tried, and how is that going?",
+                "What’s going well?  What helped you make progress?",
+                "What’s your current thinking about achieving this goal?",
+                "Any there other perspectives to consider? Other ways of looking at this?",
+                "What’s your biggest barrier to moving forward?",
+                "What’s challenging about this barrier?"
+            ]
+        },
+        {
+            "title": "OPTIONS",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to generate options—not offer yours.",
+                "How might you approach this? What could you do?",
+                "What action could move you toward your goal?",
+                "What else could you try? What if there were no constraints?",
+                "How do you think your role model would handle this?",
+                "What’s a strength or resource you could leverage?",
+                "Any other options you might create?",
+                "Reflect on and summarize the options generated.",
+                "Of these options which has the most potential to move you forward?"
+            ]
+        },
+        {
+            "title": "WILL",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to flesh out one option, and commit to it.",
+                "(Assuming he/she chooses an option) What energizes you about this option?",
+                "What resources or support do you need to achieve your goal?",
+                "Where might you get what you need? Who might provide it?",
+                "How exactly could they help? How might you approach them?",
+                "What gives you the most confidence of success? How might you reinforce that?",
+                "What could prevent you from following through? How will you overcome that?",
+                "What will happen if you don’t follow-through? What’s the cost of not making it happen?",
+                "On a scale of 1 – 10, how committed are you to pursuing this option?",
+                "What would it take to make it a ‘10’?"
+            ]
+        },
+        {
+            "title": "PLAN",
+            "color": "#33348e",
+            "percent": 12.5,
+            "questions": [
+                "In this phase, get them to identify how and when they will follow-through.",
+                "What would a plan look like to achieve your goal? When will you finish it?",
+                "What would make the plan a ‘10’ on a scale of 1 – 10?",
+                "What essentially is your plan? What’s your first step? Next? ",
+                "What barriers do you anticipate? How will you handle each one?",
+                "What would indicate you’re making progress? How will you track that?",
+                "How will you hold yourself accountable? What would help you do that?",
+                "When would you like to follow-up? How often do you want to check-in?",
+                "On a scale of 1 – 10, how committed are you to this plan?",
+                "When will you get started?",
+                "What will you do first?"
+            ]
+        }
+    ]
+}

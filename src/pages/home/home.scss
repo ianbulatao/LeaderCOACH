@@ -1,3 +1,82 @@
 page-home {
+   
+    .content-wrapper{
+        padding: 0 35px;
+        .logo-container{
+            margin-top: 3vh;
+            margin-bottom: 4vh;
+            img {
+                height: 27vw;
+                display: inline;
+            }
+            h1{
+                display: inline;
+                position: relative;
+                left: -48px;
+                top: -8px;
+                font-weight: normal;
+                font-size: 6vw;
+            }
+        }
+        .menu-buttons{
+            h3{
+                font-size: 3vh;
+            }
+            h4{
+                font-size: 3vh;
+            }
+            
+            .description{
+                padding: 0 22px;
+                p{
+                    font-size: 1.7vh ;
+                    font-weight: bold;
+                }
+            }
+            .coach-myself{
+                background-color: rgba(51, 164, 87,1);
+                color: #ffffff;
+                padding: 3vw;
+                border-radius: 10px;
+            }
+            .coach-someone{
+                background-color: rgb(204, 34, 41);
+                color: #ffffff;
+                padding: 20px;
+                padding: 3vw;
+                border-radius: 10px;
 
+            }
+            .lead-meeting{
+                background-color: rgb(51, 52, 142);
+                color: #ffffff;
+                padding: 3vw;
+                border-radius: 10px;
+            }
+            .ground-rules{
+                background-color: yellow;
+                color: #000000;
+                padding: 3vw;
+                border-radius: 10px;
+            }
+        }
+    }
+    .quote{
+        font-weight: 300;
+        padding: 16px;
+        font-style: italic;
+        /* margin-top: 100px; */
+        /* margin-bottom: 16px; */
+        background-color: #ffffff;
+        p{
+            // font-size: 1.2rem
+            font-size: 2vh;
+            font-weight: bold;
+        }
+    }
+    .quote:after{
+        content: "";
+        clear: both;
+        display: table;
+    }
 }

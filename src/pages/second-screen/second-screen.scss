@@ -1,0 +1,92 @@
+page-second-screen {
+    .coach_myself-container{
+        background-color: #33a457;
+        color: #ffffff;
+        padding: 5vw;
+        border-radius: 10px;
+        position: relative;
+    }
+    .coach_someone-container{
+        background-color: #cc2229;
+        color: #ffffff;
+        padding: 5vw;
+        border-radius: 10px;
+        position: relative;
+    }
+    .lead_a_meeting-container{
+        background-color: #33348e;
+        color: #ffffff;
+        padding: 5vw;
+        border-radius: 10px;
+        position: relative;
+    }
+    .list-container{
+        padding: 0 10px;
+        z-index: -1;
+        .list-item{
+            h4{
+                font-size: 2.5vh;
+            }
+            p{
+                font-size: 1.3vh;
+            }
+        }
+        .coach_myself-list-item{
+            background-color: #a8fda8;
+        }
+        .coach_myself-list-item:nth-child(even) {
+            background: #33a457;
+            color: #ffffff;
+        }
+        .coach_someone-list-item{
+            background-color: #fed5d5;
+        }
+        .coach_someone-list-item:nth-child(even) {
+            background: #cc2229;
+            color: #ffffff;
+        }
+        .lead_a_meeting-list-item{
+            background-color: #bcbeff;
+        }
+        .lead_a_meeting-list-item:nth-child(even) {
+            background: #33348e;
+            color: #ffffff;
+        }
+    }
+    .header{
+        h4{
+            font-size: 3vh;
+        }
+        .description{
+            p{
+                font-size: 1.7vh;
+            }
+        }
+    }
+    .logo-container{
+        margin: 5px 0;
+        .logo{
+            float: right;
+        }
+     
+        img{
+            height: 35px;
+            display: inline;
+        }
+        p{
+            display: inline;
+            position: relative;
+            left: -21px;
+            top: -3px;
+            font-weight: 200;
+            font-size: 10px;
+            letter-spacing: 0px;
+        }
+    }
+    .logo-container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+   
+}

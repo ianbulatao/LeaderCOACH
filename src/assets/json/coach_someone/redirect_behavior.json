@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "title": "PURPOSE",
+            "color": "#33348e",
+            "percent": 5,
+            "isActive": true,
+            "questions": [
+                "In this phase, set clear expectations and intention for this conversation.",
+                "Announce the topic/purpose of the conversation/meeting…",
+                "(example) “I’d like to discuss your presentation this morning…”",
+                "Give them a choice, an ‘out’, or as much autonomy as possible.",
+                "(example) “Is now a good time, or would you prefer later today?”",
+                "State why it’s important, and your intent to help them."
+            ]
+        },
+        {
+            "title": "VALUE",
+            "color": "#cc2229",
+            "percent": 5,
+            "questions": [
+                "In this phase, assure the person of their value.",
+                "(If the person is typically sensitive to critique/redirecting feedback…)",
+                "Reiterate the person's value to the team, organization, etc."
+            ]
+        },
+        {
+            "title": "SITUATION",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, get agreement on their situation/context.",
+                "State: “Your task/challenge/goal was to...”",
+                "Confirm shared understanding with employee.",
+                "Ask “What else would you add about the situation?”",
+                "Ensure your expectations were clearly understood."
+            ]
+        },
+        {
+            "title": "BEHAVIOR",
+            "color": "#33a457",
+            "percent": 25,
+            "questions": [
+                "In this phase, make explicit the behavior which needs to change.",
+                "State: “Here's what I saw/heard…” OR “I noticed/observed…” OR",
+                "“Here are the facts... (no interpretations, perceptions or judgments).",
+                "Ask: “What data am I missing?” Insist on data, evidence or examples.",
+                "Confirm shared understanding of what was said and done.",
+                "If they dismiss it, reiterate your expectations and the facts.",
+                "If they deny or disagree with the facts (rare), own your perceptions.",
+                "If they defend themselves, point out their accountability."
+            ]
+        },
+        {
+            "title": "RESULTS",
+            "color": "#33348e",
+            "percent": 20,
+            "questions": [
+                "In this phase, make clear the consequences/impacts of their behavior.",
+                "State: “As a result…” OR “It resulted in…” OR “The consequence was…” OR",
+                "State: “Here's how it impacted the team, the customer, me…”",
+                "Ask: “What could you have done to change the outcome?” OR",
+                "“What would have changed that result?” OR “What could you do?” OR",
+                "“What will you do differently next time?”",
+                "Say: “And what do you think would be the result?”",
+                "Once the person has committed to the new behavior, proceed."
+            ]
+        },
+        {
+            "title": "COMMITMENT",
+            "color": "#cc2229",
+            "percent": 20,
+            "questions": [
+                "In this phase, get them to state their commitment to change, and reiterate your expectation.",
+                "“I have a better understanding of your situation, and…”",
+                "“I hope you understand the behavior/performance expected.”",
+                "“I appreciate your commitment to follow-through on this.”",
+                "“Let me know if you need coaching to help you improve.”",
+                "“I look forward to seeing you turn this around.”",
+                "“Let me know when you make it happen.”",
+                "“Let’s check your progress on (date).”"
+            ]
+        }
+    ]
+}

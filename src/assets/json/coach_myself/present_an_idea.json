@@ -1,0 +1,89 @@
+{
+    "data": [
+        {
+            "title": "KNOW your AUDIENCE",
+            "color": "#cc2229",
+            "percent": 20,    
+            "isActive": true,
+            "questions": [
+                "In this phase, surface all you know about the audience to position the presentation.",
+                "Who’s in the audience? What do you know about them?",
+                "Based on their preferences, how should you adapt your style?",
+                "What does the audience know and not know about your topic?",
+                "What do they care most about? What matters most to them?",
+                "What do you want them to know, feel and do when it’s over?",
+                "Who are likely opinion leaders? How open/receptive are they?",
+                "What’s your c#cc2229ibility with them? How can you enhance it?",
+                "Who can vouch for your knowledge/expertise? Recommend you?",
+                "What’s a strong opening or provocative question you could ask?",
+                "What quote, statistic or image could launch the presentation?"    
+            ]
+        },
+        {
+            "title": "DEVELOP the PITCH",
+            "color": "yellow",
+            "percent": 15,
+            "questions":[
+                "In this phase, imagine how you might sell the idea to this group…",
+                "Tell a story about how they/their organization got ‘here’.",
+                "Frame their need, challenge or problem as a question: “What if…”",
+                "Position your idea as answering that question. Make it big.",
+                "Transport them to a future where the problem is solved.",
+                "Connect your idea/solution to something the audience cares about.",
+                "Give them a compelling vision of how they will feel, think and act.",
+                "Be sure to stress the risks and consequences of not acting urgently.",
+                "Compare/benchmark their actions (or lack of) to their competition."
+            ]
+        },
+        {
+            "title": "KNOW your #s",
+            "color": "#33a457",
+            "percent": 25,
+            "questions":[
+                "In this phase, collect and present all supporting data to make your case.",
+                "Describe in detail your proposal. “Here’s how we get there…”",
+                "Gear background information to an above-average audience.",
+                "Make a evidence-based case for your approach.",
+                "Cite specific, objective data supporting your idea, and acknowledge contrarian data/research.",
+                "Use persuasion techniques such as contrast, social proof, and commitment & consistency."
+            ]
+
+        },
+        {
+            "title": "ANTICIPATE Qs",
+            "color": "yellow",
+            "percent": 10,
+            "questions":[
+                "In this phase, anticipate potential questions from as many perspectives as possible.",
+                "What are likely questions? How will you respond if asked…?",
+                "What off-the-wall questions might be asked? How will you handle them?",
+                "Where are the ‘holes’ in your proposal? What could go wrong?",
+                "End each answer with a reminder of your idea's potential to solve."
+            ]
+        },
+        {
+            "title": "PROPOSE a PLAN",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, develop and present your plan to implement/achieve your idea…",
+                "Develop a plan for making it happen: actions, responsible person, timeline.",
+                "Establish a target start date and deadline for implementation.",
+                "Acknowledge any key challenges, assumptions or caveats in your plan.",
+                "Identify factors especially critical to success and resources needed."
+            ]
+        },
+        {
+            "title": "CALL to ACTION",
+            "color": "#cc2229",
+            "percent": 5,
+            "questions": [
+                "In this phase, decide how you will get their full and willing commitment to your idea…",
+                "Call for a commitment from the audience: ask them to approve.",
+                "If their response is hesitant, ask them to take one concrete step forward.",
+                "Don’t leave without at least a small commitment in your direction.",
+                "Say 'THANK YOU’…and leave."
+            ]
+        }
+    ]
+}

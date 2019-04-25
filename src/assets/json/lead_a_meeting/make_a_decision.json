@@ -1,0 +1,76 @@
+{   
+    "data": [
+        {
+            "title": "DEFINE",
+            "color": "#33348e",
+            "percent": 10,    
+            "isActive": true,
+            "questions": [
+                "In this phase, define the decision and its parameters.",
+                "Identify the nature of the decision (unilateral or group)?",
+                "What decision-making rule will be used? (vote, consensus).",
+                "Will it be closed (Y/N) or open-ended (multiple choices)? ",
+                "Define the parameters of the decision. What’s excluded?",
+                "Frame the decision as a question. Record and post it.",
+                "Will answering this question satisfy everyone concerned?"
+            ]
+        },
+        {
+            "title": "SHARE",
+            "color": "#33a457",
+            "percent": 25,    
+            "questions": [
+                "In this phase, share all pertinent, available information.",
+                "Gather facts from all parties. Establish accurate data.",
+                "Share all relevant, known information.",
+                "Compare, contrast and confirm any disputed information.",
+                "Identify what information is unknown, but necessary.",
+                "Make explicit any biases, inferences or assumptions.",
+                "Agree on all facts relevant to the decision."
+            ]
+        },
+        {
+            "title": "BRAINSTORM",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, explore potential ways of solving the problem.",
+                "Brainstorm alternative ways of answering the question.",
+                "What are other possible ways to answer the question?",
+                "Resist any evaluation…just generate ideas/possibilities.",
+                "Specify how each possibility answers the question.",
+                "Look for synergies/hybrids among the alternatives.",
+                "Finalize a list of highest potential ideas (by multi-voting)."
+            ]
+        },
+        {
+            "title": "CONSIDER",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, consider peoples’ needs, interests and values in the decision.",
+                "What does each person/group need or want out of this?",
+                "What concerns/interests do we have in common?",
+                "What subjective factors figure into this decision?",
+                "What values, ethics or norms come into play?",
+                "What extenuating circumstances should be acknowledged?",
+                "How can we incorporate these considerations when deciding?"
+            ]
+        },
+        {
+            "title": "DECIDE/ANSWER",
+            "color": "#33348e",
+            "percent": 15,    
+            "questions": [
+                "Based on the previous phases, reach a decision.",
+                "Determine which principles or policies apply (if any).",
+                "Determine the criteria on which to base the decision.",
+                "Weight criteria (if necessary via decision-making rule).",
+                "Weigh pros/cons of alternatives against defined criteria.",
+                "Propose an answer given the data and decision criteria.",
+                "Use agreed-on decision-making rule to reach a decision.",
+                "Answer the question/decision as originally defined."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{   
+    "data": [
+        {
+            "title": "INTENT + VISION",
+            "color": "yellow",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, imagine a successful workshop.",
+                "What’s your intent? What is the purpose of the workshop?",
+                "What would you like to create as a result of this meeting?",
+                "Envisioning a successful outcome, what do you see?",
+                "What’s the deeper meaning of this workshop?",
+                "How would you describe and communicate its significance?",
+                "How do you see the workshop taking people forward?",
+                "What’s your ‘gut’ or intuition telling you about it?",
+                "How can you ensure your vision becomes reality?"
+            ]
+        },
+        {
+            "title": "PEOPLE + CULTURE",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, understand the attendees and how they should interact.",
+                "Who must attend (i.e, in order to achieve the purpose/objective)? ",
+                "What purpose, role and/or function does each person represent?",
+                "How will you communicate each person’s responsibility?",
+                "What do the attendees need to know prior to the workshop?",
+                "How will you engage each person to fully contribute?",
+                "How will you establish a ‘safe space’? Build community?",
+                "How will you ensure individual and group needs are met?",
+                "If an established group, what cultural norms need challenging?",
+                "How will you leverage or challenge group/corporate cultural norms?",
+                "How will you encourage participation given group dynamics?",
+                "How will you need to facilitate to reach a successful conclusion?"
+            ]
+        },
+        {
+            "title": "OBJECTIVE + AGENDA",
+            "color": "#33348e",
+            "percent": 25,    
+            "questions": [
+                "In this phase, define the objective and design a flow to achieve it.",
+                "Establish & communicate the purpose and goal of the meeting.",
+                "Why is it important? Connect its objective to a larger purpose.",
+                "Determine the best process/agenda for the audience and topic.",
+                "How will the design achieve the outcomes you desire?",
+                "Define and communicate each person’s role/responsibility.",
+                "Give sufficient notice, and confirm attendance in advance.",
+                "Distribute pre-work sufficiently in advance to complete."
+            ]
+        },
+        {
+            "title": "TIME + PLACE ",
+            "color": "#33a457",
+            "percent": 25,    
+            "questions": [
+                "In this phase, attend to the details of holding the workshop.",
+                "Accurately estimate and communicate how long it will take.",
+                "Choose the best location/technology given the meeting type.",
+                "Choose a venue/space that reflects the meeting’s goals and values.",
+                "Choose a seating layout that elicits the kind of interaction desired.",
+                "Ensure everyone knows how to use the technology; test it in advance.",
+                "Ensure sufficient privacy. Eliminate or minimize interruptions.",
+                "Identify what pre-work would accelerate the group’s readiness.",
+                "Propose ground rules (see separate module) given group dynamics."
+            ]
+        }
+    ]
+}

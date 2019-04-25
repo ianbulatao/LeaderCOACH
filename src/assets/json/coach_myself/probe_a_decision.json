@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "title": "UNDERSTAND",
+            "color": "#33348e",
+            "percent": 15,    
+            "isActive": true,
+            "questions": [
+                "In this phase, clarify what you know about the decision.",
+               "What exactly was decided? What was excluded/not decided?",
+               "Why was the decision made? What was the stated rationale?",
+               "What do you know of how the decision was made? By whom?",
+               "What seems to be the driving force behind the decision?"
+            ]
+        },
+        {
+            "title": "RESEARCH",
+            "color": "#33a457",
+            "percent": 25,
+            "questions":[
+                "In this phase, find out on what the decision was based.",
+                "Research data and assumptions used to make the decision.",
+                "What objective criteria, if any, were used?",
+                "What information, if any, was weighted more heavily?",
+                "What was the ‘tipping point’ or key variable in deciding?",
+                "What information was perhaps missing from their analysis?"
+            ]
+        },
+        {
+            "title": "EXPLORE",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, explore what you might be missing about the decision.",
+                "What ‘big picture’ or context are you perhaps missing?",
+                "What trends were extrapolated? What assumptions were made? ",
+                "What risks were not identified or weighted sufficiently?",
+                "What possibilities were igno#cc2229? Consequences underrated?",
+                "What inferences, interpretations or biases are possible?",
+                "What p#cc2229ispositions or biases might you have about this?"
+            ]
+        },
+        {
+            "title": "CONSIDER",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, reflect on how the decision impacts you personally.",
+                "What are your feelings about the decision, and how it was made?",
+                "On what perhaps questionable values or ethics was it made?",
+                "What about this decision conflicts with your own values/ethics?",
+                "What were the competing interest? How were they handled?",
+                "Were others’ concerns or needs conside#cc2229? Incorporated?",
+                "How does all this affect your commitment to the decision?",
+                "How might that impact your team's buy-in/implementation?"
+            ]
+        },
+        {
+            "title": "DECIDE",
+            "color": "#33348e",
+            "percent": 10,
+            "questions":[
+                "In this phase, determine how you will respond to the decision.",
+                "Weigh pros & cons of supporting vs. challenging the decision.",
+                "Determine your response given the data, your insights…",
+                "…your values and impacts to you, the team and organization.",
+                "Communicate your decision and the supporting information."
+            ]
+        }
+    ]    
+}

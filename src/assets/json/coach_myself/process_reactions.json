@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "title": "OBSERVATIONS",
+            "color": "#33a457",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+              "In this phase, recall what happened and how you reacted.",
+              "What did you see and hear? What happened exactly?,",
+              "What specific things did people say and do?",
+              "What other details do you recall? What was unusual about it?",
+              "What tone of voice? What body language? What energy level?",
+              "How did your body respond? Where was any stress localized?",
+              "What did you say and/or do at the time?,",
+              "How did others respond? The same or different from you?"
+            ]
+        },
+        {
+            "title": "INTUITIONS",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, explore other explanations about that happened.",
+                "What was the 'mood'? What does your gut/intuition tell you?",
+                "What do you infer from what happened? What’s really going on?",
+                "What do you infer from what happened? What’s really going on?",
+                "Reading between the lines…what does it all mean?",
+                "What could come of it? Where is it likely headed?"
+            ]
+        },
+        {
+            "title": "REACTIONS",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, evaluate the personal and interpersonal impacts of what happened.",
+                "To what extent did you dislike/disagree with what happened?",
+                "What emotions have you experienced? How are you feeling now?",
+                "What’s something or someone about the situation that you can affirm?",
+                "To what extent did this impact one of your values? Which value(s)?",
+                "What seems to be the value(s) of the group at odds with your own?",
+                "To what extent was what happened inappropriate? Unethical? Immoral? Illegal?",
+                "How is this affecting your trust in the people involved? Their trust in you?",
+                "What's the likely impact of this on your relationship with the people involved?",
+                "How do you stay true to your values and beliefs in responding?"
+            ]
+        },
+        {
+            "title": "CONCLUSIONS",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, summarize your insights and conclusions, and decide what to do.",
+                "What's their main point/conclusion? What's their logic?",
+                "What assumptions are being made? What are the pros/cons?",
+                "What consequences do you see with their approach?",
+                "How significant are those consequences? Are you sure?",
+                "To what extent is your knowledge/competence being questioned?",
+                "What's not being said? What's making it 'undiscussable'?",
+                "In way might you respond without compromising your principles/ethics?",
+                "What’s the risk/downside of confronting the group?",
+                "What’s the risk of NOT saying or doing anything?",
+                "What will you say? What will you do?"
+            ]
+        }
+    ]    
+}

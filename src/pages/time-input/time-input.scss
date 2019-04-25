@@ -1,0 +1,17 @@
+page-time-input {
+    .content-wrapper{
+        position: absolute;
+        top: 35%;
+        input{
+            outline: 0;
+            border-width: 0 0 2px;
+            text-align: center;
+            font-size: 2rem;
+            width: 130px;
+          }
+    }
+    .ok{
+        position: absolute;
+        width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "data": [
+            {
+                "title": "CONTEXT",
+                "color": "yellow",
+                "percent": 25,
+                "isActive": true,
+                "questions": [
+                    "In this phase, explore the context and case for delegating…",
+                    "What’s leading you to delegate? What's the 'big picture'?",
+                    "What responsibilities could you potentially delegate?",
+                    "What's your purpose/objective in delegating?",
+                    "What could delegating enable you to do?",
+                    "How will your delegating benefit the team and organization?",
+                    "How might delegating inspire new ideas or fresh thinking?",
+                    "What are the risks of delegating? How can those be mitigated?",
+                    "What expectations might you need to manage? Your own? Others’?",
+                    "What will it mean for you personally if you’re successful at delegation?"
+                ]
+            },
+            {
+                "title": "SCOPE",
+                "color": "#33a457",
+                "percent": 25,
+                "questions": [
+                    "In this phase, define the scope and particulars of this delegation…",
+                    "What’s the precise scope of the responsibility?",
+                    "What deliverables are included in the scope?",
+                    "What are the key decisions and actions involved?",
+                    "What must the person eventually be able to know and do effectively?",
+                    "What specific competencies are needed to produce the deliverables?",
+                    "How teachable are these skills? How will the person develop these?",
+                    "How will you describe the work to be done?",
+                    "How much time will you commit to transferring this responsibility?"
+                ]
+            },
+            {
+                "title": "DECISION",
+                "color": "#33348e",
+                "percent": 12.5,
+                "questions": [
+                    "In this phase, select to whom you will delegate the responsibility…",
+                    "Generate a matrix/spreadsheet to evaluate candidates for this delegation.",
+                    "For the following questions, rate each person on a scale of 1 – 5.",
+                    "To what extent does ____ want to do this? Expressed interest?",
+                    "To what extent does ____ have related skills or experience?",
+                    "To what extent does ____ need to develop the skills required?",
+                    "To what extent does ____ need to develop the skills required?",
+                    "Total the candidates’ scores. Who is the best person for the job?"
+                ]
+            },
+            {
+                "title": "SUPPORT",
+                "color": "#cc2229",
+                "percent": 25,
+                "questions": [
+                    "In this phase, identify how best to motivate and support the person…",
+                    "How will the person selected benefit from this? What will it do for her/him?",
+                    "How should you position the delegation to best motivate her/him?",
+                    "hat will you do to ensure this person succeeds?",
+                    "How will you approach and engage the person so he/she willingly accepts?",
+                    "How will you support this person? Coaching? Training? Shifting of priorities?",
+                    "How will you recognize and potentially reward her/him when successful?",
+                    "What else can you do to boost their commitment to this new task?"
+                ]
+            },
+            {
+                "title": "SKILL",
+                "color": "#33348e",
+                "percent": 12.5,
+                "questions": [
+                    "In this phase, determine the skill and authority required by the individual to decide and act…",
+                    "What knowledge/experience does this person have relative to the need?",
+                    "What attitudes/mindsets are desired? How will this person need to adjust theirs?",
+                    "For each key decision/action, how much control (if any) will you retain?",
+                    "Consider assigning authority by decision/action, based on the person’s competence in that area.",
+                    "How will you gauge the person’s competence for each particular skill or knowledge area?",
+                    "What related or transferable skills does he/she have?",
+                    "What’s your plan to develop the required skills/knowledge in her/him?",
+                    "What are likely positive consequences if successful delegating?",
+                    "What are likely negative consequences if unsuccessful in delegating this?",
+                    "To what extent will you prioritize this, and commit time to making it successful?",
+                    "See ‘Accept a new task’ under COACH SOMEONE for how to structure the delegation conversation."
+                ]
+            }
+          
+        ]
+    }

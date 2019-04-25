@@ -1,0 +1,75 @@
+{
+    "data": [
+        {
+            "title": "GATHER INFORMATION",
+            "color": "#33a457",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, recall the basis for your feedback: observations, behaviors, data, etc.",
+                "Which progress measures are not being met? By whom?",
+                "What is your data/evidence? What are the known facts, not hearsay?",
+                "What are your observations? What have you seen/heard yourself?",
+                "What examples/anecdotes from others are informing you?",
+                "What examples/anecdotes from others are informing you?",
+                "How clearly did you make your performance expectations? Scale of 1 – 10?",
+                "What information do you need (and don’t have) to diagnose the situation?"
+            ]
+        },
+        {
+            "title": "CHECK ASSUMPTIONS",
+            "color": "yellow",
+            "percent": 25,
+            "questions":[
+                "In this phase, review their situation and your interpretations, assumptions, etc.",
+                "What are your unknowns? And what potential unknown unknowns?",
+                "What might you be assuming about the person? The situation? The task?",
+                "How does this person perceive this task? Importance? Urgency?",
+                "What is the person’s mindset about this task? ‘Fixed’ or ‘growth’? Scale 1 – 10.",
+                "To what extent is the person aware of his/her non-performance?",
+                "On what other projects/tasks is he/she working? How challenging are they?",
+                "What ‘other things’ might be impacting their performance of this task?",
+                "What changes in their environment could be impacting them?",
+                "Did you do everything you could to set them up to succeed?"
+            ]
+        },
+        {
+            "title": "ANALYZE + DIAGNOSE",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, dissect their performance, determine root causes, and diagnose.",
+                "What’s not meeting expectations: their behavior or their results?",
+                "(if both) How does their behavior impact or translate into results?",
+                "(if behavior) What kind of behavior(s) need to change?",
+                "(if results) Why do you think their performance is ‘off track’?",
+                "Could lack of competence—knowledge, skill on this task—be causing it?",
+                "(if competence) How might they get training or coaching on this task?",
+                "Could lack of motivation or confidence to do the task be causing this?",
+                "(if motivation) How might you address their will and/or confidence?",
+                "Could lack of time or inefficient use of time be causing non-performance?",
+                "(if time) Could you re-prioritize their tasks or help streamline their work?",
+                "What else might be causing the lack of performance?",
+                "How is their non-performance impacting the team, customer, etc.?",
+                "What will happen you do not address their lack of performance?",
+                "What behavior(s) should the person keep, start or stop doing?"
+            ]
+        },
+        {
+            "title": "CONSIDER APPROACH",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, consider how you may need to adjust your style with this person.",
+                "How comfortable is this person admitting difficulty with a task?",
+                "What are their personal need(s) in receiving this feedback?",
+                "How will you address those in delivering the feedback?",
+                "How will you maintain their self-esteem, and ‘do no harm’?",
+                "What or who else do you need to protect in this conversation?",
+                "How will you avoid triggering them with respect to SCARF?",
+                "Use the module ‘#cc2229irect behavior’ to deliver the feedback, and",
+                "Click on the ‘Prepare’ (pre-work) to find human needs relative to SCARF."
+            ]
+        }
+    ]
+}

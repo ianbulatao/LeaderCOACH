@@ -1,0 +1,88 @@
+{   
+    "data": [
+        {
+            "title": "CURRENT REALITY",
+            "color": "#33a457",
+            "percent": 20,
+            "isActive": true,
+            "questions": [
+                "In this phase, get them to describe the current state of their career.",
+                "What's up? What’s your current thinking about your career?",
+                "What’s prompted you to focus on your career at this time?",
+                "What about your current job do you like? And want to continue?",
+                "In an ideal world, what about your current job would you change?",
+                "What do you see as your key strengths, talents and capabilities?",
+                "Thinking of previous jobs, what did you especially enjoy doing?",
+                "What work do you not like? What about it do you not enjoy?",
+                "How is your view of your career impacting your satisfaction? "
+            ]
+        },
+        {
+            "title": "IDEAL",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to explore what gives them meaning/purpose.",
+                "What makes work personally meaningful for you?",
+                "What do you see as your purpose professionally?",
+                "if clear) To what extent are you fully living that purpose?",
+                "(if not clear) How might you get a clearer sense of your purpose?",
+                "What do you dream of doing? What would you do if there were no limits?",
+                "To what kind of work are you drawn? What about it appeals to you?",
+                "What do you perceive is missing in your current role? Or not fully realized?",
+                "In what ways might you leverage more of your talents in your current role?",
+                "What matters most to you at work? What are your ‘must-have’s?",
+                "(Consider the Career Anchors® assessment to explore your career values.)",
+                "How would you characterize your ideal work life?",
+                "How clear are you on your ideal career? What more do you need to reflect on?"
+            ]
+        },
+        {
+            "title": "ENERGY",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to express what energizes and motivates them.",
+                "What are you passionate about career-wise? What energizes you?",
+                "What intrinsically motivates you? (autonomy, mastery, purpose, etc.)",
+                "What aspects of a work situation are important to you? (location, environment, etc.)",
+                "How important is the culture? The person you’d be working for?",
+                "What other factors impact your energy on the job?",
+                "What further career help/support do you need? Who could provide that?"
+            ]
+        },
+        {
+            "title": "GAPS + SUCCESS",
+            "color": "#33348e",
+            "percent": 15,
+            "questions": [
+                "In this phase, get them to clarify career success and direction.",
+                "How would you define ‘career success’? Be specific.",
+                "On a scale of 1 – 10, how clear is your career direction?",
+                "What would make you rate it a ‘10’? How will you get clearer?",
+                "(Once clear) What will be key to success in your desired field?",
+                "What new competencies, skills, knowledge will you need?",
+                "What transferable skills do you have?",
+                "Where are your gaps (in knowledge/skill)?",
+                "How might you close those gaps?",
+                "Who might you talk to in your target organization?",
+                "What would you ask them specifically?",
+                "Who might you talk to about your desired role?",
+                "What would you ask them specifically?",
+                "What support do you need to reach your goal?",
+                "Where can you get that? "
+            ]
+        },
+        {
+            "title": "GOAL + PLAN",
+            "color": "#33348e",
+            "percent": 5,
+            "questions": [
+                "In this phase, get them to commit to actions.",
+                "What’s a clear, immediate goal? How will you achieve it?",
+                "What’s your plan? When will you start?",
+                "What’s your first step? When will you do that?"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "data": [
+            {
+            "title": "UNDERSTAND",
+            "color": "#33a457",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "In this phase, get them to describe their present situation.",
+                "What's up?  What’s happening right now?",
+                "What do you know about this situation?",
+                "What do you not know, but would like to know?",
+                "How can you find out?",
+                "What’s your current thinking about it?",
+                "How is this situation impacting your performance?",
+                "What makes this challenging for you? How so?",
+                "What’s in it for you personally to get back on track?"
+            ]
+        },
+        {
+            "title": "BRAINSTORM",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, facilitate their brainstorming of possible options.",
+                "What else could be going on? Such as…?",
+                "What are you assuming? Inferring? Any potential biases? ",
+                "What could YOU do about this? What else could you do?",
+                "If you could do anything, what would you do?",
+                "How can you stay open to other possibilities?",
+                "What do you want to happen? What’s your ideal outcome? ",
+                "What’s one small step you could take toward that?",
+                "What have you learned (about yourself) from this?",
+                "What else has this taught you?",
+                "Summarize your options."
+            ]
+        },
+        {
+            "title": "EVALUATE",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, help them select the best way forward.",
+                "What course of action has the most potential?",
+                "What do you like about it? What’s in it for you?",
+                "What's motivating you to pursue this option?",
+                "What about doing this gives you hesitation or concern?",
+                "To what extent will it stretch your comfort zone? How will you respond?",
+                "Who could you enlist to help you? How could they help?",
+                "How will you approach and influence them to help you?",
+                "How do you increase your confidence about this?",
+                "How will you feel when successful?",
+                "How will you reward yourself?"
+            ]
+        },
+        {
+            "title": "IMPLEMENT",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, get them to be explicit about their follow-thru.",
+                "So what's your plan? What exactly are you going to do? ",
+                "What will you do first? By when? What then?",
+                "What challenges or barriers do you foresee?",
+                "What sources of power do you have?",
+                "How will you tackle these obstacles head-on?",
+                "How will you persevere and make it happen?",
+                "How will you hold yourself accountable?",
+                "Would you like to check back with me? When?",
+                "When do you take that first step?"
+            ]
+        }
+    ]
+
+}

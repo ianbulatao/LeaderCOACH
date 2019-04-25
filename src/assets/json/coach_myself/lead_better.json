@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "title": "SITUATIONS",
+            "color": "#33a457",
+            "percent": 25,
+            "isActive": true,
+            "questions": [
+                "In this phase, reflect on what situations presented leadership challenges…",
+                "What opportunities did you have (this week) to demonstrate leadership?",
+                "How did you handle specific situations or challenges?",
+                "What went well? What would you do differently?"
+            ]
+        }, 
+        {
+            "title": "INSIGHTS",
+            "color": "yellow",
+            "percent": 25,
+            "questions": [
+                "In this phase, reflect on what you learned from your leadership challenges…",
+                "What else was personally significant for you (during the week)?",
+                "What did you learn about yourself? Your boss? Peers? Team?",
+                "What insights / a-ha’s did you have? What lessons learned?"
+            ]
+        },
+        {
+            "title": "VALUES",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions": [
+                "In this phase, focus on how to live your values to their fullest…",
+                "In what specific ways did you demonstrate your values?",
+                "What value(s) do you want to emphasize going forward? How will you?",
+                "What are you intentionally doing to build trust, rapport and relationships?",
+                "Who do you need to thank, recognize or reward? How?"
+            ]
+        }, 
+        {
+            "title": "PROGRESS",
+            "color": "#33348e",
+            "percent": 25,
+            "questions": [
+                "In this phase, review your goals vs. progress, and what you plan to do…",
+                "In what specific ways did you demonstrate your values?",
+                "What value(s) do you want to emphasize going forward? How will you?",
+                "What are you intentionally doing to build trust, rapport and relationships?",
+                "Who do you need to thank, recognize or reward? How?"
+            ]
+        }
+    
+    ]
+}

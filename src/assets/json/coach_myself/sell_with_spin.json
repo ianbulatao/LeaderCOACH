@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "title": "SITUATION",
+            "color": "#33a457",
+            "isActive": true,
+            "percent": 25,
+            "questions":[
+                "In this phase, fully explore their current situation and challenges.",
+                "Ask questions selectively to gather information/background:",
+                "What's going on in your world/business right now?",
+                "What's impacting your part of the business?",
+                "How would you describe your current situation?",
+                "What challenges are you facing? Your team/unit?",
+                "In what specific ways is the challenge hindering you/your team?",
+                "How is the challenge perhaps helping you/your team?"
+            ]
+        },     
+        {
+            "title": "PROBLEM",
+            "color": "#33348e",
+            "percent": 25,
+            "questions":[
+                "In this phase, foster a full description of their specific problem.",
+                "What do you worry about? What’s keeping you up at night?",
+                "How satisfied (or dissatisfied) are you with how things are going?",
+                "What specific difficulties have you had with…?",
+                "What issues continue to be unresolved?",
+                "What challenges have you found getting resolution?",
+                "What seems to be the crux of the problem?",
+                "Why do you think it’s such a problem?"
+            ]
+        },  
+        {
+            "title": "IMPLICATION",
+            "color": "yellow",
+            "percent": 25,
+            "questions":[
+                "In this phase, surface the significance and implications of their problem.",
+                "Ask questions to get at inferences/impacts of the Problem:",
+                "What effect is this having on operations, customers, etc.?",
+                "What effect is this having on operations, customers, etc.?",
+                "What could this potentially mean down the road?",
+                "What are the implications for other areas of your business?",
+                "How significant are these impacts—if they were to occur?",
+                "What potential impacts do you perhaps not even realize?"
+            ]
+        },  
+        {
+            "title": "NEED + PAYOFF",
+            "color": "#cc2229",
+            "percent": 25,
+            "questions":[
+                "In this phase, enable them to realize the need to solve their problem.",
+                "Ask questions to make implicit needs more explicit…",
+                "…and to reinforce the positive elements of your solution:",
+                "How important is it that you solve this?",
+                "How important is it that you solve this?",
+                "How else could solving this benefit your team/organization?",
+                "What would the payoff be for you personally?",
+                "What’s the danger/downside of not solving it?",
+                "What can you not afford to let happen? How so?",
+                "What if I could share a way to address/tackle this?",
+                "Would you be interested in hearing more?"
+            ]
+        }
+    ]
+}

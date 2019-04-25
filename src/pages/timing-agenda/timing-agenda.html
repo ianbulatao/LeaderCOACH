@@ -1,0 +1,68 @@
+<!--
+  Generated template for the TimingAgendaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+      <button ion-button menuToggle>
+          <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    <!-- <ion-title>timingAgenda</ion-title> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="swipercontainer" (swipe)="swipeEvent($event)">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="assets/imgs/leader.png" alt="">
+                <p class="logo-text">LeaderCOACH</p>
+            </div>
+        </div>
+          <div  class="content-wrapper">
+              <h4 text-center>Preview of Timing/Agenda</h4>
+              <div text-center class="time">
+                  <img src="assets/imgs/clock.png" alt="">
+                  <div class="min">
+                    <h1>{{minutes}}</h1>
+                    <h4>min</h4>
+                  </div>
+                  <div class="triangles">
+                      <div  (click)="increaseOverAll()" class="triangle">
+                        <div class="triangle-up"></div>
+                      </div>
+                      <div (click)="increaseOverAll()" class="triangle">
+                        <div  class="triangle-down"></div>
+                        </div>
+                      </div>
+              </div>
+              <h4 text-center>{{questionType}}</h4>
+
+              <div *ngFor="let section of sections; let i = index;" class="phases">
+                <div [ngStyle]="{'background-color': section.color, 'color': section.color == 'yellow' ? '#000000' : '#ffffff' }" class="phase">
+                  <div float-left>
+                    <h4>{{section.title}}</h4>
+                  </div>
+                  <h4 class="minutes" float-right>{{section.prevTime}} MINS</h4>
+
+                  <div class="triangles">
+                    <div  (click)="increase(i)" class="triangle">
+                      <div [ngStyle]="{'border-color': section.color === 'yellow' ? '#000000 transparent' : '#ffffff transparent'}" class="triangle-up"></div>
+                    </div>
+                    <div (click)="decrease(i)" class="triangle">
+                      <div [ngStyle]="{'border-color': section.color === 'yellow' ? '#000000 transparent' : '#ffffff transparent'}" class="triangle-down"></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+</ion-content>
+
+<ion-footer color="primary">
+    <div style="height: 50px;">
+
+    </div>
+</ion-footer> 

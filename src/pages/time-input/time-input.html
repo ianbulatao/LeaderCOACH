@@ -1,0 +1,45 @@
+<!--
+  Generated template for the TimeInputPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+      <button ion-button menuToggle>
+          <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    <!-- <ion-title>timeInput</ion-title> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="swipercontainer" (swipe)="swipeEvent($event)">
+    <div class="logo-container">
+        <div class="logo">
+            <img src="assets/imgs/leader.png" alt="">
+            <p class="logo-text">LeaderCOACH</p>
+        </div>
+    </div>
+      <div class="content-wrapper">
+        <div text-center class="timer">
+          <h4>How much time are you allotting?</h4>
+          <input [(ngModel)]="minutes"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type = "number"
+          maxlength = "3">
+          <h4>Minutes</h4>
+
+          <button (click)="continue()" ion-button >Continue</button>
+        </div>
+      </div>
+    </div>
+    <div text-center class="ok">
+    </div>
+</ion-content>
+
+<ion-footer color="primary">
+
+    <div class="custom-footer" style="height: 50px;">
+
+    </div>
+</ion-footer> 

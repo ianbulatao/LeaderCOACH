@@ -1,0 +1,100 @@
+page-timing-agenda {
+    .phase{
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 20px 0;
+        position: relative;
+        h4{
+            margin: 0;
+        }
+        h4.minutes{
+            margin: 0 25px 0 0;
+        }
+        .triangles{
+            position: absolute;
+            right: 14px;
+            top: 8px;
+            .triangle{
+                width: 25px;
+                padding: 3px 7px;
+            }
+            .triangle-up{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 5px 8.7px 5px;
+                border-color: transparent transparent #000000 transparent;
+            }
+            .triangle-down{
+                width: 0;
+                // margin-top: 8px;
+                height: 0;
+                border-style: solid;
+                border-width: 8.7px 5px 0 5px;
+                border-color: #000000 transparent;
+            }
+        }
+        
+    }
+    .phase:after {
+        content: "."; 
+        display: block; 
+        height: 0; 
+        clear: both; 
+        visibility: hidden;
+    }    
+    .time{
+        position: relative;
+        // background-image: url(../assets/imgs/clock.png);
+        // object-fit: contain;
+        img{
+            height: 190px;
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        .min{
+            position: absolute;
+            top: 50%;
+            left: 38%;
+            transform: translateY(-50%);
+            background-color: black;
+            color: #ffffff;
+            padding: 13px;
+            border-radius: 50%;
+            width: 70px;
+            h1,h4{
+                margin: 0;
+            }
+            h1{
+                font-size: 35px;
+                line-height: 21px;
+            }
+        }
+        .triangles{
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 0;
+            .triangle{
+                width: 40px;
+                padding: 7px 12px;
+            }
+            .triangle-up{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 7.5px 13.0px 7.5px;
+                border-color: #000000 transparent;
+            }
+            .triangle-down{
+                width: 0;
+                // margin-top: 8px;
+                height: 0;
+                border-style: solid;
+                border-width: 13.0px 7.5px 0 7.5px;
+                border-color: #000000 transparent;
+            }
+        }
+    }
+      
+}

@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "title": "RELEVANT DATA",
+            "color": "#33a457",
+            "percent": 25,    
+            "isActive": true,
+            "questions": [
+                "In this phase, establish what is.",
+                "What do we know?",
+                "What’s the current situation?",
+                "What parameters are most relevant in this situation?",
+                "What’s the data for these parameters? How’s it trending?",
+                "How accurate and reliable is our information? How do we know?",
+                "How quickly is the situation changing? Improving or worsening?",
+                "What’s potentially dangerous about this situation?",
+                "How is this event different from prior, similar incidents?",
+                "What are the forces or pressures helping us?",
+                "What is hurting, hindering or challenging us?",
+                "What resources and/or competencies can we deploy immediately?",
+                "What does our collective ‘gut’ tell us?"
+            ]
+        },
+        {
+            "title": "POSSIBLE FUTURES",
+            "color": "yellow",
+            "percent": 25,    
+            "questions": [
+                "In this phase, brainstorm what could be, and what we want to be.",
+                "What else could the data be telling us? How might we be wrong?",
+                "How might we need to shift or expand our perspective?",
+                "What could happen? How might this situation evolve?",
+                "What’s the best-case scenario/outcome? Worst-case?",
+                "Where is this likely headed? How confident are we?",
+                "What could this be connected to? Related to? Dependent on?",
+                "How could we exploit the chaos inherent in the current state?",
+                "How might we look at this situation creatively?",
+                "What metaphor or analogy would best describe this?",
+                "What ideas, images or symbols does this bring to mind?",
+                "What’s a theme, pattern or ‘red thread’ running through this?",
+                "What insights or a-ha’s does anyone have?",
+                "How could we transform this into a potential opportunity?"
+            ]
+        },
+        {
+            "title": "STAKEHOLDER NEEDS",
+            "color": "#cc2229",
+            "percent": 25,    
+            "questions": [
+                "In this phase, understand the people impact and messaging.",
+                "What’s the immediate impact on the people involved?",
+                "How are other groups/stakeholders viewing this situation?",
+                "What impact will this have on employees, customers and shareholders?",
+                "What are their specific needs, interests and concerns in this situation?",
+                "What do our stakeholders need and value most right now?",
+                "How do we deliver that to the extent possible?",
+                "What help do we need? Who could help us? With what?",
+                "What’s our communication strategy?",
+                "What message do we communicate? To whom? How?",
+                "How might we benefit from this? How could it help us?",
+                "How is this affecting us personally?",
+                "What’s our evaluation of the situation?"
+            ]
+        },
+        {
+            "title": "RESPONSE + NEXT STEPS",
+            "color": "#33348e",
+            "percent": 25,    
+            "questions": [
+                "In this phase, determine our response.",
+                "What’s the end game? What outcome do we want?",
+                "How do we make this happen?",
+                "What action(s) do we take immediately?",
+                "What do we need to communicate? To whom?",
+                "Who should be given authority/responsibility to manage it?",
+                "What are likely consequences of this situation?",
+                "What are the root causes? Why did this happen?",
+                "How do we prevent it from happening again?",
+                "Where is our greatest risk? What’s likely to go wrong?",
+                "What questions remain?",
+                "How do we stay informed as the situation evolves?",
+                "How soon should we meet again to follow-up?"
+            ]
+        }
+    ]
+}

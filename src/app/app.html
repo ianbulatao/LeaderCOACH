@@ -1,16 +1,41 @@
-<ion-menu [content]="content">
-  <ion-header>
+<ion-menu [swipeEnabled]="false" [content]="content">
+  <!-- <ion-header>
     <ion-toolbar>
       <ion-title>Menu</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <ion-content>
-    <ion-list>
+  <ion-content class="menu-bg-color">
+    <div   class="menu-list">
+        
+        <p text-left>Get questions to help you</p>
+        <ul>
+          <li>Coach yourself</li>
+          <li>Coach someone</li>
+          <li>Lead a meeting</li>
+        </ul>
+        <hr>
+        <p text-left>About Leader COACH</p>
+        <ul>
+          <li>What it is.</li>
+          <li>How it works.</li>
+          <li>What coaching is/is not.</li>
+          <li>Why these colors?</li>
+          <li>Why is equal to ideal?</li>
+        </ul>
+        <hr>
+        <p>Contact Us</p>
+        <ul>
+          <li>Share experience</li>
+          <li>Give feedback</li>
+          <li>Suggest modules</li>
+        </ul>
+    </div>
+    <!-- <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
-    </ion-list>
+    </ion-list> -->
   </ion-content>
 
 </ion-menu>

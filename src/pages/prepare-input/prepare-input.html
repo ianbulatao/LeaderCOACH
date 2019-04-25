@@ -1,0 +1,46 @@
+<!--
+  Generated template for the PrepareInputPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle>
+        <ion-icon color="light" name="menu"></ion-icon>
+    </button>
+    <!-- <ion-title>prepareInput</ion-title> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="swipercontainer"  (swipe)="swipeEvent($event)">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="assets/imgs/leader.png" alt="">
+                <p class="logo-text">LeaderCOACH</p>
+            </div>
+        </div>
+        <div class="content-wrapper">
+          <div text-center class="timer">
+            <h4>Would you like to prepare for the session or just get started?</h4>
+          </div>
+        </div>
+        <div text-center class="buttons">
+            <ion-row>
+              <ion-col>
+            <button (click)="prepare()" style="background-color: #2F3192; " ion-button >PREPARE</button>
+              </ion-col>
+              <ion-col >
+                  <button (click)="startNow()" style="background-color: #00A551; " ion-button>START NOW</button>
+              </ion-col>
+            </ion-row>
+          </div>
+    </div>
+   
+</ion-content>
+<ion-footer color="primary">
+    <div style="height: 50px;">
+
+    </div>
+</ion-footer> 
