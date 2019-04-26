@@ -21,4 +21,7 @@ export class AppProvider {
   getQuestion(){
     return this.http.get<any>(`assets/json/${this.type}/${this.questionType.trim().toLowerCase().replace(/ /g, '_')}.json`);
   }
+  getGroundRules(){
+    return this.http.get<any>('assets/json/ground_rules.json');
+  }
 }

@@ -13,20 +13,59 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <div class="swipercontainer" (swipe)="swipeEvent($event)">
+<ion-content >
+    <!-- <div class="swipercontainer" (swipe)="swipeEvent($event)"> -->
         <div class="logo-container">
             <div class="logo">
                 <img src="assets/imgs/leader.png" alt="">
                 <p class="logo-text">LeaderCOACH</p>
             </div>
         </div>
-        <div text-center class="content-wrapper">
-          <h4 margin-bottom>Ground Rules</h4>
-          <ion-list >
+         
+            <h5 text-center> Choose 1 or 2 per phase. </h5>
+            <ion-list >
+              <ion-item-divider margin-top>
+                  <ion-label>
+                  PARTICIPATION + ORDER
+                    </ion-label>
+              </ion-item-divider>
+              <ion-item *ngFor="let rule of rules?.participation_order">
+                <ion-checkbox  [disabled]="groundRule.participation_order.length >= 2 && !rule?.isChoose" (ionChange)="onChange(rule.isChoose,rule.text,'participation_order')" [(ngModel)]="rule.isChoose" item-left checked="isChecked"></ion-checkbox>
+                <p class="rule" item-right>{{rule.text}}</p>
+              </ion-item>
+              <ion-item-divider margin-top>
+                  <ion-label>
+                    CURIOSITY + IMAGINATION
+                    </ion-label>
+              </ion-item-divider>
+              <ion-item *ngFor="let rule of rules?.curiosity_imagination">
+                <ion-checkbox [disabled]="groundRule.curiosity_imagination.length >= 2 && !rule?.isChoose" (ionChange)="onChange(rule.isChoose,rule.text, 'curiosity_imagination')" [(ngModel)]="rule.isChoose" item-left checked="isChecked" ></ion-checkbox>
+                <p class="rule" item-right>{{rule.text}}</p>
+              </ion-item>
+              <ion-item-divider margin-top>
+                  <ion-label>
+                      RESPECT + INCLUSION
+                    </ion-label>
+              </ion-item-divider>
+              <ion-item *ngFor="let rule of rules?.respect_inclusion">
+                <ion-checkbox  [disabled]="groundRule.respect_inclusion.length >= 2 && !rule?.isChoose" (ionChange)="onChange(rule.isChoose,rule.text, 'respect_inclusion')" [(ngModel)]="rule.isChoose" item-left checked="isChecked" ></ion-checkbox>
+                <p class="rule" item-right>{{rule.text}}</p>
+              </ion-item>
+              <ion-item-divider margion-top>
+                  <ion-label>
+                      CHALLENGE + CRITIQUE
+                    </ion-label>
+              </ion-item-divider>
+              <ion-item *ngFor="let rule of rules?.challenge_critique">
+                <ion-checkbox [disabled]="groundRule.challenge_critique.length >= 2  && !rule?.isChoose" (ionChange)="onChange(rule.isChoose,rule.text, 'challenge_critique')" [(ngModel)]="rule.isChoose" item-left checked="isChecked" ></ion-checkbox>
+                <p class="rule" item-right>{{rule.text}}</p>
+              </ion-item>
+            </ion-list>
+          <!-- </ion-item-group> -->
+          <!-- <ion-list >
               <ng-container *ngIf="rules.length > 0; else elseTemplate">
                   <ion-item *ngFor="let rule of rules">
-                      {{rule}}
+                      {{rule.text}}
                   </ion-item>
               </ng-container>
               <ng-template #elseTemplate>
@@ -36,13 +75,12 @@
               </ng-template>
               
       
-            </ion-list>
-        </div>
-    </div>
+            </ion-list> -->
+    <!-- </div> -->
 </ion-content>
 
-<ion-footer color="primary">
-    <div class="input-rules">
+<ion-footer text-center color="primary">
+    <!-- <div class="input-rules">
       <ion-item>
         <ion-label stacked > Add rules</ion-label>
         <ion-input [(ngModel)]="rule" type="text" ></ion-input>
@@ -50,8 +88,15 @@
       <button ion-button (click)="addrules()" >
         Add
       </button>
-    </div>
-    <div style="height: 50px;">
-
-    </div>
+    </div> -->
+    <!-- <div style="height: 50px;"> -->
+      <ion-row>
+        <ion-col>
+         <button color="light" (click)="navCtrl.pop()" ion-button clear>CANCEL</button>
+        </ion-col>
+        <ion-col>
+          <button color="light"  (click)="save()" ion-button clear>SAVE</button>
+        </ion-col>
+      </ion-row>
+    <!-- </div> -->
 </ion-footer> 

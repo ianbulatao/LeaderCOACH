@@ -199,5 +199,10 @@ export class MainScreenPage {
     return 0;
   }
  }
+ onSlideDrag(e){
+    if(e.offsetDirection == 2 && this.sections[this.activeIndex].questions.length -1 == this.slides.getActiveIndex()){
+      this.nextSection();
+    }
+ }
 
 }

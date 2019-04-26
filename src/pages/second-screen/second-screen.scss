@@ -2,21 +2,21 @@ page-second-screen {
     .coach_myself-container{
         background-color: #33a457;
         color: #ffffff;
-        padding: 5vw;
+        padding: 5vw 3vw;
         border-radius: 10px;
         position: relative;
     }
     .coach_someone-container{
         background-color: #cc2229;
         color: #ffffff;
-        padding: 5vw;
+        padding: 5vw 3vw;
         border-radius: 10px;
         position: relative;
     }
     .lead_a_meeting-container{
         background-color: #33348e;
         color: #ffffff;
-        padding: 5vw;
+        padding: 5vw 3vw;
         border-radius: 10px;
         position: relative;
     }
@@ -26,9 +26,10 @@ page-second-screen {
         .list-item{
             h4{
                 font-size: 2.5vh;
+                font-weight: bold;
             }
             p{
-                font-size: 1.3vh;
+                font-size: 3vw;
             }
         }
         .coach_myself-list-item{
@@ -56,10 +57,12 @@ page-second-screen {
     .header{
         h4{
             font-size: 3vh;
+            font-weight: bold;
         }
         .description{
             p{
-                font-size: 1.7vh;
+                font-size: 3.5vw;
+                font-weight: bold;
             }
         }
     }

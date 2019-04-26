@@ -35,7 +35,7 @@
 
 <ion-content >
    
-    <ion-slides  #slides [pager]="slides.getActiveIndex() == 0 ? false : true">
+    <ion-slides debounce=“500” (swipe)="onSlideDrag($event)"  #slides [pager]="slides.getActiveIndex() == 0 ? false : true">
 
         <ion-slide *ngFor="let slide of sections[activeIndex]?.questions" [ngStyle]="{'background-color': sections[activeIndex]?.color}">
           <h4 [ngStyle]="{'color': sections[activeIndex]?.color === 'yellow' ? 'black' : 'white', 'font-style': slides.getActiveIndex() == 0 ? 'italic' : 'normal'}" >{{slide}}</h4>
