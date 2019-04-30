@@ -1,65 +1,83 @@
 {
-  "participation_order": [
-       { "isChoose": false,  "text": "Be here. Be present. Choose to be here. Focus. Lean in."},
-       { "isChoose": false,  "text": "No electronics/devices. No distractions. No interruptions."},
-       { "isChoose": false,  "text": "Exit the room if you need to take a call/text."},
-       { "isChoose": false,  "text": "Take care of your needs. If you need to go, go."},
-       { "isChoose": false,  "text": "Start & end on time. Stick to the agenda. Stay on point."},
-       { "isChoose": false,  "text": "Defer non-agenda topics. Park issues in the parking lot."},
-       { "isChoose": false,  "text": "Share all relevant information. Share your experience."},
-       { "isChoose": false,  "text": "No rabbit trails. Stay out of the weeds. Keep it moving."},
-       { "isChoose": false,  "text": "KISS: Keep It Simple and Straightforward."},
-       { "isChoose": false,  "text": "Don’t overcomplicate it. Stay out of La La Land."},
-       { "isChoose": false,  "text": "Don’t repeat what’s been said. Once and done."},
-       { "isChoose": false,  "text": "Listen. Remember the ratio of ears to mouth."},
-       { "isChoose": false,  "text": "Speak up! Don’t let your input/opinion go unheard."},
-       { "isChoose": false,  "text": "Be brief. Share the air. Participate—don't dominate."},
-       { "isChoose": false,  "text": "Engage. Every voice heard. Speak now or forever…"},
-       { "isChoose": false,  "text": "Non-participation not allowed. Say what’s on your mind."},
-       { "isChoose": false,  "text": "Balance your participation. Balance advocacy & inquiry." }
-    ],
-  "curiosity_imagination": [
-       { "isChoose": false,  "text": "Be curious. Stay open. Be creative. Be imaginative."},
-       { "isChoose": false,  "text": "Every idea has possibility. Imagine the impossible."},
-       { "isChoose": false,  "text": "No judging ideas—positively or negatively."},
-       { "isChoose": false,  "text": "Nothing's too crazy. Be a little weird. Embrace chaos."},
-       { "isChoose": false,  "text": "Postpone judgment. No pre-mortems."},
-       { "isChoose": false,  "text": "Suspend judgment. Decide when it’s time to decide."},
-       { "isChoose": false,  "text": "More than one right answer. No one right answer."},
-       { "isChoose": false,  "text": "Don’t look back. Don’t kill the mood/vibe/mojo."},
-       { "isChoose": false,  "text": "Don’t boil the ocean. Keep it high level."},
-       { "isChoose": false,  "text": "Be positive. Have fun! Make it a game. Play hard!"},
-       { "isChoose": false,  "text": "Keep learning. Fail fast. Have a growth mindset."},
-       { "isChoose": false,  "text": "Be explicit about intentions, inferences}, assumptions." }
-    ],
-  "respect_inclusion": [
-       { "isChoose": false,  "text": "Demonstrate respect. Esteem everyone. All belong."},
-       { "isChoose": false,  "text": "Protect the interests of those not present. Be nice. Be kind."},
-       { "isChoose": false,  "text": "Listen for understanding, not judgment. Relate."},
-       { "isChoose": false,  "text": "One speaker at a time. No side-bar conversations."},
-       { "isChoose": false,  "text": "Don’t edit or speak for others.  Own your opinions."},
-       { "isChoose": false,  "text": "Share interests or needs before stating opinions/positions."},
-       { "isChoose": false,  "text": "Agree to disagree. Seek to collaborate. Push for win-win."},
-       { "isChoose": false,  "text": "Vegas Rules. What's said here, stays here. Protect confidentiality."},
-       { "isChoose": false,  "text": "Don't take it personally. Don’t make it personal."},
-       { "isChoose": false,  "text": "Don’t assume intent or attribute motive/agenda. Reel in projections."},
-       { "isChoose": false,  "text": "Build on shared values/common ground. Be tactful." }
-    ],
-   "challenge_critique": [
-       { "isChoose": false,  "text": "Be real. Be candid. Be transparent. Be vulnerable."},
-       { "isChoose": false,  "text": "Show up. Unpack your thinking. Excavate the unsaid."},
-       { "isChoose": false,  "text": "Discuss the 'undiscussables'. No elephants in the room."},
-       { "isChoose": false,  "text": "Own your stuff. Speak your truth. No-blame zone."},
-       { "isChoose": false,  "text": "No carry-on baggage. Check your ego at the door."},
-       { "isChoose": false,  "text": "Ask questions to understand, not to judge."},
-       { "isChoose": false,  "text": "Explain your reasoning/rationale. Share your logic."},
-       { "isChoose": false,  "text": "Challenge the thinking--not the person. No devil's advocates."},
-       { "isChoose": false,  "text": "Critique ideas, not people. Debate ideas}, not people."},
-       { "isChoose": false,  "text": "Stay objective. Don’t take/make it personal."},
-       { "isChoose": false,  "text": "Not everything is a debate. Pick your battles."},
-       { "isChoose": false,  "text": "Decide how to decide. Stick to the decision-making rule."},
-       { "isChoose": false,  "text": "Specify next steps, date due and person responsible."},
-       { "isChoose": false,  "text": "Be accountable. Each person is accountable to every other."},
-       { "isChoose": false,  "text": "Once we leave the room, we are one: one voice, one mind." }
-    ]
+  "data": [
+     {
+        "title": "PARTICIPATION + ORDER",
+        "color": "#33a457",
+        "rules":  [
+         { "isChoose": false,  "text": "Be here. Be present. Choose to be here. Focus. Lean in."},
+         { "isChoose": false,  "text": "No electronics/devices. No distractions. No interruptions."},
+         { "isChoose": false,  "text": "Exit the room if you need to take a call/text."},
+         { "isChoose": false,  "text": "Take care of your needs. If you need to go, go."},
+         { "isChoose": false,  "text": "Start & end on time. Stick to the agenda. Stay on point."},
+         { "isChoose": false,  "text": "Defer non-agenda topics. Park issues in the parking lot."},
+         { "isChoose": false,  "text": "Share all relevant information. Share your experience."},
+         { "isChoose": false,  "text": "No rabbit trails. Stay out of the weeds. Keep it moving."},
+         { "isChoose": false,  "text": "KISS: Keep It Simple and Straightforward."},
+         { "isChoose": false,  "text": "Don’t overcomplicate it. Stay out of La La Land."},
+         { "isChoose": false,  "text": "Don’t repeat what’s been said. Once and done."},
+         { "isChoose": false,  "text": "Listen. Remember the ratio of ears to mouth."},
+         { "isChoose": false,  "text": "Speak up! Don’t let your input/opinion go unheard."},
+         { "isChoose": false,  "text": "Be brief. Share the air. Participate—don't dominate."},
+         { "isChoose": false,  "text": "Engage. Every voice heard. Speak now or forever…"},
+         { "isChoose": false,  "text": "Non-participation not allowed. Say what’s on your mind."},
+         { "isChoose": false,  "text": "Balance your participation. Balance advocacy & inquiry." }
+      ]
+     },
+     {
+        "title": "CURIOSITY + IMAGINATION",
+        "color": "yellow",
+        "rules": [
+         { "isChoose": false,  "text": "Be curious. Stay open. Be creative. Be imaginative."},
+         { "isChoose": false,  "text": "Every idea has possibility. Imagine the impossible."},
+         { "isChoose": false,  "text": "No judging ideas—positively or negatively."},
+         { "isChoose": false,  "text": "Nothing's too crazy. Be a little weird. Embrace chaos."},
+         { "isChoose": false,  "text": "Postpone judgment. No pre-mortems."},
+         { "isChoose": false,  "text": "Suspend judgment. Decide when it’s time to decide."},
+         { "isChoose": false,  "text": "More than one right answer. No one right answer."},
+         { "isChoose": false,  "text": "Don’t look back. Don’t kill the mood/vibe/mojo."},
+         { "isChoose": false,  "text": "Don’t boil the ocean. Keep it high level."},
+         { "isChoose": false,  "text": "Be positive. Have fun! Make it a game. Play hard!"},
+         { "isChoose": false,  "text": "Keep learning. Fail fast. Have a growth mindset."},
+         { "isChoose": false,  "text": "Be explicit about intentions, inferences}, assumptions." }
+      ]
+     },
+     {
+        "title": "RESPECT + INCLUSION",
+        "color": "#cc2229",
+        "rules": [
+         { "isChoose": false,  "text": "Demonstrate respect. Esteem everyone. All belong."},
+         { "isChoose": false,  "text": "Protect the interests of those not present. Be nice. Be kind."},
+         { "isChoose": false,  "text": "Listen for understanding, not judgment. Relate."},
+         { "isChoose": false,  "text": "One speaker at a time. No side-bar conversations."},
+         { "isChoose": false,  "text": "Don’t edit or speak for others.  Own your opinions."},
+         { "isChoose": false,  "text": "Share interests or needs before stating opinions/positions."},
+         { "isChoose": false,  "text": "Agree to disagree. Seek to collaborate. Push for win-win."},
+         { "isChoose": false,  "text": "Vegas Rules. What's said here, stays here. Protect confidentiality."},
+         { "isChoose": false,  "text": "Don't take it personally. Don’t make it personal."},
+         { "isChoose": false,  "text": "Don’t assume intent or attribute motive/agenda. Reel in projections."},
+         { "isChoose": false,  "text": "Build on shared values/common ground. Be tactful." }
+      ]
+     },
+     {
+        "title": "CHALLENGE + CRITIQUE",
+        "color": "#33348e",
+        "rules": [
+         { "isChoose": false,  "text": "Be real. Be candid. Be transparent. Be vulnerable."},
+         { "isChoose": false,  "text": "Show up. Unpack your thinking. Excavate the unsaid."},
+         { "isChoose": false,  "text": "Discuss the 'undiscussables'. No elephants in the room."},
+         { "isChoose": false,  "text": "Own your stuff. Speak your truth. No-blame zone."},
+         { "isChoose": false,  "text": "No carry-on baggage. Check your ego at the door."},
+         { "isChoose": false,  "text": "Ask questions to understand, not to judge."},
+         { "isChoose": false,  "text": "Explain your reasoning/rationale. Share your logic."},
+         { "isChoose": false,  "text": "Challenge the thinking--not the person. No devil's advocates."},
+         { "isChoose": false,  "text": "Critique ideas, not people. Debate ideas}, not people."},
+         { "isChoose": false,  "text": "Stay objective. Don’t take/make it personal."},
+         { "isChoose": false,  "text": "Not everything is a debate. Pick your battles."},
+         { "isChoose": false,  "text": "Decide how to decide. Stick to the decision-making rule."},
+         { "isChoose": false,  "text": "Specify next steps, date due and person responsible."},
+         { "isChoose": false,  "text": "Be accountable. Each person is accountable to every other."},
+         { "isChoose": false,  "text": "Once we leave the room, we are one: one voice, one mind." }
+      ]
+     }
+  ]
 }

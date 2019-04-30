@@ -15,7 +15,9 @@ import { AppProvider } from '../../providers/app/app';
   templateUrl: 'ground-rules.html',
 })
 export class GroundRulesPage {
-  rules;
+  rules = [];
+  activeIndex = 0;
+  defaultWidthSection;
   // participation_order = 0;
   // curiosity_imagination = 0;
   // respect_inclusion = 0;
@@ -39,26 +41,27 @@ export class GroundRulesPage {
     }
     this.appProvider.getGroundRules().subscribe(res => {
       console.log(res)
-      this.rules = res;
-      this.rules.participation_order.forEach(element => {
+      this.rules = res.data;
+      this.defaultWidthSection = 50/(this.rules.length - 1);
+      this.rules[0].rules.forEach(element => {
         const index = this.groundRule.participation_order.indexOf(element.text);
         if(index != -1){
           element.isChoose = true;
         }
       });
-      this.rules.respect_inclusion.forEach(element => {
+      this.rules[1].rules.forEach(element => {
         const index = this.groundRule.respect_inclusion.indexOf(element.text);
         if(index != -1){
           element.isChoose = true;
         }
       });
-      this.rules.curiosity_imagination.forEach(element => {
+      this.rules[2].rules.forEach(element => {
         const index = this.groundRule.curiosity_imagination.indexOf(element.text);
         if(index != -1){
           element.isChoose = true;
         }
       });
-      this.rules.challenge_critique.forEach(element => {
+      this.rules[3].rules.forEach(element => {
         const index = this.groundRule.challenge_critique.indexOf(element.text);
         if(index != -1){
           element.isChoose = true;
@@ -73,16 +76,17 @@ export class GroundRulesPage {
   swipeEvent(e){
     console.log(e);
     if(e.offsetDirection === 4){
-      this.navCtrl.pop()
+      this.prevSection();
     } 
     else if(e.offsetDirection === 2){
-      this.navCtrl.pop()
+      this.nextSection();
     }
   }
   addrules(){
     this.rules.push(this.rule)
   }
-  onChange(isChoose,rule,phase){
+  onChange(isChoose,rule){
+    const phase = this.activeIndex == 0 ? 'participation_order' : this.activeIndex == 1 ? 'curiosity_imagination' :  this.activeIndex == 2 ? 'respect_inclusion' : 'challenge_critique'
     console.log(isChoose);
     console.log(this.rules)
     if(isChoose){
@@ -106,5 +110,23 @@ export class GroundRulesPage {
     localStorage.setItem('groundRules', groundRules);
     toast.present();
     this.navCtrl.pop();
+  }
+  nextSection(){
+    if( (this.rules.length-1) != this.activeIndex ){
+      this.activeIndex++;
+      // this.slideIndex = 0;
+      // this.phaseStatementTimer = 0;
+      // this.slides.lockSwipes(false);
+      // this.slides.slideTo(this.slideIndex, 500);
+    }
+  }
+  prevSection(){
+    if(this.activeIndex != 0){
+      this.activeIndex--;
+      // this.slideIndex = 0;
+      // this.phaseStatementTimer = 0;
+      // this.slides.lockSwipes(false);
+      // this.slides.slideTo(this.slideIndex, 500);
+    }
   }
 }

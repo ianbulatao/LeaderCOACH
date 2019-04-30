@@ -1,4 +1,7 @@
 page-ground-rules {
+  .swiper-container{
+      position: relative;
+  }
     .input-rules{
         padding: 16px;
         background-color: #ffffff;
@@ -8,5 +11,81 @@ page-ground-rules {
     }
     .rule{
         width: 300px;
+    }
+    .header-phase{
+        
+        float: left;
+        p{  
+            // color: #00A651;
+            margin: 0;
+        }
+        p.phase{
+            font-size: 1.9rem;
+
+        }
+        margin: 5px;
+    }
+    .colors {
+        width: 100%;
+        text-align: center;
+        // font-size: 0;
+        .color{
+            float: left;
+            width: 30%;
+            background-color: green;
+            height: 20px;
+        }
+        // .greenBand {
+        //     float: left;
+        //     width: 30%;
+        //     background-color: green;
+        //     height: 20px;
+        //     // display: inline-block;
+        // }
+        // .yellowBand {
+        //     float: left;
+        //     // display: inline-block;
+        //     width: 17.5%;
+        //     background-color: yellow;
+        //     height: 20px;
+        //     margin: 0px;
+        // }
+        // .redBand {
+        //     float: left;
+        //     // display: inline-block;
+        //     width: 17.5%;
+        //     background-color: red;
+        //     height: 20px;
+        //     margin: 0px;
+        // }
+        // .blueBand {
+        //     float: left;
+        //     // display: inline-block;
+        //     width: 17.5%;
+        //     margin: 0px;
+        //     background-color: blue;
+        //     height: 20px;
+        // }
+        
+    }
+    .colors:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+    .totalTime {
+        width: 100%;
+        background-color: #dedede;
+        height: 10px;
+        margin: 5px;
+        margin-left: 0px;
+        border-radius: 0px;
+        .timer {
+            height: 10px;
+            margin: 5px;
+            margin-left: 0px;
+            border-radius: 0px;
+        }
     }
 }

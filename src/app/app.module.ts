@@ -18,6 +18,7 @@ import { MainScreenPageModule } from '../pages/main-screen/main-screen.module';
 import { PreparePageModule } from '../pages/prepare/prepare.module';
 import { TimingAgendaPageModule } from '../pages/timing-agenda/timing-agenda.module';
 import { GroundRulesPageModule } from '../pages/ground-rules/ground-rules.module';
+import { PostCritiquePageModule } from '../pages/post-critique/post-critique.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GroundRulesPageModule } from '../pages/ground-rules/ground-rules.module
     MainScreenPageModule,
     PreparePageModule,
     TimingAgendaPageModule,
-    GroundRulesPageModule
+    GroundRulesPageModule,
+    PostCritiquePageModule
 
   ],
   bootstrap: [IonicApp],

@@ -19,22 +19,22 @@
         </div>
         <div  text-center class="menu-buttons">
           <h3>What do you want to do?</h3>
-          <div (click)="goTo('coach_myself')" margin-top class="coach-myself" text-center>
-            <h4 no-margin>COACH MYSELF</h4>
+          <div (click)="goTo('coach_an_employee')" margin-top class="coach-someone" text-center>
+            <h4 no-margin>COACH an EMPLOYEE</h4>
             <div class="description">
-              <p no-margin>get questions to reflect on and answer</p>
+                <p no-margin>get questions to prepare for a conversation</p>
             </div>
           </div>
-          <div (click)="goTo('coach_someone')" margin-top class="coach-someone" text-center>
-              <h4 no-margin>COACH SOMEONE</h4>
-              <div class="description">
-                  <p no-margin>get questions to coach myself and others</p>
-              </div>
+          <div (click)="goTo('coach_myself')" margin-top class="coach-myself" text-center>
+            <h4 no-margin>COACH YOURSELF</h4>
+            <div class="description">
+              <p no-margin>get questions on which to reflect and act</p>
             </div>
+          </div>
             <div (click)="goTo('lead_a_meeting')" margin-top class="lead-meeting" text-center>
                 <h4 no-margin>LEAD a MEETING</h4>
                 <div class="description">
-                  <p no-margin>get questions to challenge your team/group</p>
+                  <p no-margin>get an agenda and questions for your group</p>
                 </div>
               </div>
             <div (click)="gotoGroundRules()" margin-top class="ground-rules" text-center>
@@ -51,8 +51,8 @@
 
 <ion-footer no-border color="primary">
     <div class="quote">
-        <p no-margin>To ask the right question is already half the solution of a problem.</p>
-        <p no-margin float-right>- Carl Jung</p>
+        <p class="message" no-margin>To ask the right question is already half the solution of a problem.</p>
+        <p class="person" no-margin float-right>Carl Jung</p>
       </div>
     <!-- <div class="custom-footer" style="height: 7vh;">
 

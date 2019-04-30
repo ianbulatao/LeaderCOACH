@@ -64,15 +64,18 @@ page-home {
     .quote{
         font-weight: 300;
         padding: 16px;
-        font-style: italic;
         /* margin-top: 100px; */
         /* margin-bottom: 16px; */
         // background-color: #ffffff;
         color: #ffffff;
-        p{
+        font-weight: bold;
+        p.message{
             // font-size: 1.2rem
             font-size: 2vh;
-            font-weight: bold;
+            font-style: italic;
+        }
+        p.person{
+            font: 3vh;
         }
     }
     .quote:after{

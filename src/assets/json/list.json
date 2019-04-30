@@ -1,7 +1,7 @@
 {
     "coach_myself": {
       "title": "COACH MYSELF",
-      "description": "get questions to reflect on and answer",  
+      "description": "get questions on which to reflect and act",  
       "list":   [
         {"title": "Delegate work", "description":"prepare for a delegation conversation"},
         {"title": "Get unstuck", "description":"move through a challenge or obstacle"},
@@ -17,9 +17,9 @@
         {"title": "Sort out feedback ", "description":"reflect on criticism, and move forward"}
         ]
     },
-    "coach_someone": {
-        "title": "COACH SOMEONE",
-        "description": "get questions to coach myself and others",  
+    "coach_an_employee": {
+        "title": "COACH an EMPLOYEE",
+        "description": "get questions to prepare for a conversation",  
         "list":   [
           {"title": "Accept a new task", "description":"structure a delegation conversation "},
           {"title": "Achieve a goal", "description":"identify plan for a developmental goal"},
@@ -36,7 +36,7 @@
 
       "lead_a_meeting": {
         "title": "LEAD a MEETING",
-        "description": "get questions to challenge your team/group",  
+        "description": "get an agenda and questions for your group",  
         "list":   [
           {"title": "Build teamwork", "description":"build rapport, trust and focus for a team"},
           {"title": "Devise a strategy", "description":"analyze a situation for best way forward"},

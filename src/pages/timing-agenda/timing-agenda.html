@@ -9,20 +9,26 @@
       <button ion-button menuToggle>
           <ion-icon color="light" name="menu"></ion-icon>
       </button>
+      <div class="logo-container">
+          <div class="logo">
+              <img src="assets/imgs/leader.png" alt="">
+              <p class="logo-text">LeaderCOACH</p>
+          </div>
+      </div>
     <!-- <ion-title>timingAgenda</ion-title> -->
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
     <div class="swipercontainer" (swipe)="swipeEvent($event)">
-        <div class="logo-container">
+        <!-- <div class="logo-container">
             <div class="logo">
                 <img src="assets/imgs/leader.png" alt="">
                 <p class="logo-text">LeaderCOACH</p>
             </div>
-        </div>
+        </div> -->
           <div  class="content-wrapper">
-              <h4 text-center>Preview of Timing/Agenda</h4>
+              <h4 margin-top text-center>Preview of Timing/Agenda</h4>
               <div text-center class="time">
                   <img src="assets/imgs/clock.png" alt="">
                   <div class="min">
@@ -33,7 +39,7 @@
                       <div  (click)="increaseOverAll()" class="triangle">
                         <div class="triangle-up"></div>
                       </div>
-                      <div (click)="increaseOverAll()" class="triangle">
+                      <div (click)="decreaseOverAll()" class="triangle">
                         <div  class="triangle-down"></div>
                         </div>
                       </div>
@@ -42,11 +48,11 @@
 
               <div *ngFor="let section of sections; let i = index;" class="phases">
                 <div [ngStyle]="{'background-color': section.color, 'color': section.color == 'yellow' ? '#000000' : '#ffffff' }" class="phase">
-                  <div float-left>
+                  <!-- <div float-left>
                     <h4>{{section.title}}</h4>
                   </div>
-                  <h4 class="minutes" float-right>{{section.prevTime}} MINS</h4>
-
+                  <h4 class="minutes" float-right>{{section.prevTime}} MINS</h4> -->
+                  <h4><span>{{section.title}}</span><span class="min">{{section.prevTime}}</span></h4>
                   <div class="triangles">
                     <div  (click)="increase(i)" class="triangle">
                       <div [ngStyle]="{'border-color': section.color === 'yellow' ? '#000000 transparent' : '#ffffff transparent'}" class="triangle-up"></div>

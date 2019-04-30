@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { AppProvider } from '../../providers/app/app';
+import { PostCritiquePage } from '../post-critique/post-critique';
 
 /**
  * Generated class for the MainScreenPage page.
@@ -50,10 +51,11 @@ export class MainScreenPage {
 
         //add time percent calculated property of section 
         for(let section of this.sections){
-          section.time = this.currentTimeInSeconds*section.percent/100;
-          section.timeTotal = this.currentTimeInSeconds*section.percent/100;
-          section.questionTime = (this.currentTimeInSeconds*section.percent/100)/section.questions.length;
-          section.questionTimeTotal = (this.currentTimeInSeconds*section.percent/100)/section.questions.length;
+          section.time = this.currentTimeInSeconds/this.sections.length;
+          section.timeTotal = this.currentTimeInSeconds/this.sections.length;
+          section.questionTime = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
+          section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
+        
         }
         console.log(this.sections)
         this.defaultWidthSection = 50/(this.sections.length - 1);
@@ -100,7 +102,7 @@ export class MainScreenPage {
     this.slides.lockSwipes(true );
   }
   nextSection(){
-    if( (this.sections.length-1) != this.activeIndex ){
+    if( this.sections.length-1 != this.activeIndex ){
       this.activeIndex++;
       this.slideIndex = 0;
       this.phaseStatementTimer = 0;
@@ -116,7 +118,6 @@ export class MainScreenPage {
       // this.slides.lockSwipes(false);
       this.slides.slideTo(this.slideIndex, 500);
     }
-    
   }
 
   convertSecondstoTime(seconds) { 
@@ -152,9 +153,7 @@ export class MainScreenPage {
         this.slides.slideNext();
       }
     } else {
-      this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
-      this.currentTimeConsumedInSeconds+=0.01;
-      this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
+      
   
       if(!this.isPause){
   
@@ -178,6 +177,9 @@ export class MainScreenPage {
         
       }
       }
+      this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
+      this.currentTimeConsumedInSeconds+=0.01;
+      this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
     }
 
   
@@ -203,6 +205,9 @@ export class MainScreenPage {
     if(e.offsetDirection == 2 && this.sections[this.activeIndex].questions.length -1 == this.slides.getActiveIndex()){
       this.nextSection();
     }
+ }
+ done(){
+   this.navCtrl.push(PostCritiquePage);
  }
 
 }

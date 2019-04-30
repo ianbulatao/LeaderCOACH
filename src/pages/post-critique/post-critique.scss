@@ -1,0 +1,15 @@
+page-post-critique {
+    .content-wrapper{
+        position: absolute;
+        top: 35%;
+       
+    }
+    .buttons{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .button{
+            width: 125px;
+        }
+    }
+}

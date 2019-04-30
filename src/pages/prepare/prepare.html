@@ -10,17 +10,18 @@
     <button ion-button menuToggle>
       <ion-icon color="light" name="menu"></ion-icon>
   </button>
+  <div class="logo-container">
+      <div class="logo">
+          <img src="assets/imgs/leader.png" alt="">
+          <p class="logo-text">LeaderCOACH</p>
+      </div>
+  </div>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <div class="swipercontainer" (swipe)="swipeEvent($event)">
-    <div class="logo-container">
-        <div class="logo">
-            <img src="assets/imgs/leader.png" alt="">
-            <p class="logo-text">LeaderCOACH</p>
-        </div>
-    </div>
+   
       <div class="content-wrapper" [ngStyle]="{'top': questions[activeIndex].isChoices ? 'unset' : '35%'}">
         <div text-center class="question">
           <h4>{{questions[activeIndex].question}}</h4>

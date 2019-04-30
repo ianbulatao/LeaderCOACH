@@ -70,9 +70,15 @@
            
           </ion-col>
           <ion-col>
-              <button (click)="nextSection()" large ion-button clear icon-only >
+              <ng-container *ngIf="activeIndex >= sections.length-1 && sections[activeIndex]?.questions.length-1 <= slides.getActiveIndex(); else elseDoneTemplate">
+                <button (click)="done()" ion-button clear large color="dark">DONE</button>
+              </ng-container>
+              <ng-template #elseDoneTemplate>
+                <button (click)="nextSection()" large ion-button clear icon-only >
                   <ion-icon color="dark" name="fastforward"></ion-icon>
                 </button>
+              </ng-template>
+              
             </ion-col>
       </ion-row>
     <div style="height: 50px;">

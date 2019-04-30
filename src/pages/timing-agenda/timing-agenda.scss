@@ -1,19 +1,23 @@
 page-timing-agenda {
     .phase{
-        padding: 10px 20px;
+        padding: 10px 32px 10px 20px;
         border-radius: 20px;
-        margin: 20px 0;
+        margin: 10px 0;
         position: relative;
         h4{
             margin: 0;
+            font-size: 4vw;
+        }
+        .min{
+            float: right;
         }
         h4.minutes{
             margin: 0 25px 0 0;
         }
         .triangles{
             position: absolute;
-            right: 14px;
-            top: 8px;
+            right: 6px;
+            top: 1px;
             .triangle{
                 width: 25px;
                 padding: 3px 7px;
@@ -66,7 +70,7 @@ page-timing-agenda {
                 margin: 0;
             }
             h1{
-                font-size: 35px;
+                font-size: 7vw;
                 line-height: 21px;
             }
         }
