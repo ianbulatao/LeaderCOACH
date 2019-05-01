@@ -25,10 +25,10 @@ export class TimeInputPage {
     public appProvider: AppProvider
     ) {
     this.type = this.navParams.get('type');
-    if(this.type === 'coach_myself'){
-      this.minutes = 10;
-    } else if(this.type === 'coach_someone'){
+    if(this.type === 'coach_an_employee'){
       this.minutes = 15;
+    } else if(this.type === 'coach_myself'){
+      this.minutes = 10;
     } else {
       this.minutes = 30;
     }

@@ -58,7 +58,7 @@ export class MainScreenPage {
         
         }
         console.log(this.sections)
-        this.defaultWidthSection = 50/(this.sections.length - 1);
+        this.defaultWidthSection = 30/(this.sections.length - 1);
         console.log(this.sections.length);
         console.log(this.defaultWidthSection)
 
@@ -147,14 +147,14 @@ export class MainScreenPage {
 //    },1000)
    
   this.timerInterval2 = setInterval(()=> {
-    this.phaseStatementTimer += 0.01;
     if(this.slides.getActiveIndex() == 0 ){
+      this.phaseStatementTimer += 0.01;
       if(this.phaseStatementTimer >= 3){
+        this.phaseStatementTimer = 0;
         this.slides.slideNext();
       }
     } else {
       
-  
       if(!this.isPause){
   
       this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTime - 0.01; 
@@ -203,11 +203,14 @@ export class MainScreenPage {
  }
  onSlideDrag(e){
     if(e.offsetDirection == 2 && this.sections[this.activeIndex].questions.length -1 == this.slides.getActiveIndex()){
-      this.nextSection();
+      if(this.activeIndex >= this.sections.length-1 && this.sections[this.activeIndex].questions.length-1 <= this.slides.getActiveIndex()) {
+        this.done();
+      } else {
+        this.nextSection();
+      }
     }
  }
  done(){
    this.navCtrl.push(PostCritiquePage);
  }
-
 }

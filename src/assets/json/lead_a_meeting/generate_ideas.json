@@ -10,7 +10,7 @@
                 "What do we see? How to notice every detail? In each moment?",
                 "What can we experience immediately? What’s our gut say?",
                 "What do we not know? How can we diversify our learning?",
-                "What do we not know? How can we diversify our learning?",
+                "What’s something we have plenty of? What’s unlimited?",
                 "What's one little thing we could improve on? How would we?",
                 "What’s one way we could do it differently than in the past?",
                 "What could we get away with? What envelope could we push?",
@@ -31,20 +31,20 @@
                 "What if we could do anything? What if X were not a barrier?",
                 "What’s our BIG IDEA? What one thing could transform reality?",
                 "In a perfect world…what would our ideal solution really be?",
-                "What would we do with unlimited resources/time/energy/money?",
+                "What would we do with unlimited resources? Time? Energy? Money?",
                 "Where could we 'plant a seed'? Where would this grow best?",
                 "How could we hitchhike on that idea to make it even better?",
                 "What’s the craziest idea we can imagine right now?"
             ]
         },
         {
-            "title": "PEOPLE + CULTURE",
+            "title": "PASSIONATE DREAMS",
             "color": "#cc2229",
             "percent": 25,    
             "questions": [
                 "In this phase, everyone shares their needs and passions.",
                 "What are we really passionate about? What fuels our dream?",
-                "What are we really passionate about? What fuels our dream?",
+                "With whom might we collaborate? Who shares our dream?",
                 "Who else is invested/interested in a similar goal/outcome?",
                 "Who else will benefit from this? Who could we partner with?",
                 "Who else could help or contribute resources, time or skill?",
@@ -56,21 +56,21 @@
             ]
         },
         {
-            "title": "EXECUTION",
+            "title": "FAIL FAST, NEVER SAFE",
             "color": "#33348e",
             "percent": 25,    
             "questions": [
                 "In this phase, everyone challenges each other to be the best.",
                 "“Be wrong as fast as you can.” Ed Catmull",
                 "What’s the worst that could happen if we try? The best?",
-                "What resources/knowledge/skills do we need to succeed?",
-                "What do we need to not fail? What keeps us in the game?",
+                "What resources, knowledge, and skills do we need to succeed?",
+                "What’s the minimum we can do? How do we not fail? What keeps us in the game?",
                 "What other problems does our product/service/plan solve?",
                 "What are the driving forces? Why? Resisting forces? Why?",
                 "How are these changing over time? In our favor? Against us?",
-                "Assume the idea/plan is a colossal failure. Why did it fail?",
-                "In what new ways could we introduce/launch our idea/plan?",
-                "When should we introduce our idea/plan for maximum effect?"
+                "Assume the idea or plan is a colossal failure. Why did it fail?",
+                "In what new ways could we introduce or launch our idea or plan?",
+                "When should we roll-out for maximum effect?"
             ]
         }
     ]

@@ -10,9 +10,8 @@
                 "Which progress measures are not being met? By whom?",
                 "What is your data/evidence? What are the known facts, not hearsay?",
                 "What are your observations? What have you seen/heard yourself?",
-                "What examples/anecdotes from others are informing you?",
-                "What examples/anecdotes from others are informing you?",
-                "How clearly did you make your performance expectations? Scale of 1 – 10?",
+                "What stories/anecdotes from others are informing you?",
+                "Be wary of using 3rd party information in feedback. Firsthand is best.",
                 "What information do you need (and don’t have) to diagnose the situation?"
             ]
         },
@@ -51,7 +50,7 @@
                 "(if time) Could you re-prioritize their tasks or help streamline their work?",
                 "What else might be causing the lack of performance?",
                 "How is their non-performance impacting the team, customer, etc.?",
-                "What will happen you do not address their lack of performance?",
+                "What will happen if you do not address their lack of performance?",
                 "What behavior(s) should the person keep, start or stop doing?"
             ]
         },
@@ -67,7 +66,7 @@
                 "How will you maintain their self-esteem, and ‘do no harm’?",
                 "What or who else do you need to protect in this conversation?",
                 "How will you avoid triggering them with respect to SCARF?",
-                "Use the module ‘#cc2229irect behavior’ to deliver the feedback, and",
+                "Use the module ‘Redirect behavior’ to deliver the feedback, and",
                 "Click on the ‘Prepare’ (pre-work) to find human needs relative to SCARF."
             ]
         }

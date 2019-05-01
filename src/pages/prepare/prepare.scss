@@ -1,7 +1,9 @@
 page-prepare {
     .content-wrapper{
         position: absolute;
-        top: 35%;
+        top: 0;
+        height: 100%;
+        width: 100%;
         // input{
         //     outline: 0;
         //     border-width: 0 0 2px;
@@ -11,6 +13,9 @@ page-prepare {
         //   }
     }
     .question{
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
         h4{
             margin-bottom: 2rem;
         }

@@ -34,7 +34,7 @@ export class PrepareInputPage {
     } 
   }
   startNow(){
-    this.navCtrl.push(MainScreenPage);
+    this.navCtrl.push(PreparePage, {isStartNow: true});
   }
   prepare(){
     this.navCtrl.push(PreparePage);

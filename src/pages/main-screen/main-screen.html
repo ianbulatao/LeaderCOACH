@@ -22,7 +22,7 @@
       </div>
   </div>
   <div class="colors">
-      <div *ngFor="let section of sections; let i = index;" [ngStyle]="{'width': activeIndex == i ? '50%' : defaultWidthSection+'%', 'background-color': section.color}" class="color">
+      <div *ngFor="let section of sections; let i = index;" [ngStyle]="{'width': activeIndex == i ? '70%' : defaultWidthSection+'%', 'background-color': section.color}" class="color">
           <span [ngStyle]="{'color': section.color === 'yellow' ? 'black' : 'white'}" *ngIf="activeIndex == i">{{section.title}}</span>
       </div>
      

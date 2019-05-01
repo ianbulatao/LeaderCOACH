@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AppProvider } from '../../providers/app/app';
 import { TimingAgendaPage } from '../timing-agenda/timing-agenda';
+import { MainScreenPage } from '../main-screen/main-screen';
 
 /**
  * Generated class for the PreparePage page.
@@ -27,6 +28,9 @@ export class PreparePage {
     public appProvider: AppProvider
   ) {
     if(this.appProvider.type === 'coach_myself'){
+      if(this.navParams.get('isStartNow')){
+        this.activeIndex = 7;
+      }
       this.questions = [
         {question: 'What’s your energy level?', isNumber: true, answer: null, type: 'energyLevel'},
         {question: 'Is this the best time?', isYesNo: true, answer: null, type: 'bestEnergyLevel'},
@@ -35,8 +39,13 @@ export class PreparePage {
         {question: 'Is this the best time?', isYesNo: true, answer: null},
         {question: 'What would help you focus more?', isText: true, answer: null},
         {question: 'What’s your objective in the time allotted for this session?', isText: true, answer: null},
+        {question: 'SWIPE LEFT to move to the next question. Use <strong>&raquo;</strong> to move to the next section (color) once the current section has been sufficiently explored. Use <strong>&laquo;</strong> to go back to the previous section.'},
+        {question: 'Engage the person with your questions. Ask in your own words. Allow time for thought, reflection. Be comfortable with silence. Encourage them to elaborate, give examples, and share anecdotes. Use phrases like “Tell me more…”, “For instance?”, “Help me understand…”. Remember: your goal is not to provide answers, but to help them find their answer; not to impose a solution, but help them find their best solution.'},
       ]
-    } else if(this.appProvider.type === 'coach_someone') {
+    } else if(this.appProvider.type === 'coach_an_employee') {
+      if(this.navParams.get('isStartNow')){
+        this.activeIndex = 10;
+      }
       this.questions = [
         {question: 'What’s your energy level?', isNumber: true, answer: null, type: 'energyLevel'},
         {question: 'Is this the best time?', isYesNo: true, answer: null, type: 'bestEnergyLevel'},
@@ -50,7 +59,7 @@ export class PreparePage {
         {
           question: 'Reflecting on their personal needs in this conversation, which of these do you need to enhance and how?',
           isChoices: true, 
-          isText: true, 
+          isText: true,          
           answer: null,
           choice: null,
           choices: [
@@ -61,8 +70,18 @@ export class PreparePage {
             "Fairness – help them understand any decision, deadline or work assigned is reasonable"
           ]
         },
+        {question: 'SWIPE LEFT to move to the next question. Use <strong>&raquo;</strong> to move to the next section (color) once the current section has been sufficiently explored. Use <strong>&laquo;</strong> to go back to the previous section.'},
+        {question: `Engage the person with your questions. Ask in your own words. 
+        Allow time for thought, reflection. Be comfortable with silence. 
+        Encourage them to elaborate, give examples, and share anecdotes. 
+        Use phrases like “Tell me more…”, “For instance?”, “Help me understand…”. Remember: your goal is not to provide answers, but to help them find their answer; not to impose a solution, but help them find their best solution.
+        `},
+
       ]
     } else {
+      if(this.navParams.get('isStartNow')){
+        this.activeIndex = 9;
+      }
       this.questions = [
         {question: 'What’s the purpose / objective of this meeting?', isText: true, answer: null,},
         {question: 'To what extent is every attendee clear about the purpose / objective?', isNumber: true, answer: null },
@@ -73,6 +92,8 @@ export class PreparePage {
         {question: 'To what extent are the ground rules clear to everyone and fully accepted?', isNumber: true, answer: null},
         {question: 'Would you like to review/choose ground rules?', isYesNo: true, answer: null},
         {question: 'Your meeting’s pre-critique score is x.y. (average of the responses given above) This means your meeting is starting with a xy% chance of success.  (score converted to a %)', isText: true, answer: null},
+        {question: 'SWIPE LEFT to move to the next question. Use <strong>&raquo;</strong> to move to the next section (color) once the current section has been sufficiently explored. Use <strong>&laquo;</strong> to go back to the previous section.'},
+        {question: `The questions which follow are intended to prompt discussion. Other related questions for that section are welcome. However, as the leader, be on guard for questions that may be better asked in a later section. The point is to fully explore each section (color) then move to the next one. Consider using a speech-to-text voice recorder or assigning note-taking responsibility to capture decisions and follow-up actions.`},
       ]
     }
   }
@@ -86,7 +107,7 @@ export class PreparePage {
     setTimeout(()=> {
       if(this.appProvider.type === 'coach_myself'){
         this.prepareCoachMyself();
-      } else if(this.appProvider.type === 'coach_someone') {
+      } else if(this.appProvider.type === 'coach_an_employee') {
         this.prepareCoachSomeone();
       } else {
         this.prepareLeadMeeting();
@@ -100,7 +121,7 @@ export class PreparePage {
     setTimeout(()=> {
       if(this.appProvider.type === 'coach_myself'){
         this.prepareCoachMyself();
-      } else if(this.appProvider.type === 'coach_someone') {
+      } else if(this.appProvider.type === 'coach_an_employee') {
         this.prepareCoachSomeone();
       } else {
         this.prepareLeadMeeting();
@@ -116,7 +137,7 @@ export class PreparePage {
     else if(e.offsetDirection === 2){
       if(this.appProvider.type === 'coach_myself'){
         this.prepareCoachMyself();
-      } else if(this.appProvider.type === 'coach_someone') {
+      } else if(this.appProvider.type === 'coach_an_employee') {
         this.prepareCoachSomeone();
       } else {
         this.prepareLeadMeeting();
@@ -154,8 +175,16 @@ export class PreparePage {
     } else if(this.activeIndex == 5){
         this.activeIndex = 6;
     } else if(this.activeIndex == 6){
-      this.navCtrl.push(TimingAgendaPage);
-    }
+      this.activeIndex = 7;
+    } else if(this.activeIndex == 7){
+      this.activeIndex = 8;
+    } else if(this.activeIndex == 8){
+      if(this.navParams.get('isStartNow')){
+        this.navCtrl.push(MainScreenPage);
+      } else {
+        this.navCtrl.push(TimingAgendaPage);
+      }
+    } 
   }
   prepareCoachSomeone(){
     if(this.activeIndex == 0){
@@ -186,9 +215,10 @@ export class PreparePage {
       }
     } else if(this.activeIndex == 5){
         this.activeIndex = 6;
-    } else if(this.activeIndex > 5 && this.activeIndex < 9){
+    } else if(this.activeIndex > 5 && this.activeIndex < 11){
       this.activeIndex++;
-    } else if(this.activeIndex == 9){
+    } 
+    else if(this.activeIndex == 11){
       this.navCtrl.push(TimingAgendaPage);
     }
   }
@@ -226,7 +256,15 @@ export class PreparePage {
         this.activeIndex = 8;
       }
     } else if(this.activeIndex == 8){
-      this.navCtrl.push(TimingAgendaPage);
+      this.activeIndex = 9;
+    } else if(this.activeIndex == 9){
+      this.activeIndex = 10;
+    } else if(this.activeIndex == 10){
+      if(this.navParams.get('isStartNow')){
+        this.navCtrl.push(MainScreenPage);
+      } else {
+        this.navCtrl.push(TimingAgendaPage);
+      }
     }
     
   }

@@ -1,6 +1,6 @@
 {
     "coach_myself": {
-      "title": "COACH MYSELF",
+      "title": "COACH YOURSELF to…",
       "description": "get questions on which to reflect and act",  
       "list":   [
         {"title": "Delegate work", "description":"prepare for a delegation conversation"},
@@ -18,7 +18,7 @@
         ]
     },
     "coach_an_employee": {
-        "title": "COACH an EMPLOYEE",
+        "title": "COACH an EMPLOYEE to…",
         "description": "get questions to prepare for a conversation",  
         "list":   [
           {"title": "Accept a new task", "description":"structure a delegation conversation "},
@@ -35,7 +35,7 @@
       },
 
       "lead_a_meeting": {
-        "title": "LEAD a MEETING",
+        "title": "LEAD a MEETING to…",
         "description": "get an agenda and questions for your group",  
         "list":   [
           {"title": "Build teamwork", "description":"build rapport, trust and focus for a team"},

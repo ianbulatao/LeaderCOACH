@@ -22,9 +22,9 @@
 <ion-content padding>
   <div class="swipercontainer" (swipe)="swipeEvent($event)">
    
-      <div class="content-wrapper" [ngStyle]="{'top': questions[activeIndex].isChoices ? 'unset' : '35%'}">
+      <div class="content-wrapper" >
         <div text-center class="question">
-          <h4>{{questions[activeIndex].question}}</h4>
+          <h4 [innerHTML]="questions[activeIndex].question"></h4>
           <div *ngIf="questions[activeIndex].isNumber" class="selection">
             <div [ngClass]="{'active': questions[this.activeIndex].answer === 1}" (click)="select(1)" >1</div>
             <div [ngClass]="{'active': questions[this.activeIndex].answer === 2}" (click)="select(2)" >2</div>
