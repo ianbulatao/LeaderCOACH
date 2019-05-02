@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AppProvider } from '../../providers/app/app';
+import { MainScreenPage } from '../main-screen/main-screen';
 
 /**
  * Generated class for the TimingAgendaPage page.
@@ -78,6 +79,7 @@ export class TimingAgendaPage {
       this.navCtrl.pop()
     } 
     else if(e.offsetDirection === 2){
+      this.navCtrl.push(MainScreenPage, {timeSetToAgendaPage: this.sections})
     }
   }
 }

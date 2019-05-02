@@ -20,24 +20,65 @@
 </ion-header>
 
 <ion-content padding>
-    <div class="swipercontainer"  (swipe)="swipeEvent($event)">
-        
-        <div class="content-wrapper">
-          <div text-center class="timer">
-            <h4>Would you like to evaluate your session?</h4>
-          </div>
+  <div class="swipercontainer" (swipe)="swipeEvent($event)">
+   
+    <div class="content-wrapper" >
+      <div text-center class="question">
+        <h4 [innerHTML]="questions[activeIndex].question"></h4>
+        <div *ngIf="questions[activeIndex].isNumber" class="selection">
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 1}" (click)="select(1)" >1</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 2}" (click)="select(2)" >2</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 3}" (click)="select(3)" >3</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 4}" (click)="select(4)" >4</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 5}" (click)="select(5)" >5</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 6}" (click)="select(6)" >6</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 7}" (click)="select(7)" >7</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 8}" (click)="select(8)" >8</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 9}" (click)="select(9)" >9</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 10}" style="padding: 1px 4px;" (click)="select(10)">10</div>
         </div>
-        <div text-center class="buttons">
-            <ion-row>
-              <ion-col>
-            <button (click)="no()" style="background-color: #2F3192; " ion-button >NO</button>
-              </ion-col>
-              <ion-col >
-                  <button (click)="yes()" style="background-color: #00A551; " ion-button>YES</button>
-              </ion-col>
-            </ion-row>
-          </div>
+        
+        <div *ngIf="questions[activeIndex].isYesNo"  class="selection">
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 'yes'}" (click)="select('yes')" >Yes</div>
+        <div [ngClass]="{'active': questions[this.activeIndex].answer === 'no'}" (click)="select('no')" >No</div>
+        </div>
+
+        <div *ngIf="questions[activeIndex].isAlloted"  class="selection">
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 'Not enough'}" (click)="select('Not enough')" >Not enough</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 'About right'}" (click)="select('About right')" >About right</div>
+          <div [ngClass]="{'active': questions[this.activeIndex].answer === 'Too much'}" (click)="select('Too much')" >About right</div>
+        </div>
+
+        <div *ngIf="questions[activeIndex].isChoices"  class="selection">
+              <div margin-bottom [ngClass]="{'active': questions[this.activeIndex].choice === choice}" (click)="selectChoice(choice)" *ngFor="let choice of questions[activeIndex].choices" text-center>
+                {{choice}}
+              </div>
+        </div>
+        <input *ngIf="questions[activeIndex].isText" [(ngModel)]="questions[this.activeIndex].answer" >
+        <ion-item class="personality" *ngIf="questions[activeIndex].isDropDown">
+          <ion-label>Personality Type</ion-label>
+          <ion-select [(ngModel)]="questions[this.activeIndex].answer"  multiple="false" >
+            <ion-option value="ISTJ" >ISTJ</ion-option>
+            <ion-option value="ISFJ" >ISFJ</ion-option>
+            <ion-option value="INFJ" >INFJ</ion-option>
+            <ion-option value="INTJ" >INTJ</ion-option>
+            <ion-option value="ISTP" >ISTP</ion-option>
+            <ion-option value="ISFP" >ISFP</ion-option>
+            <ion-option value="INFP" >INFP</ion-option>
+            <ion-option value="INTP" >INTP</ion-option>
+            <ion-option value="ESTP" >ESTP</ion-option>
+            <ion-option value="ESFP" >ESFP</ion-option>
+            <ion-option value="ENFP" >ENFP</ion-option>
+            <ion-option value="ENTP" >ENTP</ion-option>
+            <ion-option value="ESTJ" >ESTJ</ion-option>
+            <ion-option value="ESFJ" >ESFJ</ion-option>
+            <ion-option value="ENFJ" >ENFJ</ion-option>
+            <ion-option value="ENTJ" >ENTJ</ion-option>
+          </ion-select>
+        </ion-item>
+      </div>
     </div>
+  </div>
    
 </ion-content>
 <ion-footer color="primary">

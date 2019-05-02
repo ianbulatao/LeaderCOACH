@@ -36,39 +36,48 @@ export class MainScreenPage {
   slideIndex = 0;
   isPhaseStatement = true;
   phaseStatementTimer = 0;
+  isSlide = false;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
     public appProvider: AppProvider
     ) {
-      
+      console.log(this.navParams.get('timeSetToAgendaPage'))
       this.questionType = this.appProvider.questionType;
       this.minutes = this.appProvider.minutes;
       this.currentTimeInSeconds = this.minutes * 60;
-      this.appProvider.getQuestion().subscribe(async res => {
-        console.log(res);
-        this.sections = res.data;
-
-        //add time percent calculated property of section 
-        for(let section of this.sections){
-          section.time = this.currentTimeInSeconds/this.sections.length;
-          section.timeTotal = this.currentTimeInSeconds/this.sections.length;
-          section.questionTime = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
-          section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
-        
+      if(this.navParams.get('timeSetToAgendaPage')){
+        this.sections = this.navParams.get('timeSetToAgendaPage');
+        const a = async () => {
+          for(let section of this.sections){
+            section.time = section.prevTime*60;
+            section.timeTotal = section.prevTime*60;
+            section.questionTime = (section.prevTime*60)/(section.questions.length-1);
+            section.questionTimeTotal = (section.prevTime*60)/(section.questions.length-1);
+          }
+          this.defaultWidthSection = 30/(this.sections.length - 1);
+          this.startTimer();
         }
-        console.log(this.sections)
-        this.defaultWidthSection = 30/(this.sections.length - 1);
-        console.log(this.sections.length);
-        console.log(this.defaultWidthSection)
+        a();
+      } else {
+        this.appProvider.getQuestion().subscribe(async res => {
+          console.log(res);
+          this.sections = res.data;
+  
+          //add time percent calculated property of section 
+          for(let section of this.sections){
+            section.time = this.currentTimeInSeconds/this.sections.length;
+            section.timeTotal = this.currentTimeInSeconds/this.sections.length;
+            section.questionTime = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
+            section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
+          
+          }
 
-        this.startTimer();
-
-        // this.slides.lockSwipes(true);
-
-      })
-
-   
+          this.defaultWidthSection = 30/(this.sections.length - 1);
+          this.startTimer();
+          
+        })
+      }
   }
   next() {
     this.slides.slideNext();
@@ -102,21 +111,25 @@ export class MainScreenPage {
     this.slides.lockSwipes(true );
   }
   nextSection(){
+    this.isSlide = true;
     if( this.sections.length-1 != this.activeIndex ){
       this.activeIndex++;
       this.slideIndex = 0;
       this.phaseStatementTimer = 0;
       // this.slides.lockSwipes(false);
-      this.slides.slideTo(this.slideIndex, 500);
+      this.slides.slideTo(this.slideIndex, 1);
+      // this.isSlide = false;
     }
   }
   prevSection(){
+    this.isSlide = true;
     if(this.activeIndex != 0){
       this.activeIndex--;
       this.slideIndex = 0;
       this.phaseStatementTimer = 0;
       // this.slides.lockSwipes(false);
-      this.slides.slideTo(this.slideIndex, 500);
+      this.slides.slideTo(this.slideIndex, 1);
+      // this.isSlide = false;
     }
   }
 
@@ -155,7 +168,7 @@ export class MainScreenPage {
       }
     } else {
       
-      if(!this.isPause){
+      if(!this.isPause && !this.isSlide){
   
       this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTime - 0.01; 
       this.currentTime+=0.01;
@@ -177,9 +190,12 @@ export class MainScreenPage {
         
       }
       }
-      this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
-      this.currentTimeConsumedInSeconds+=0.01;
-      this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
+      if(!this.isSlide){
+        this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
+        this.currentTimeConsumedInSeconds+=0.01;
+        this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
+      }
+     
     }
 
   
@@ -211,6 +227,6 @@ export class MainScreenPage {
     }
  }
  done(){
-   this.navCtrl.push(PostCritiquePage);
+   this.navCtrl.push(PostCritiquePage, {sections: this.sections});
  }
 }

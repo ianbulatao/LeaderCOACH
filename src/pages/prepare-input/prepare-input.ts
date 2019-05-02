@@ -30,7 +30,7 @@ export class PrepareInputPage {
       this.navCtrl.pop()
     } 
     else if(e.offsetDirection === 2){
-      this.navCtrl.push(MainScreenPage);
+    this.navCtrl.push(PreparePage, {isStartNow: true});
     } 
   }
   startNow(){

@@ -20,16 +20,21 @@ import { TimingAgendaPageModule } from '../pages/timing-agenda/timing-agenda.mod
 import { GroundRulesPageModule } from '../pages/ground-rules/ground-rules.module';
 import { PostCritiquePageModule } from '../pages/post-critique/post-critique.module';
 
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    BreakDownTimePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
+    Ng2GoogleChartsModule,
     SecondScreenPageModule,
     TimeInputPageModule,
     PrepareInputPageModule,
@@ -37,14 +42,17 @@ import { PostCritiquePageModule } from '../pages/post-critique/post-critique.mod
     PreparePageModule,
     TimingAgendaPageModule,
     GroundRulesPageModule,
-    PostCritiquePageModule
+    PostCritiquePageModule,
+    // BreakDownTimePageModule
 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    BreakDownTimePage
+
   ],
   providers: [
     StatusBar,

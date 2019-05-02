@@ -219,7 +219,11 @@ export class PreparePage {
       this.activeIndex++;
     } 
     else if(this.activeIndex == 11){
-      this.navCtrl.push(TimingAgendaPage);
+      if(this.navParams.get('isStartNow')){
+        this.navCtrl.push(MainScreenPage);
+      } else {
+        this.navCtrl.push(TimingAgendaPage);
+      }
     }
   }
   prepareLeadMeeting(){
