@@ -19,6 +19,8 @@ import { PreparePageModule } from '../pages/prepare/prepare.module';
 import { TimingAgendaPageModule } from '../pages/timing-agenda/timing-agenda.module';
 import { GroundRulesPageModule } from '../pages/ground-rules/ground-rules.module';
 import { PostCritiquePageModule } from '../pages/post-critique/post-critique.module';
+import { WhatdoesPageModule } from '../pages/whatdoes/whatdoes.module';
+import { HowWorksPageModule } from '../pages/how-works/how-works.module';
 
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
@@ -43,6 +45,8 @@ import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
     TimingAgendaPageModule,
     GroundRulesPageModule,
     PostCritiquePageModule,
+    WhatdoesPageModule,
+    HowWorksPageModule
     // BreakDownTimePageModule
 
   ],

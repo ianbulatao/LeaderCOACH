@@ -4,7 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { WhatdoesPage } from '../pages/whatdoes/whatdoes';
+import { HowWorksPage } from '../pages/how-works/how-works';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,17 +15,32 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pagesCoach: Array<{ title: string, component: any}>;
+  pagesLeader: Array<{ title: string, component: any }>;
+  pagesContact: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      // { title: 'List', component: ListPage }
+    this.pagesCoach = [
+      { title: 'Coach myself', component: WhatdoesPage },
+      { title: 'Coach someone' , component: WhatdoesPage },
+      { title: 'Lead a meeting', component: WhatdoesPage },
+      { title: 'Set ground rules', component: WhatdoesPage }
+  ];
+    this.pagesLeader = [
+      { title: 'What it does.', component: WhatdoesPage },
+      { title: 'How it works.', component: HowWorksPage },
+      { title: 'What coaching is/is not.', component: WhatdoesPage },
+      { title: 'Why these colors?', component: WhatdoesPage },
+      { title: 'Why is equal to ideal?', component: WhatdoesPage }
     ];
-
+    this.pagesContact = [
+      { title: 'Share experience', component: WhatdoesPage },
+      { title: 'Give feedback', component: WhatdoesPage },
+      { title: 'Suggest modules', component: WhatdoesPage }
+    ];
   }
 
   initializeApp() {
