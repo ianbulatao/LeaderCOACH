@@ -6,6 +6,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { WhatdoesPage } from '../pages/whatdoes/whatdoes';
 import { HowWorksPage } from '../pages/how-works/how-works';
+import { LeaderWhatCoachPage } from '../pages/leader-what-coach/leader-what-coach';
+import { LeaderWhyColorsPage } from '../pages/leader-why-colors/leader-why-colors';
+import { LeaderWhyEqualIdealPage } from '../pages/leader-why-equal-ideal/leader-why-equal-ideal';
+import { ContactGiveFeedbackPage } from '../pages/contact-give-feedback/contact-give-feedback';
+import { ContactShareExperiencePage } from '../pages/contact-share-experience/contact-share-experience';
+import { ContactSuggestPage } from '../pages/contact-suggest/contact-suggest';
 
 @Component({
   templateUrl: 'app.html'
@@ -32,14 +38,14 @@ export class MyApp {
     this.pagesLeader = [
       { title: 'What it does.', component: WhatdoesPage },
       { title: 'How it works.', component: HowWorksPage },
-      { title: 'What coaching is/is not.', component: WhatdoesPage },
-      { title: 'Why these colors?', component: WhatdoesPage },
-      { title: 'Why is equal to ideal?', component: WhatdoesPage }
+      { title: 'What coaching is/is not.', component: LeaderWhatCoachPage },
+      { title: 'Why these colors?', component: LeaderWhyColorsPage },
+      { title: 'Why is equal to ideal?', component: LeaderWhyEqualIdealPage }
     ];
     this.pagesContact = [
-      { title: 'Share experience', component: WhatdoesPage },
-      { title: 'Give feedback', component: WhatdoesPage },
-      { title: 'Suggest modules', component: WhatdoesPage }
+      { title: 'Share experience', component: ContactShareExperiencePage },
+      { title: 'Give feedback', component: ContactGiveFeedbackPage },
+      { title: 'Suggest modules', component: ContactSuggestPage }
     ];
   }
 

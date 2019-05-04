@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the HowWorksPage page.
@@ -17,9 +18,12 @@ export class HowWorksPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  
+  gotoBoot() {
+    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.popToRoot();
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad HowWorksPage');
   }
-
 }

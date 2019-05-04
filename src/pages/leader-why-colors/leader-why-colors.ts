@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 
+
 /**
- * Generated class for the WhatdoesPage page.
+ * Generated class for the LeaderWhyColorsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,10 +12,10 @@ import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
-  selector: 'page-whatdoes',
-  templateUrl: 'whatdoes.html',
+  selector: 'page-leader-why-colors',
+  templateUrl: 'leader-why-colors.html',
 })
-export class WhatdoesPage {
+export class LeaderWhyColorsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,6 +25,7 @@ export class WhatdoesPage {
     this.navCtrl.popToRoot();
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad WhatdoesPage');
+    console.log('ionViewDidLoad LeaderWhyColorsPage');
   }
+
 }

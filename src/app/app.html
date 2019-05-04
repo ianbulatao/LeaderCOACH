@@ -7,34 +7,6 @@
 
   <ion-content class="menu-bg-color">
     <div class="menu-list">
-        
-      <!--  <p text-left></p>
-        <ul>
-          <li>Coach yourself</li>
-          <li>Coach someone</li>
-          <li>Lead a meeting</li>
-        </ul>
-        <hr>
-        <p text-left>About Leader COACH</p>
-        <ul>
-          <li>What it is.</li>
-          <li>How it works.</li>
-          <li>What coaching is/is not.</li>
-          <li>Why these colors?</li>
-          <li>Why is equal to ideal?</li>
-        </ul>
-        <hr>
-        <p>Contact Us</p>
-        <ul>
-          <li>Share experience</li>
-          <li>Give feedback</li>
-          <li>Suggest modules</li>
-        </ul>
-        <p>Quotes</p>
-        <hr>
-            <ion-toggle toggle-class="toggle-calm">Auto-advance questions?</ion-toggle>
-            <p>Auto-advance questions?</p>
-            <ion-toggle toggle-class="toggle-calm"></ion-toggle> -->
    <ion-list no-lines>
      <p>Get questions to help you…</p>
      <hr>
@@ -53,15 +25,19 @@
         </button>
       <p menuClose (click)="openPage()" >Quotes</p>
       <hr>
-      <ion-item>
-        <ion-toggle class="ion-tog" toggle-class="toggle-calm"></ion-toggle>
-        <ion-label>Auto-advance questions?</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-toggle class="ion-tog" toggle-class="toggle-calm"></ion-toggle>
-        <ion-label>Hide/show timer</ion-label>
-      </ion-item>
-    </ion-list>
+      <p>Settings</p>
+      <hr>
+      <div >
+        <ion-item class="toggle">
+            <ion-toggle  item-start checked="true"></ion-toggle>
+            <ion-label class="it-toggle">Auto-advance questions?</ion-label>
+          </ion-item>
+          <ion-item class="toggle">
+            <ion-toggle item-start checked="true" ></ion-toggle>
+            <ion-label class="it-toggle">Hide/show timer</ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
   </div>
   </ion-content>
 </ion-menu>

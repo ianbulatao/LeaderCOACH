@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -21,6 +22,12 @@ import { GroundRulesPageModule } from '../pages/ground-rules/ground-rules.module
 import { PostCritiquePageModule } from '../pages/post-critique/post-critique.module';
 import { WhatdoesPageModule } from '../pages/whatdoes/whatdoes.module';
 import { HowWorksPageModule } from '../pages/how-works/how-works.module';
+import { LeaderWhatCoachPageModule } from '../pages/leader-what-coach/leader-what-coach.module';
+import { LeaderWhyColorsPageModule } from '../pages/leader-why-colors/leader-why-colors.module';
+import { LeaderWhyEqualIdealPageModule } from '../pages/leader-why-equal-ideal/leader-why-equal-ideal.module';
+import { ContactGiveFeedbackPageModule } from '../pages/contact-give-feedback/contact-give-feedback.module';
+import { ContactShareExperiencePageModule } from '../pages/contact-share-experience/contact-share-experience.module';
+import { ContactSuggestPageModule } from '../pages/contact-suggest/contact-suggest.module';
 
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
@@ -46,7 +53,13 @@ import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
     GroundRulesPageModule,
     PostCritiquePageModule,
     WhatdoesPageModule,
-    HowWorksPageModule
+    HowWorksPageModule,
+    LeaderWhatCoachPageModule,
+    LeaderWhyColorsPageModule,
+    LeaderWhyEqualIdealPageModule,
+    ContactGiveFeedbackPageModule,
+    ContactShareExperiencePageModule,
+    ContactSuggestPageModule
     // BreakDownTimePageModule
 
   ],
@@ -61,6 +74,7 @@ import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
   providers: [
     StatusBar,
     SplashScreen,
+    EmailComposer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AppProvider
   ]

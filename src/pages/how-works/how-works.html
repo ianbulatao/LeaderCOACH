@@ -5,46 +5,48 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar hideBackButton>
-    <button ion-button show menuToggle>
-      <ion-icon color="light" name="menu"></ion-icon>
-    </button>
-    <div class="logo-container">
-      <div class="logo">
-        <img src="assets/imgs/leader.png" alt="">
-        <p class="logo-text">LeaderCOACH</p>
+    <ion-navbar>
+      <ion-buttons left>
+       <button ion-button icon-only (click)="gotoBoot()">
+         <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>  
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/imgs/leader.png" alt="">
+          <p class="logo-text">LeaderCOACH</p>
+        </div>
       </div>
-    </div>
-    <!-- <ion-title>SecondScreen</ion-title> -->
-  </ion-navbar>
-</ion-header>
+    </ion-navbar>
+  </ion-header>
+  
 
 <ion-content padding>
-  <h2>How it works</h2>
+  <h2 class="infoHead">How it works</h2>
     <ul>
-      <li><p>LeaderCOACH® begins by asking what you essentially want to do: coach yourself, coach someone or lead a meeting. There are
+      <li><p><span class="fonty">LeaderCOACH®</span> begins by asking what you essentially want to do: coach yourself, coach someone or lead a meeting. There are
       33 different modules (or goals) from which to choose. You choose how much time to devote to the session, and what your objective
       is within that time frame. (This increases intentionality and improves your chance of success.)
       </p></li>
       <li><p>
-         LeaderCOACH gives you the option to prepare for the session by prompting you with questions to reflect on, ultimately producing
+          <span class="fonty">LeaderCOACH</span> gives you the option to prepare for the session by prompting you with questions to reflect on, ultimately producing
         a percent likelihood of success
       </p></li>
       <li><p>
-         LeaderCOACH starts with a preview of the proposed timing (which you can adjust) organized into an agenda with timed phases
+          <span class="fonty">LeaderCOACH</span> starts with a preview of the proposed timing (which you can adjust) organized into an agenda with timed phases
         (each of which you can adjust). Once accepted, the first phase begins. Each phase begins with a statement of intent for that
         phase, then presents the first question. Swipe left to get the next question, or let auto-advance move you to the next question.
         (You may disable auto-advance, and hide the timer if you wish.)
       </p></li>
       <li><p>
-         LeaderCOACH questions are merely launching pads from which to explore a perspective. You choose how prescriptively to use
+          <span class="fonty">LeaderCOACH</span> questions are merely launching pads from which to explore a perspective. You choose how prescriptively to use
         the questions. Put them into your own words. Ask related questions, but be careful not to jump to another phase/ perspective
         with your question. Once a phase has been fully explored, you can advance to the next phase—or return to a previous phase.
         The result is an efficient, 360-degree view of your subject.
       </p></li>
       <li><p>
          A post-critique of your session is optional. Questions prompt you to reflect on what went well, and what you’d do differently
-        next time. If you know your Myers-Briggs® type code, LeaderCOACH will produce pie charts of how it would predict you spent
+        next time. If you know your Myers-Briggs® type code, <span class="fonty">LeaderCOACH</span> will produce pie charts of how it would predict you spent
         time in the session (by phase), your actual time spent, and the ideal (an equal balance).
       </p></li>
     </ul>
