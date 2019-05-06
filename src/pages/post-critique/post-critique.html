@@ -57,7 +57,7 @@
         <input *ngIf="questions[activeIndex].isText" [(ngModel)]="questions[this.activeIndex].answer" >
         <ion-item class="personality" *ngIf="questions[activeIndex].isDropDown">
           <ion-label>Personality Type</ion-label>
-          <ion-select [(ngModel)]="questions[this.activeIndex].answer"  multiple="false" >
+          <ion-select [(ngModel)]="personalType"  multiple="false" >
             <ion-option value="ISTJ" >ISTJ</ion-option>
             <ion-option value="ISFJ" >ISFJ</ion-option>
             <ion-option value="INFJ" >INFJ</ion-option>

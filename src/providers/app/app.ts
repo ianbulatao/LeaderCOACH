@@ -12,6 +12,8 @@ export class AppProvider {
   type: string = '';
   questionType: string = '';
   minutes: number = 0;
+  personalType = '';
+
  TimeConsumedInSeconds;
   constructor(public http: HttpClient) {
     console.log('Hello AppProvider Provider');

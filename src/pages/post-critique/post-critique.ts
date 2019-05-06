@@ -25,6 +25,7 @@ export class PostCritiquePage {
   activeIndex = 0;
   totalTimeConsumed = 0;
   type = '';
+  personalType = '';
   constructor(public navCtrl: NavController, public navParams: NavParams, public appProvider: AppProvider) {
     console.log(this.navParams.get('sections'))
     this.totalTimeConsumed = this.appProvider.TimeConsumedInSeconds;
@@ -89,7 +90,7 @@ export class PostCritiquePage {
       } else if(this.activeIndex == 7){
         this.activeIndex = 8;
       }else if(this.activeIndex == 8){
-        this.navCtrl.push(BreakDownTimePage, {sections: this.navParams.get('sections')});
+        this.navCtrl.push(BreakDownTimePage, {sections: this.navParams.get('sections'), personalType: this.personalType});
       }
     },20)
   }
