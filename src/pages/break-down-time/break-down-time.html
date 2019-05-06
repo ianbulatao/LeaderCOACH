@@ -19,17 +19,26 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
-  <h4 text-center>Breakdown of Time</h4>
- <ion-grid no-padding>
-   <ion-row>
-     <ion-col no-padding>
+  <h4 text-center margin-top>Breakdown of Time</h4>
+ <ion-grid class="pie-container">
+   <ion-row text-center>
+     <ion-col padding-horizontal>
+        <h5 no-margin>Actual</h5>
       <google-chart [data]="actual"></google-chart>
      </ion-col>
-     <ion-col no-padding>
+     <ion-col padding-horizontal>
+        <h5 no-margin>Ideal</h5>
         <google-chart [data]="ideal"></google-chart>
        </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col padding-horizontal>
+       <div *ngFor="let section of sections" margin-vertical class="section">
+          <div class="circle" [ngStyle]="{'background-color': section?.color}"></div> <p  class="phase"><span>{{section?.title}}</span></p>
+       </div>
+     </ion-col>
    </ion-row>
  </ion-grid>
 

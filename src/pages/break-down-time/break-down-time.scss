@@ -1,5 +1,39 @@
 
 page-break-down-time {
-
+    .pie-container{
+        h5{
+            z-index: 1;
+            position: relative;
+            top: 20px;
+        }
+       .section{
+        .circle{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-color: green;
+            border-radius: 100%;
+            margin-right: 1px;
+            position: relative;
+            top: 2px;
+        }
+       }
+        .phase{
+            display: inline;
+        }
+        // .phase:before {
+        //     border-radius: 100%;
+        //     counter-increment: section;
+        //     content: counter(section);
+        //     background: #f1562c;
+        //     color: #f1562c;
+        //     padding: 0px;
+        //     border: none;
+        //     text-align: center;
+        //     width: 16px;
+        //     margin-right: 9px;
+        //     display: inline-block;
+        // }
+    }
 
 }
