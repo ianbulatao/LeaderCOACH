@@ -82,4 +82,7 @@ export class TimingAgendaPage {
       this.navCtrl.push(MainScreenPage, {timeSetToAgendaPage: this.sections})
     }
   }
+  next(){
+    this.navCtrl.push(MainScreenPage, {timeSetToAgendaPage: this.sections})
+  }
 }
