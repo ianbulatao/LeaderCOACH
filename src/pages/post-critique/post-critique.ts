@@ -23,9 +23,12 @@ export class PostCritiquePage {
   // YesOrNoSelected;
   answer
   activeIndex = 0;
+  totalTimeConsumed = 0;
   type = '';
   constructor(public navCtrl: NavController, public navParams: NavParams, public appProvider: AppProvider) {
     console.log(this.navParams.get('sections'))
+    this.totalTimeConsumed = this.appProvider.TimeConsumedInSeconds;
+    console.log(this.totalTimeConsumed)
     this.type = this.appProvider.type;
     this.questions = [
       {question: 'Would you like to evaluate your session?', isYesNo: true, answer: null},
@@ -86,7 +89,7 @@ export class PostCritiquePage {
       } else if(this.activeIndex == 7){
         this.activeIndex = 8;
       }else if(this.activeIndex == 8){
-        this.navCtrl.push(BreakDownTimePage);
+        this.navCtrl.push(BreakDownTimePage, {sections: this.navParams.get('sections')});
       }
     },20)
   }

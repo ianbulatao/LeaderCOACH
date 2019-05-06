@@ -168,7 +168,7 @@ export class MainScreenPage {
       }
     } else {
       
-      if(!this.isPause && !this.isSlide){
+      if(!this.isPause){
   
       this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTime - 0.01; 
       this.currentTime+=0.01;
@@ -190,11 +190,11 @@ export class MainScreenPage {
         
       }
       }
-      if(!this.isSlide){
+      // if(!this.isSlide){
         this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
         this.currentTimeConsumedInSeconds+=0.01;
         this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
-      }
+      // }
      
     }
 
@@ -227,6 +227,7 @@ export class MainScreenPage {
     }
  }
  done(){
+   this.appProvider.TimeConsumedInSeconds = this.currentTimeConsumedInSeconds;
    this.navCtrl.push(PostCritiquePage, {sections: this.sections});
  }
 }

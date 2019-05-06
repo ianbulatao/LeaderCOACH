@@ -14,17 +14,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'break-down-time.html',
 })
 export class BreakDownTimePage {
+  sections = [];
   actual = {
     chartType: 'PieChart',
     dataTable: [
       ['Languages', 'Percent'],
-      ['Ionic',     33],
-      ['Angular',      33],
-      ['JavaScript',  33]
+      ['Test',     33],
+      ['Test',      33],
+      ['Test',  33]
     ],
     options: {
-    'title': 'Actual',
+    // 'title': 'Actual',
     'legend': 'none',
+    titlePosition: 'none',
+    chartArea:{left:0,top:0,width:"100%",height:"100%"},
+    // colors: [],
     // 'width': 150,
     // 'height': 150
     }
@@ -33,12 +37,12 @@ export class BreakDownTimePage {
     chartType: 'PieChart',
     dataTable: [
       ['Languages', 'Percent'],
-      ['Ionic',     33],
-      ['Angular',      33],
-      ['JavaScript',  33]
     ],
     options: {
-    'title': 'Ideal',
+      chartArea:{left:0,top:0,width:"100%",height:"100%"},
+      colors:[],
+    // 'title': 'Ideal',
+    titlePosition: 'none',
     'legend': 'none',
 
     // 'width': 150,
@@ -47,6 +51,12 @@ export class BreakDownTimePage {
   };
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.sections = this.navParams.get('sections');
+    this.sections.forEach(element => {
+      this.ideal.dataTable.push([element.title, {v: element.percent, f: element.percent}]);
+      this.ideal.options.colors.push(element.color);
+    });
+    console.log(this.sections);
   }
 
   ionViewDidLoad() {
