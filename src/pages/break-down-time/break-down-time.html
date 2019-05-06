@@ -23,18 +23,40 @@
 
   <h4 text-center margin-top>Breakdown of Time</h4>
  <ion-grid class="pie-container">
+   <ion-row *ngIf="isPredicted">
+     <ion-col  text-center>
+      <h5 no-margin>Predicted</h5>
+     </ion-col>
+   </ion-row>
+   <ion-row *ngIf="isPredicted" text-center>
+     <ion-col>
+        <google-chart [data]="predicted"></google-chart>
+     </ion-col>
+     <ion-col style="padding: 28px 5px 5px 5px;">
+        <div margin-vertical class="section">
+            <div class="circle" style="background-color:#33a457"></div> <p  class="phase"><span>Sensing</span></p>
+         </div>
+         <div margin-vertical class="section">
+            <div class="circle" style="background-color:yellow"></div> <p  class="phase"><span>Intution</span></p>
+         </div>    <div margin-vertical class="section">
+            <div class="circle" style="background-color:#33348e"></div> <p  class="phase"><span>Thinking</span></p>
+         </div>    <div margin-vertical class="section">
+            <div class="circle" style="background-color:#cc2229"></div> <p  class="phase"><span>Feeling</span></p>
+         </div>
+     </ion-col>
+   </ion-row>
    <ion-row text-center>
-     <ion-col padding-horizontal>
+     <ion-col >
         <h5 no-margin>Actual</h5>
       <google-chart [data]="actual"></google-chart>
      </ion-col>
-     <ion-col padding-horizontal>
+     <ion-col >
         <h5 no-margin>Ideal</h5>
         <google-chart [data]="ideal"></google-chart>
        </ion-col>
    </ion-row>
    <ion-row>
-     <ion-col padding-horizontal>
+     <ion-col >
        <div *ngFor="let section of sections" margin-vertical class="section">
           <div class="circle" [ngStyle]="{'background-color': section?.color}"></div> <p  class="phase"><span>{{section?.title}}</span></p>
        </div>
