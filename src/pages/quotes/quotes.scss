@@ -15,13 +15,11 @@ page-quotes {
     .fonty {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin-top: 10vw;
     }
-    ion-card {
-        padding: 20vw 10vw;
-        margin: 20px;
-        background: opacity($color: light);
-        height: 50vh;
-        min-height: 10vh;
-        min-width: 10vw;
+    .quot {
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 2vw;
     }
 }

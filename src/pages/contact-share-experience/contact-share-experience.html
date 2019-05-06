@@ -24,16 +24,10 @@
   <h2 class="fonty">Share your Experience</h2>
   <hr>
   <div class = "emailForm" padding>
-    <ion-item>
       <ion-label>
-        <ion-label color="primary" stacked>Subject</ion-label>
-        <ion-input type="text" placeholder="Shared Experience"></ion-input>
+        <ion-label color="primary" class="emailLabel" stacked>Message: </ion-label>
+        <ion-textarea class="txtArea" rows="3" [(ngModel)]="body" type="text"></ion-textarea>
       </ion-label>
-    </ion-item>
-        <ion-label>
-          <ion-label color="primary" stacked>Your Experience:</ion-label>
-          <ion-input [(ngModel)]="body" type="text"></ion-input>
-        </ion-label>
     <button ion-button block (click)="send()">Send</button>
   </div>
 </ion-content>

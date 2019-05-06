@@ -19,7 +19,7 @@ import { ToastController } from 'ionic-angular';
 })
 export class ContactGiveFeedbackPage {
   subject = 'Application Feedback'
-  body = 'Whats your feedback'
+  body = ''
 
   constructor(
     public navCtrl: NavController, 

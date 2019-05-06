@@ -2,24 +2,24 @@
   <ion-content class="menu-bg-color">
     <div class="menu-list">
    <ion-list no-lines>
-     <p>Get questions to help you…</p>
+     <p class="fonty">Get questions to help you…</p>
      <hr>
-        <button menuClose ion-item *ngFor="let p of pagesCoach" (click)="openPage(p)">
+        <button menuClose ion-item *ngFor="let p of pagesCoach" (click)="openPage(p , p.type)">
           {{ p.title }}
         </button>
-      <p>About LeaderCOACH</p>
+      <p class="fonty">About LeaderCOACH</p>
       <hr>
         <button menuClose ion-item *ngFor="let p of pagesLeader" (click)="openPage(p)">
           {{ p.title }}
         </button>
-      <p>Contact Us</p>
+      <p class="fonty">Contact Us</p>
       <hr>
         <button menuClose ion-item *ngFor="let p of pagesContact" (click)="openPage(p)">
           {{ p.title }}
         </button>
-      <p menuClose (click)="openPage('QuotesPage')" >Quotes</p>
+      <p class="fonty" menuClose (click)="openPage('QuotesPage')" >Quotes</p>
       <hr>
-      <p>Settings</p>
+      <p class="fonty">Settings</p>
       <hr>
       <div >
         <ion-item class="toggle">

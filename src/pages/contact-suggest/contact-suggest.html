@@ -24,16 +24,10 @@
   <h2 class="fonty">Suggest new modules/question</h2>
   <hr>
   <div class = "emailForm" padding>
-    <ion-item>
-      <ion-label>
-        <ion-label color="primary" stacked>Subject</ion-label>
-        <ion-input type="text" placeholder="Suggestions"></ion-input>
-      </ion-label>
-    </ion-item>
-        <ion-label>
-          <ion-label color="primary" stacked>Your Suggestions: </ion-label>
-          <ion-input [(ngModel)]="body" type="text"></ion-input>
-        </ion-label>
+    <ion-label>
+      <ion-label color="primary" class="emailLabel" stacked>Suggestion: </ion-label>
+      <ion-textarea class="txtArea" rows="3" [(ngModel)]="body" type="text"></ion-textarea>
+    </ion-label>
     <button ion-button block (click)="send()">Send</button>
   </div>
 </ion-content>

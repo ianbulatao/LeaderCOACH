@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AppProvider } from '../providers/app/app';
 
 import { HomePage } from '../pages/home/home';
 import { WhatdoesPage } from '../pages/whatdoes/whatdoes';
@@ -13,6 +14,8 @@ import { ContactGiveFeedbackPage } from '../pages/contact-give-feedback/contact-
 import { ContactShareExperiencePage } from '../pages/contact-share-experience/contact-share-experience';
 import { ContactSuggestPage } from '../pages/contact-suggest/contact-suggest';
 import { QuotesPage } from '../pages/quotes/quotes';
+import { SecondScreenPage } from '../pages/second-screen/second-screen';
+import { GroundRulesPage } from '../pages/ground-rules/ground-rules';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,20 +24,23 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
-
-  pagesCoach: Array<{ title: string, component: any}>;
+  pagesCoach: Array<{ title: string, component: any, type: string}>;
   pagesLeader: Array<{ title: string, component: any }>;
   pagesContact: Array<{ title: string, component: any }>;
-
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(
+    public platform: Platform, 
+    public statusBar: StatusBar, 
+    public splashScreen: SplashScreen,
+    public appProvider: AppProvider
+  ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pagesCoach = [
-      { title: 'Coach myself', component: WhatdoesPage },
-      { title: 'Coach someone' , component: WhatdoesPage },
-      { title: 'Lead a meeting', component: WhatdoesPage },
-      { title: 'Set ground rules', component: WhatdoesPage }
+      { title: 'Coach myself', component: SecondScreenPage, type: 'coach_myself' },
+      { title: 'Coach someone', component: SecondScreenPage, type: 'coach_an_employee' },
+      { title: 'Lead a meeting', component: SecondScreenPage, type: 'lead_a_meeting' },
+      { title: 'Set ground rules', component: GroundRulesPage, type: null }
   ];
     this.pagesLeader = [
       { title: 'What it does.', component: WhatdoesPage },
@@ -52,17 +58,16 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+  openPage(page, type) {
     if (page === "QuotesPage") { this.nav.setRoot(QuotesPage); }
-    else { this.nav.setRoot(page.component); }
+    else {
+      this.nav.setRoot(page.component, { type: type });
+      this.appProvider.type = type;
+    }
   }
 }
