@@ -12,6 +12,7 @@ import { LeaderWhyEqualIdealPage } from '../pages/leader-why-equal-ideal/leader-
 import { ContactGiveFeedbackPage } from '../pages/contact-give-feedback/contact-give-feedback';
 import { ContactShareExperiencePage } from '../pages/contact-share-experience/contact-share-experience';
 import { ContactSuggestPage } from '../pages/contact-suggest/contact-suggest';
+import { QuotesPage } from '../pages/quotes/quotes';
 
 @Component({
   templateUrl: 'app.html'
@@ -61,6 +62,7 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if (page === "QuotesPage") { this.nav.setRoot(QuotesPage); }
+    else { this.nav.setRoot(page.component); }
   }
 }

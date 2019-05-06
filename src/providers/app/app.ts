@@ -15,13 +15,8 @@ export class AppProvider {
   constructor(public http: HttpClient) {
     console.log('Hello AppProvider Provider');
   }
-  getAllList(){
-    return this.http.get<any>('assets/json/list.json');
-  }
-  getQuestion(){
-    return this.http.get<any>(`assets/json/${this.type}/${this.questionType.trim().toLowerCase().replace(/ /g, '_')}.json`);
-  }
-  getGroundRules(){
-    return this.http.get<any>('assets/json/ground_rules.json');
-  }
+  getAllList() { return this.http.get<any>('assets/json/list.json'); }
+  getQuestion() { return this.http.get<any>(`assets/json/${this.type}/${this.questionType.trim().toLowerCase().replace(/ /g, '_')}.json`); }
+  getGroundRules() { return this.http.get<any>('assets/json/ground_rules.json'); }
+  getAllQuotes() { return this.http.get<any>('assets/json/quotes.json'); }
 }

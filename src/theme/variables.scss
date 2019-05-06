@@ -44,6 +44,7 @@ $colors: (
   feeling:    #FF0000,
   thinking:   #0000ff
 );
+$app-background: linear-gradient(to bottom, color($colors, light) 0%, color($colors, dark) 100%);
 
 
 // App iOS Variables

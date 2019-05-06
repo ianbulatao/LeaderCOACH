@@ -28,6 +28,7 @@ import { LeaderWhyEqualIdealPageModule } from '../pages/leader-why-equal-ideal/l
 import { ContactGiveFeedbackPageModule } from '../pages/contact-give-feedback/contact-give-feedback.module';
 import { ContactShareExperiencePageModule } from '../pages/contact-share-experience/contact-share-experience.module';
 import { ContactSuggestPageModule } from '../pages/contact-suggest/contact-suggest.module';
+import { QuotesPageModule } from '../pages/quotes/quotes.module';
 
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
@@ -59,7 +60,8 @@ import { BreakDownTimePage } from '../pages/break-down-time/break-down-time';
     LeaderWhyEqualIdealPageModule,
     ContactGiveFeedbackPageModule,
     ContactShareExperiencePageModule,
-    ContactSuggestPageModule
+    ContactSuggestPageModule,
+    QuotesPageModule
     // BreakDownTimePageModule
 
   ],

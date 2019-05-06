@@ -1,10 +1,4 @@
 <ion-menu [swipeEnabled]="false" [content]="content">
-  <!-- <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
-
   <ion-content class="menu-bg-color">
     <div class="menu-list">
    <ion-list no-lines>
@@ -23,7 +17,7 @@
         <button menuClose ion-item *ngFor="let p of pagesContact" (click)="openPage(p)">
           {{ p.title }}
         </button>
-      <p menuClose (click)="openPage()" >Quotes</p>
+      <p menuClose (click)="openPage('QuotesPage')" >Quotes</p>
       <hr>
       <p>Settings</p>
       <hr>

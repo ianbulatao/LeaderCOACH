@@ -1,0 +1,27 @@
+page-quotes {
+    background: map-get($colors , dark);
+    opacity: 0.5;
+    .aster { 
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+    .head {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+    }
+    ion-slides {
+        margin-top: -15vw;
+    }
+    .fonty {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+    ion-card {
+        padding: 20vw 10vw;
+        margin: 20px;
+        background: opacity($color: light);
+        height: 50vh;
+        min-height: 10vh;
+        min-width: 10vw;
+    }
+}
