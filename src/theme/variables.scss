@@ -21,9 +21,8 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
+$toast-md-background: transparent;
+$toast-width: 100%;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -42,7 +41,8 @@ $colors: (
   sensing:    #008000,
   intuition:  #ffff00,
   feeling:    #FF0000,
-  thinking:   #0000ff
+  thinking:   #0000ff,
+  answer:     #7f8c8d
 );
 $app-background: linear-gradient(to bottom, color($colors, light) 0%, color($colors, dark) 100%);
 

@@ -23,11 +23,11 @@
       <hr>
       <div >
         <ion-item class="toggle">
-            <ion-toggle  item-start checked="true"></ion-toggle>
+            <ion-toggle (ionChange)="updateQuestion($event)" item-start checked="true"></ion-toggle>
             <ion-label class="it-toggle">Auto-advance questions?</ion-label>
           </ion-item>
           <ion-item class="toggle">
-            <ion-toggle item-start checked="true" ></ion-toggle>
+            <ion-toggle (ionChange)="updateTimer($event)" item-start checked="true" ></ion-toggle>
             <ion-label class="it-toggle">Hide/show timer</ion-label>
           </ion-item>
         </div>

@@ -21,13 +21,11 @@
 </ion-header>
 
 <ion-content class="quoteSlides" padding>
-  <h2 class="head"> LeaderCOACH Motivation</h2>
+  <h2 class="head">Why LeaderCOACH?</h2>
   <hr>
     <ion-slides pager="false">
       <ion-slide *ngFor="let quote of quotes">
-          <h3 class="quot">
-          <span class="aster">"</span> {{quote.content}}
-          <span class="aster">"</span>
+          <h3 class="quot"> {{quote.content}}
           </h3>
           <h2 class="fonty">{{quote.author}}</h2>
     </ion-slide>

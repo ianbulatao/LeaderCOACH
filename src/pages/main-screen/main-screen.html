@@ -14,7 +14,7 @@
   <div class="logo-container">
       <div class="header-phase">
         <p class="phase">{{questionType}}</p>
-        <p>{{convertSecondstoTime(currentTimeConsumedInSeconds)}} consumed</p>
+        <div *ngIf="hideTimer"> <p>{{convertSecondstoTime(currentTimeConsumedInSeconds)}} consumed</p></div>
       </div>
       <div class="logo">
           <img src="assets/imgs/leader.png" alt="">
@@ -28,7 +28,7 @@
      
 
   </div>
-  <div class="totalTime">
+  <div *ngIf="hideTimer" class="totalTime">
       <div class="timer" [ngStyle]="{'background-color': sections[activeIndex]?.color, 'width' : getPercentWidthSectionTime(sections[activeIndex]?.time,sections[activeIndex]?.timeTotal) +'%'}"></div>
   </div>
 </ion-header>

@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { AppProvider } from '../../providers/app/app';
 import { BreakDownTimePage } from '../break-down-time/break-down-time';
-
+import { ToastController } from 'ionic-angular';
 /**
  * Generated class for the PostCritiquePage page.
  *
@@ -26,7 +26,7 @@ export class PostCritiquePage {
   totalTimeConsumed = 0;
   type = '';
   personalType = '';
-  constructor(public navCtrl: NavController, public navParams: NavParams, public appProvider: AppProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public appProvider: AppProvider, private toastCtrl: ToastController) {
     console.log(this.navParams.get('sections'))
     this.totalTimeConsumed = this.appProvider.TimeConsumedInSeconds;
     console.log(this.totalTimeConsumed)
@@ -55,14 +55,36 @@ export class PostCritiquePage {
   }
   
   swipeEvent(e){
-    console.log(e);
-    if(e.offsetDirection === 4){
-      
-    } 
-    else if(e.offsetDirection === 2){
-      this.nextStage();
-    } 
+    this.presentToast(e);
   }
+  presentToast(e) { 
+    let duration:number = 2000;
+    let elapsedTime:number = 0;
+    let intervalHandler = setInterval( () => { elapsedTime += 10; },10);   
+    let toast = this.toastCtrl.create({
+      message: 'Do you want to proceed?',
+      position: 'middle',
+      duration: duration,
+      showCloseButton: true,
+      closeButtonText: "Proceed",
+      cssClass: 'toast'
+    });
+    
+    toast.onDidDismiss(() => {
+      clearInterval(intervalHandler);
+      if (elapsedTime < duration){
+        console.log('Procceed');
+        console.log(e);
+        if (e.offsetDirection === 2) {
+          this.nextStage();
+        } 
+      }
+    });
+    
+    toast.present();
+  }
+
+  
   nextStage(){
     setTimeout(()=> {
       if(this.activeIndex == 0){

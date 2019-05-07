@@ -37,7 +37,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pagesCoach = [
-      { title: 'Coach myself', component: SecondScreenPage, type: 'coach_myself' },
+      { title: 'Coach yourself', component: SecondScreenPage, type: 'coach_myself' },
       { title: 'Coach someone', component: SecondScreenPage, type: 'coach_an_employee' },
       { title: 'Lead a meeting', component: SecondScreenPage, type: 'lead_a_meeting' },
       { title: 'Set ground rules', component: GroundRulesPage, type: null }
@@ -46,8 +46,8 @@ export class MyApp {
       { title: 'What it does.', component: WhatdoesPage },
       { title: 'How it works.', component: HowWorksPage },
       { title: 'What coaching is/is not.', component: LeaderWhatCoachPage },
-      { title: 'Why these colors?', component: LeaderWhyColorsPage },
-      { title: 'Why is equal to ideal?', component: LeaderWhyEqualIdealPage }
+      { title: 'Why these colors.', component: LeaderWhyColorsPage },
+      { title: 'Why is equal ideal.', component: LeaderWhyEqualIdealPage }
     ];
     this.pagesContact = [
       { title: 'Share experience', component: ContactShareExperiencePage },
@@ -68,6 +68,22 @@ export class MyApp {
     else {
       this.nav.setRoot(page.component, { type: type });
       this.appProvider.type = type;
+    }
+  }
+  updateTimer(e) {
+    if (e.checked) {
+      this.appProvider.timerStat = true;
+    }
+    else {
+      this.appProvider.timerStat = false;
+    }
+  }
+  updateQuestion(e) {
+    if (e.checked) {
+      this.appProvider.isSlide = true;
+    }
+    else {
+      this.appProvider.isSlide = false;
     }
   }
 }

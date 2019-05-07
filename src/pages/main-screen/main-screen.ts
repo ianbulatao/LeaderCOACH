@@ -37,6 +37,7 @@ export class MainScreenPage {
   isPhaseStatement = true;
   phaseStatementTimer = 0;
   isSlide = false;
+  hideTimer;
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -70,7 +71,6 @@ export class MainScreenPage {
             section.timeTotal = this.currentTimeInSeconds/this.sections.length;
             section.questionTime = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
             section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
-          
           }
 
           this.defaultWidthSection = 30/(this.sections.length - 1);
@@ -78,6 +78,7 @@ export class MainScreenPage {
           
         })
       }
+    this.hideTimer = this.appProvider.timerStat;
   }
   next() {
     this.slides.slideNext();
@@ -92,7 +93,6 @@ export class MainScreenPage {
         console.log('slide end');
         // this.slides.lockSwipes(true);
     })
-
   }
 
   swipeEvent(e){
@@ -158,48 +158,50 @@ export class MainScreenPage {
 //    }
 //    console.log(this.sections[this.activeIndex].time,this.sections[this.activeIndex].timeTotal)
 //    },1000)
-   
-  this.timerInterval2 = setInterval(()=> {
-    if(this.slides.getActiveIndex() == 0 ){
-      this.phaseStatementTimer += 0.01;
-      if(this.phaseStatementTimer >= 3){
-        this.phaseStatementTimer = 0;
-        this.slides.slideNext();
-      }
-    } else {
-      
-      if(!this.isPause){
-  
-      this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTime - 0.01; 
-      this.currentTime+=0.01;
-  
-      if(!this.isPause){
-        if( this.sections[this.activeIndex].questionTime <= 0 && this.sections[this.activeIndex].questions.length -1 == this.slides.getActiveIndex() && this.currentTime >= this.sections[this.activeIndex].timeTotal){
-          this.nextSection();
-          this.currentTime = 0;
+    this.timerInterval2 = setInterval(() => {
+      if (this.slides.getActiveIndex() == 0) {
+        this.phaseStatementTimer += 0.01;
+        if (this.phaseStatementTimer >= 3) {
           this.phaseStatementTimer = 0;
-        
-        } else if(this.sections[this.activeIndex].questionTime <= 0){
-          // this.slides.lockSwipes(false);
-          console.log('active slide index',this.slides.getActiveIndex())
-          // this.slideIndex = this.slides.getActiveIndex() + 1;
-          // console.log('slide next' + this.slideIndex)
           this.slides.slideNext();
-          this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTimeTotal;
         }
-        
-      }
-      }
-      // if(!this.isSlide){
-        this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
-        this.currentTimeConsumedInSeconds+=0.01;
-        this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
-      // }
-     
-    }
+      } else {
 
-  
-  }, 10) 
+        if (!this.isPause) {
+
+          this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTime - 0.01;
+          this.currentTime += 0.01;
+
+          if (!this.isPause) {
+            if (this.sections[this.activeIndex].questionTime <= 0 &&
+              this.sections[this.activeIndex].questions.length - 1 == this.slides.getActiveIndex() &&
+              this.currentTime >= this.sections[this.activeIndex].timeTotal) {
+              this.nextSection();
+              this.currentTime = 0;
+              this.phaseStatementTimer = 0;
+            }
+            else if (this.appProvider.isSlide){
+              if (this.sections[this.activeIndex].questionTime <= 0) {
+                // this.slides.lockSwipes(false);
+                console.log('active slide index', this.slides.getActiveIndex())
+                // this.slideIndex = this.slides.getActiveIndex() + 1;
+                // console.log('slide next' + this.slideIndex)
+                this.slides.slideNext();
+                this.sections[this.activeIndex].questionTime = this.sections[this.activeIndex].questionTimeTotal;
+              }
+           }
+          }
+        }
+        // if(!this.isSlide){
+        this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
+        this.currentTimeConsumedInSeconds += 0.01;
+        this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
+        // }
+
+      }
+
+
+    }, 10) 
   }
 
 

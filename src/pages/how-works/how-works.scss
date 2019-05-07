@@ -1,3 +1,14 @@
 page-how-works {
-
+    ion-content {
+        ul {
+            padding: 3vw;
+            margin: 0 3vw;
+        }
+        li {
+            line-height: 25px;
+            font-size: 4.5vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    }   
 }

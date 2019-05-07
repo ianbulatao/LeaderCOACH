@@ -13,6 +13,8 @@ export class AppProvider {
   questionType: string = '';
   minutes: number = 0;
   personalType = '';
+  timerStat: Boolean= true;
+  isSlide: Boolean = true;
 
  TimeConsumedInSeconds;
   constructor(public http: HttpClient) {

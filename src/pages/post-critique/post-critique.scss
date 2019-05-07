@@ -65,4 +65,21 @@ page-post-critique {
     .personality{
         padding: 0 35px;
     }
+    .answers { 
+         border-bottom: 1px solid map-get($colors, answer);
+         border-radius: 0 !important;
+         margin: 0 8vw !important;
+        }
+    .answersQ { padding: 0vw 2vw !important; }
+    .answered { 
+        line-height: 30px; 
+        border-bottom: 1px solid map-get($colors, answer);
+        border-radius: 0 !important; 
+        margin-right: 4vw !important;
+        margin-bottom: 5px;
+    }
+    .textArea {
+        border: .3px solid map-get($colors , dark );
+        border-radius: 10px;
+    }
 }
