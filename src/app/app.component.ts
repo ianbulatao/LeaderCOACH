@@ -47,7 +47,7 @@ export class MyApp {
       { title: 'How it works.', component: HowWorksPage },
       { title: 'What coaching is/is not.', component: LeaderWhatCoachPage },
       { title: 'Why these colors.', component: LeaderWhyColorsPage },
-      { title: 'Why is equal ideal.', component: LeaderWhyEqualIdealPage }
+      { title: 'Why equal is ideal.', component: LeaderWhyEqualIdealPage }
     ];
     this.pagesContact = [
       { title: 'Share experience', component: ContactShareExperiencePage },

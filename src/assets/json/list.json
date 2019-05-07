@@ -36,7 +36,7 @@
 
       "lead_a_meeting": {
         "title": "LEAD a MEETING to…",
-        "description": "get an agenda and questions for your group",  
+        "description": "get an agenda, tips and questions by topic",  
         "list":   [
           {"title": "Build teamwork", "description":"build rapport, trust and focus for a team"},
           {"title": "Devise a strategy", "description":"analyze a situation for best way forward"},
