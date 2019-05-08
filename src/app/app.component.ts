@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Events  } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppProvider } from '../providers/app/app';
@@ -20,6 +20,7 @@ import { GroundRulesPage } from '../pages/ground-rules/ground-rules';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -27,20 +28,22 @@ export class MyApp {
   pagesCoach: Array<{ title: string, component: any, type: string}>;
   pagesLeader: Array<{ title: string, component: any }>;
   pagesContact: Array<{ title: string, component: any }>;
+  public activeNav: string;
   constructor(
     public platform: Platform, 
     public statusBar: StatusBar, 
     public splashScreen: SplashScreen,
-    public appProvider: AppProvider
+    public appProvider: AppProvider,
+    public events: Events
   ) {
     this.initializeApp();
-
+    this.activeNav = this.appProvider.type;
     // used for an example of ngFor and navigation
     this.pagesCoach = [
       { title: 'Coach yourself', component: SecondScreenPage, type: 'coach_myself' },
       { title: 'Coach someone', component: SecondScreenPage, type: 'coach_an_employee' },
       { title: 'Lead a meeting', component: SecondScreenPage, type: 'lead_a_meeting' },
-      { title: 'Set ground rules', component: GroundRulesPage, type: null }
+      { title: 'Set ground rules', component: GroundRulesPage, type: 'ground_rules' }
   ];
     this.pagesLeader = [
       { title: 'What it does.', component: WhatdoesPage },
@@ -54,6 +57,12 @@ export class MyApp {
       { title: 'Give feedback', component: ContactGiveFeedbackPage },
       { title: 'Suggest modules', component: ContactSuggestPage }
     ];
+    this.events.subscribe('user:login', () => {
+      this.update();
+    });
+    this.events.subscribe('userz:login', () => {
+      this.updateBack();
+    });
   }
 
   initializeApp() {
@@ -66,9 +75,19 @@ export class MyApp {
   openPage(page, type) {
     if (page === "QuotesPage") { this.nav.setRoot(QuotesPage); }
     else {
+      if (type) {
+        this.appProvider.type = page.type;
+        this.activeNav = this.appProvider.type;
+      }
       this.nav.setRoot(page.component, { type: type });
       this.appProvider.type = type;
     }
+  }
+  update() {
+    this.activeNav = this.appProvider.type;
+  }
+  updateBack() {
+    this.activeNav = '';
   }
   updateTimer(e) {
     if (e.checked) {

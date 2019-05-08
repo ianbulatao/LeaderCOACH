@@ -4,10 +4,10 @@
    <ion-list no-lines>
      <p class="fonty">Get questions to help you…</p>
      <hr>
-        <button menuClose ion-item *ngFor="let p of pagesCoach" (click)="openPage(p , p.type)">
+        <button menuClose ion-item *ngFor="let p of pagesCoach" [ngStyle]="{'border-bottom': activeNav == p.type ? '1px solid rgba(0, 0, 0, 0.3)' : 'none', 'font-weight': activeNav == p.type ? '800': 'normal'}" (click)="openPage(p , p.type)">
           {{ p.title }}
         </button>
-      <p class="fonty">About LeaderCOACH</p>
+      <p class="fonty">About LeaderCOACH&trade;</p>
       <hr>
         <button menuClose ion-item *ngFor="let p of pagesLeader" (click)="openPage(p)">
           {{ p.title }}

@@ -56,7 +56,7 @@ export class MainScreenPage {
             section.questionTime = (section.prevTime*60)/(section.questions.length-1);
             section.questionTimeTotal = (section.prevTime*60)/(section.questions.length-1);
           }
-          this.defaultWidthSection = 30/(this.sections.length - 1);
+          this.defaultWidthSection = 10/(this.sections.length - 1);
           this.startTimer();
         }
         a();
@@ -73,7 +73,7 @@ export class MainScreenPage {
             section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
           }
 
-          this.defaultWidthSection = 30/(this.sections.length - 1);
+          this.defaultWidthSection = 10/(this.sections.length - 1);
           this.startTimer();
           
         })

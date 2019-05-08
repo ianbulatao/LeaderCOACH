@@ -35,36 +35,44 @@ export class ContactGiveFeedbackPage {
     this.navCtrl.setRoot(HomePage);
     this.navCtrl.popToRoot();
   }
-  send() {
-    let email = {
-      "to_email": "ian08bulatao@gmail",
-      "subject": "Feedback",
-      "message": this.body,
-      "email_type_option": true
-    }
-    this.http.post('https://us20.api.mailchimp.com/3.0/', { email })
-  }
-  // validate(res) {
-  //   let messageContent;
-  //   if (!res) messageContent = 'Response Sent!';
-  //   else messageContent = 'Response not Sent!'
-  //   let toast = this.toastCtrl.create({
-  //     message: messageContent,
-  //     duration: 3000
-  //   });
-  //   toast.present();
-  // }
   // send() {
   //   let email = {
-  //     to: 'ian08bulatao@gmail.com',
-  //     subject: this.subject,
-  //     body: this.body,
-  //     isHtml: true
+  //     "to_email": "ian08bulatao@gmail",
+  //     "subject": "Feedback",
+  //     "message": this.body,
+  //     "email_type_option": true
   //   }
-  //   this.emailComposer.open(email, err => {
-  //     this.validate(err);
-  //   });
+  //   this.http.post('https://us20.api.mailchimp.com/3.0/', { email })
   // }
+  validate(res) {
+    let messageContent;
+    if (!res) messageContent = 'Response Sent!';
+    else messageContent = 'Response not Sent!'
+    let duration: number = 2000;
+    let elapsedTime: number = 0;
+    let intervalHandler = setInterval(() => { elapsedTime += 10; }, 10);
+    let toast = this.toastCtrl.create({
+      message: messageContent,
+      position: 'middle',
+      duration: duration,
+      showCloseButton: true,
+      closeButtonText: "Proceed",
+      cssClass: 'toast'
+    });
+    toast.onDidDismiss(() => { });
+    toast.present();
+  }
+  send() {
+    let email = {
+      to: 'ian08bulatao@gmail.com',
+      subject: this.subject,
+      body: this.body,
+      isHtml: false
+    }
+    this.emailComposer.open(email, (err) => {
+      this.validate(err);
+    });
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactGiveFeedbackPage');
   }

@@ -36,10 +36,20 @@ export class ContactShareExperiencePage {
     let messageContent;
     if (!res) messageContent = 'Response Sent!';
     else messageContent = 'Response not Sent!'
+    let duration: number = 2000;
+    let elapsedTime: number = 0;
+    let intervalHandler = setInterval(() => { elapsedTime += 10; }, 10);
     let toast = this.toastCtrl.create({
       message: messageContent,
-      duration: 3000
+      position: 'middle',
+      duration: duration,
+      showCloseButton: true,
+      closeButtonText: "Proceed",
+      cssClass: 'toast'
     });
+
+    toast.onDidDismiss(() => { });
+
     toast.present();
   }
   send() {
@@ -49,7 +59,7 @@ export class ContactShareExperiencePage {
       body: this.body,
       isHtml: true
     }
-    this.emailComposer.open(email, err => {
+    this.emailComposer.open(email, (err) => {
       this.validate(err);
     });
   }

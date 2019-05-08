@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { AppProvider } from '../../providers/app/app';
 import { TimeInputPage } from '../time-input/time-input';
+import { Platform } from 'ionic-angular';
 
 /**
  * Generated class for the SecondScreenPage page.
@@ -24,7 +25,9 @@ export class SecondScreenPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public appProvider: AppProvider
+    public appProvider: AppProvider,
+    public platform: Platform,
+    public events: Events
     ) {
     this.type = this.navParams.get('type');
     console.log(this.type)
@@ -46,7 +49,6 @@ export class SecondScreenPage {
       this.navCtrl.pop();
     }
   }
-
   gotoInputTime(questionType){
     this.navCtrl.push(TimeInputPage, {type: this.type})
     this.appProvider.questionType = questionType;
