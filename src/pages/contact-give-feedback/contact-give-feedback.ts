@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EmailComposer } from '@ionic-native/email-composer'; 
 import { HttpClient } from '@angular/common/http';
 import { HomePage } from '../home/home';
-import { ToastController } from 'ionic-angular';
 
 
 /**
@@ -25,8 +23,6 @@ export class ContactGiveFeedbackPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams, 
-    private emailComposer: EmailComposer,
-    public toastCtrl: ToastController,
     public http: HttpClient
   ) {
   }
@@ -44,35 +40,6 @@ export class ContactGiveFeedbackPage {
   //   }
   //   this.http.post('https://us20.api.mailchimp.com/3.0/', { email })
   // }
-  validate(res) {
-    let messageContent;
-    if (!res) messageContent = 'Response Sent!';
-    else messageContent = 'Response not Sent!'
-    let duration: number = 2000;
-    let elapsedTime: number = 0;
-    let intervalHandler = setInterval(() => { elapsedTime += 10; }, 10);
-    let toast = this.toastCtrl.create({
-      message: messageContent,
-      position: 'middle',
-      duration: duration,
-      showCloseButton: true,
-      closeButtonText: "Proceed",
-      cssClass: 'toast'
-    });
-    toast.onDidDismiss(() => { });
-    toast.present();
-  }
-  send() {
-    let email = {
-      to: 'ian08bulatao@gmail.com',
-      subject: this.subject,
-      body: this.body,
-      isHtml: false
-    }
-    this.emailComposer.open(email, (err) => {
-      this.validate(err);
-    });
-  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactGiveFeedbackPage');
   }

@@ -60,7 +60,7 @@ export class MyApp {
     this.events.subscribe('user:login', () => {
       this.update();
     });
-    this.events.subscribe('userz:login', () => {
+    this.events.subscribe('updateBack', () => {
       this.updateBack();
     });
   }
@@ -75,20 +75,18 @@ export class MyApp {
   openPage(page, type) {
     if (page === "QuotesPage") { this.nav.setRoot(QuotesPage); }
     else {
-      if (type) {
-        this.appProvider.type = page.type;
-        this.activeNav = this.appProvider.type;
-      }
+      this.activeNav = page.title;
       this.nav.setRoot(page.component, { type: type });
       this.appProvider.type = type;
     }
   }
   update() {
-    this.activeNav = this.appProvider.type;
+    this.activeNav = this.appProvider.title;
   }
   updateBack() {
     this.activeNav = '';
   }
+  
   updateTimer(e) {
     if (e.checked) {
       this.appProvider.timerStat = true;

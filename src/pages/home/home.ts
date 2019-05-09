@@ -16,7 +16,7 @@ export class HomePage {
     public appProvider: AppProvider,
     public events: Events
     ) {
-    this.events.publish('userz:login');
+      this.events.publish('updateBack');
   }
 
   // swipeEvent(e){
@@ -25,13 +25,15 @@ export class HomePage {
   //     this.navCtrl.setRoot(SecondScreenPage, {}, {animate: true, direction: "forward"})
   //   }
   // }
-  goTo(type) {
+  goTo(type, title) {
     this.navCtrl.push(SecondScreenPage, {type:type})
     this.appProvider.type = type;
+    this.appProvider.title = title;
     this.events.publish('user:login');
   }
-  gotoGroundRules() {
+  gotoGroundRules(title) {
+    this.appProvider.title = title;
     this.navCtrl.push(GroundRulesPage)
   }
-
+  
 }

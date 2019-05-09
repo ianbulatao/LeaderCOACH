@@ -20,25 +20,25 @@
         <hr>
         <div  text-center class="menu-buttons">
           <h3>What do you want to do?</h3>
-          <div (click)="goTo('coach_an_employee')" margin-top class="coach-someone" text-center>
+          <div (click)="goTo('coach_an_employee', 'Coach someone')" margin-top class="coach-someone" text-center>
             <h4 no-margin>COACH an EMPLOYEE</h4>
             <div class="description">
                 <p no-margin>get questions to prepare for a conversation</p>
             </div>
           </div>
-          <div (click)="goTo('coach_myself')" margin-top class="coach-myself" text-center>
+          <div (click)="goTo('coach_myself', 'Coach yourself')" margin-top class="coach-myself" text-center>
             <h4 no-margin>COACH YOURSELF</h4>
             <div class="description">
               <p no-margin>get questions on which to reflect and act</p>
             </div>
           </div>
-            <div (click)="goTo('lead_a_meeting')" margin-top class="lead-meeting" text-center>
+            <div (click)="goTo('lead_a_meeting', 'Lead a meeting')" margin-top class="lead-meeting" text-center>
                 <h4 no-margin>LEAD a MEETING</h4>
                 <div class="description">
                   <p no-margin>get an agenda, tips and questions by topic</p>
                 </div>
               </div>
-            <div (click)="gotoGroundRules()" margin-top class="ground-rules" text-center>
+            <div (click)="gotoGroundRules('Set ground rules')" margin-top class="ground-rules" text-center>
                 <h4 no-margin>SET GROUND RULES</h4>
                 <div class="description">
                   <p no-margin>choose from 100+ norms for better meetings</p>

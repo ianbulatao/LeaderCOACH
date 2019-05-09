@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EmailComposer } from '@ionic-native/email-composer';
+import { HTTP } from '@ionic-native/http';
 import { HomePage } from '../home/home';
-import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the ContactShareExperiencePage page.
@@ -14,54 +13,44 @@ import { ToastController } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-contact-share-experience',
-  templateUrl: 'contact-share-experience.html',
+  templateUrl: 'contact-share-experience.html'
 })
 export class ContactShareExperiencePage {
-  subject = 'Application Experience'
-  body = ''
+  subject = 'Application Experience';
+  message = '';
+  mailgunUrl: string;
+  mailgunApiKey: string;
+  public http: HTTP;
 
   constructor(
     public navCtrl: NavController, 
-    public navParams: NavParams,
-    public emailComposer: EmailComposer,
-    public toastCtrl: ToastController
-    ) {
+    public navParams: NavParams
+  ) {
+    this.mailgunUrl = "sandbox5cff8575cea94f24a5faa0f9c4c0fb12.mailgun.org";
+    this.mailgunApiKey = window.btoa("api:4cc6bb317c28ca6c8f9c659a718d75e0-e566273b-39abe374");
   }
 
   gotoBoot() {
     this.navCtrl.setRoot(HomePage);
     this.navCtrl.popToRoot();
   }
-  validate(res) {
-    let messageContent;
-    if (!res) messageContent = 'Response Sent!';
-    else messageContent = 'Response not Sent!'
-    let duration: number = 2000;
-    let elapsedTime: number = 0;
-    let intervalHandler = setInterval(() => { elapsedTime += 10; }, 10);
-    let toast = this.toastCtrl.create({
-      message: messageContent,
-      position: 'middle',
-      duration: duration,
-      showCloseButton: true,
-      closeButtonText: "Proceed",
-      cssClass: 'toast'
-    });
-
-    toast.onDidDismiss(() => { });
-
-    toast.present();
-  }
+  
   send() {
-    let email = {
-      to: 'ian08bulatao@gmail.com',
-      subject: this.subject,
-      body: this.body,
-      isHtml: true
+    let headers = {
+      'Authorization': 'Basic ' + this.mailgunApiKey,
+      'Content-Type': 'application/x-www-form-urlencoded'
     }
-    this.emailComposer.open(email, (err) => {
-      this.validate(err);
-    });
+
+    let body = {
+      from: 'test@email.com',
+    to: 'ian08bulatao@gmail.com',
+      subject: this.subject,
+        text: this.message
+  }
+
+    let url = 'https://api.mailgun.net/v3/' + this.mailgunUrl + '/messages';
+
+    return this.http.post(url, body, headers);
   }
 
   ionViewDidLoad() {

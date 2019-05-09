@@ -15,6 +15,7 @@ export class AppProvider {
   personalType = '';
   timerStat: Boolean= true;
   isSlide: Boolean = true;
+  title: string;
 
  TimeConsumedInSeconds;
   constructor(public http: HttpClient) {
