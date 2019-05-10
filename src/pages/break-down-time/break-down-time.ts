@@ -20,15 +20,13 @@ export class BreakDownTimePage {
     chartType: 'PieChart',
     dataTable: [
       ['Languages', 'Percent'],
-      ['Test',     33],
-      ['Test',      33],
-      ['Test',  33]
     ],
     options: {
     // 'title': 'Actual',
     legend: 'none',
     titlePosition: 'none',
     chartArea:{left:10,top:0,right:10,width:"100%",height:"100%"},
+    colors:[],
     // colors: [],
     // 'width': 150,
     // 'height': 150
@@ -84,14 +82,20 @@ export class BreakDownTimePage {
     {code: "ENFJ", sensing: 16, intution:30, thinking:7, feeling:47 },
     {code: "ENTJ", sensing: 16, intution:30, thinking:47, feeling:7 },
   ]
-
+  totalTimeConsumed=0;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.sections = this.navParams.get('sections');
     this.sections.forEach(element => {
       this.ideal.dataTable.push([element.title, {v: element.percent, f: element.percent}]);
       this.ideal.options.colors.push(element.color);
+      this.totalTimeConsumed += element.timeConsumedInSeconds;
+    });
+    this.sections.forEach(element => {
+      this.actual.dataTable.push([element.title, {v: element.timeConsumedInSeconds/this.totalTimeConsumed*100, f: element.timeConsumedInSeconds/this.totalTimeConsumed*100}]);
+      this.actual.options.colors.push(element.color);
     });
     console.log(this.sections);
+    console.log(this.totalTimeConsumed)
     const index = this.mbti.findIndex(element => element.code === this.navParams.get('personalType'));
     if(index > -1){
       this.isPredicted = true;

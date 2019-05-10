@@ -68,6 +68,7 @@ export class MainScreenPage {
           for(let section of this.sections){
             section.time = this.currentTimeInSeconds/this.sections.length;
             section.timeTotal = this.currentTimeInSeconds/this.sections.length;
+            section.timeConsumedInSeconds = 0;
             section.questionTime = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
             section.questionTimeTotal = (this.currentTimeInSeconds/this.sections.length)/(section.questions.length-1);
           
@@ -194,6 +195,8 @@ export class MainScreenPage {
         this.currentTimeInSeconds = this.currentTimeInSeconds - 0.01;
         this.currentTimeConsumedInSeconds+=0.01;
         this.sections[this.activeIndex].time = this.sections[this.activeIndex].time - 0.01;
+        this.sections[this.activeIndex].timeConsumedInSeconds+=0.01;
+
       // }
      
     }
